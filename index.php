@@ -11,6 +11,8 @@ if (!isset($_SESSION['cart']))
 //include settings
 require_once('includes/settings.php');
 
+// include dbcon
+require_once('includes/dbcon.php');
 
 
 $routes = array(
