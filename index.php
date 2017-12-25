@@ -8,6 +8,10 @@ session_start();
 if (!isset($_SESSION['cart']))
   $_SESSION['cart'] = array();
 
+//include settings
+require_once('includes/settings.php');
+
+
 
 $routes = array(
 'default' => 'homepage_controller.php',
