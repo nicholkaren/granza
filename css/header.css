@@ -1,5 +1,6 @@
 
-body{
+
+body {
     margin: 0;
     z-index: -1;
 }
@@ -39,8 +40,8 @@ a:visited {
 }
 
 #profile::before {
-    font-family: 'millhouse-icons';
-    content: '\6d';
+    font-family: 'icons';
+    content: '\[]';
     font-size: 1.2em;
     margin-top: 15px;
 }
@@ -50,8 +51,8 @@ a:visited {
 }
 
 #shop_bag::before {
-    font-family: 'millhouse-icons';
-    content: '\62';
+    font-family: 'icons';
+    content: '\[]';
     font-size: 1.2em;
 }
 

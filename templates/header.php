@@ -33,6 +33,12 @@
         <a href="?action=default">
         <img src="img/logo/granza.png" alt="logotype granza" id="id_logo"></a>
     </div>
+
+    <!--IKONER TILL MIN PROFIL & SHOPPING BAG-->
+    <div class="menu_icons">
+        <a href="?action=login"><span id="profile"></span></a> <!-- Ska gå till admin -->
+        <a href="?action=addtocart"> <!-- Ska gå till cart -->
+            <span id="shop_bag"></span></a>
     
      
 </header>
