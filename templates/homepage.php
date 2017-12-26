@@ -3,7 +3,7 @@
 ?>
 <!--STARTSIDA-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link type="text/css" rel="stylesheet" href="css/startpage.css">
+<link type="text/css" rel="stylesheet" href="css/homepage.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Work+Sans:300,400" rel="stylesheet">
 <script src='includes/js.js'></script>
 
@@ -43,9 +43,9 @@
     <!-- Ansök om medlemsskap -->
     <div id="ansok-granza">
         <div class="placement-left">
-            <img class="orange" src="img/products/doftnoter/oranges.png">
-            <img class="rockrose" src="img/products/doftnoter/rockrose.png">
-            <img class="junpierberry" src="img/products/doftnoter/junpierberry.png">
+            <img class="orange" src="img/doftnoter/oranges.png">
+            <img class="rockrose" src="img/doftnoter/rockrose.png">
+            <img class="junpierberry" src="img/doftnoter/junpierberry.png">
         </div>
         <div class="placement-right">
             <img src="img/logo/granza.png">
