@@ -1,0 +1,206 @@
+
+body, .startpage {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+
+/* Button på produktbilder */
+button {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border: 2px solid #AE9266;
+    width: 40%;
+    position: relative;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: #AE9266;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #AE9266;
+    border: none;
+    color: white;
+}
+
+/* Button på toppbild */
+#create {
+    margin: 0 auto;
+    padding: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    width: 30%;
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    left: 0%;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#create:hover {
+    color: #f0bb29;
+}
+
+.start-cat-button:visited{
+    text-decoration: none;
+}
+
+h2.our-favorites {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    color: #000000;
+}
+
+h3 {
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.start_cat, .start_prod{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.product_wrapper img {
+    width: 70%;
+    margin-left:15%;
+    margin-right: 15%;
+}
+
+.product_wrapper p, h3 {
+    text-align: center;
+}
+
+.category_wrapper, .product_wrapper  {
+    width: 30%;
+    position: relative;
+}
+
+/******* Css för toppbild ************/
+
+.startpage {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.startpage_bigimage {
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.topimage {
+    max-width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.buttonContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 50%;
+    bottom: 0;
+    margin-left: -42px;
+}
+
+.buttons {
+    border-radius: 50%;
+    border: 2px solid rgba(174,146, 102, 1);
+    width: 7px;
+    height: 7px;
+    margin: 5px;
+}
+
+.buttonActive {
+    background-color: rgba(174,146, 102, 1);
+}
+
+/* CSS för Ansök om medlemsskap */
+#ansok-granza {
+    width: 100%;
+    height: 380px;
+    background-color: #D4A80E; 
+    margin-top: 5%;
+    display: flex;
+}
+
+.placement-left {
+    width: 40%;
+    padding-left: 5%;
+    flex: 1;
+}
+
+/* Kollagebilder */
+img.orange {
+    width: 600px;
+    height: 781px;
+    margin-top: -15%;
+    position: absolute;
+}
+
+img.rockrose {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    left: 30%;
+    margin-top: 3%;
+}
+
+img.junpierberry {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    left: 20%;
+    margin-top: 10%;
+}
+
+.placement-right {
+    width: 50%;
+    color: white;
+    text-align: center;
+    margin-top: 10%;
+    flex: 0 0 60%; 
+}
+
+/* Button Ansök */
+#ansok-medlemsskap {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#ansok-medlemsskap:hover { 
+    color: black;
+    background-color: white;
+}
+
