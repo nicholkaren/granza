@@ -3,7 +3,7 @@
 ?>
 <!--STARTSIDA-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link type="text/css" rel="stylesheet" href="css/homepage.css">
+<link type="text/css" rel="stylesheet" href="css/startpage.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Work+Sans:300,400" rel="stylesheet">
 <script src='includes/js.js'></script>
 
@@ -18,15 +18,17 @@
                     <div class="buttons"></div>
                 </div>
                 <button id="create"> Ett knappval </button>
+
     </div>
     
     
      <!-- FÖRSTA PRODUKTRADEN -->
+    
     <a href="?action=category&id=1">
         <h2 class="our-favorites">Damdofter | Profumi Donna </h2></a>
     <div class="start_prod">
-        
-  <!-- Damdofter -->
+    
+    <!-- Damdofter -->
     <?php foreach ($pagecontent->products as $currprod) {
     echo '<div class="product_wrapper">';
     echo '<a href="?action=product&pid='.$currprod['product_id'].'">';
@@ -47,12 +49,12 @@
     <!-- Ansök om medlemsskap -->
     <div id="ansok-granza">
         <div class="placement-left">
-            <img class="orange" src="img/doftnoter/oranges.png">
-            <img class="rockrose" src="img/doftnoter/rockrose.png">
-            <img class="junpierberry" src="img/doftnoter/junpierberry.png">
+            <img class="orange" src="img/products/doftnoter/oranges.png">
+            <img class="rockrose" src="img/products/doftnoter/rockrose.png">
+            <img class="junpierberry" src="img/products/doftnoter/junpierberry.png">
         </div>
         <div class="placement-right">
-            <img src="img/logo/granza.png">
+            <img src="img/logo/granza.png"
 
             <h2></h2>
             <p>Ansök om medlemsskap och få tillgång<br>
@@ -73,9 +75,37 @@
     echo '<h3>'.$currprod2['title_2'].'</h3>';
     echo '<p class="price">'.$currprod2['price_2'] .' KR'.'</p>';
     echo '</a>';
+    echo '<form method="post" action="?action=addtocart">';
+    echo '<input type="hidden" value="'.$currprod2['price_2'].'" name="price">';
+    echo '<input type="hidden" value="1" id="cart_qty" name="qty">';
+    echo '<input type="hidden" value="'.$currprod2['product_id_2'].'" id="cart_" name="pid">';
+    echo '<button type="submit">KÖP NU</button>';
+    echo '</form>';
     echo '</div>';
     } ?>
     </div>     
+    
+    <!--KATEGORIER-->
+    <div class="start_cat">
+    <?php /* foreach (){*/
+    echo '<div class="category_wrapper">';
+    echo '<a href="?action=category&id=3"><img src="img/inspo/candle_inspo4.jpg"></a>';
+    echo '<a href="?action=category&id=3" class="start-cat-button">DOFTLJUS</a>';
+    echo '</div>';
+/*}*/ ?>
+    <?php /* foreach (){*/
+    echo '<div class="category_wrapper">';
+    echo '<a href="?action=category&id=2"><img src="img/inspo/sunglass_inspo7.jpg"></a>';
+    echo '<a href="?action=category&id=2" class="start-cat-button">SOLGLASÖGON</a>';
+    echo '</div>';
+/*}*/ ?>
+    <?php /* foreach (){*/
+    echo '<div class="category_wrapper">';
+    echo '<a href="?action=category&id=1"><img src="img/inspo/watch_inspo3.jpg"></a>';
+    echo '<a href="?action=category&id=1" class="start-cat-button">KLOCKOR</a>';
+    echo '</div>';
+/*}*/ ?>
+    
     </div>
     
 </div>

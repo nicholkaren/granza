@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Granza perfumes</title>
+<title>Granza perfumes | <?php echo $pagecontent->title; ?></title>
 <link rel="shortcut icon" href="img/logo/granza.png"/>
 <link type="text/css" rel="stylesheet" href="css/header.css">
 <link type="text/css" rel="stylesheet" href="css/footer.css">
@@ -24,7 +24,7 @@
                 <li><a href="?action=category&id=1">Damdofter</a></li>
                 <li><a href="?action=category&id=2">Herrdofter</a></li>
                 <li><a href="?action=about-us">Om oss</a></li>
-                <li><a href="?action=faq">FAQ</a></li>
+                <li><a href="?action=about-us">FAQ</a></li>
             </ul>
         </nav>
     
@@ -33,12 +33,24 @@
         <a href="?action=default">
         <img src="img/logo/granza.png" alt="logotype granza" id="id_logo"></a>
     </div>
-
+    
     <!--IKONER TILL MIN PROFIL & SHOPPING BAG-->
     <div class="menu_icons">
-        <a href="?action=login"><span id="profile"></span></a> <!-- Ska gå till admin -->
-        <a href="?action=addtocart"> <!-- Ska gå till cart -->
-            <span id="shop_bag"></span></a>
-    
-     
+        <a href="?action=login"><span id="profile"></span></a>
+        <a href="?action=addtocart">
+            <span id="shop_bag">
+                <!-- SKRIVER UT ANTALET PRODUKTER I VARUKORGEN -->
+              <?php if(isset($_SESSION['cart-total']) && $_SESSION['cart-total'] > 0){
+                printf ('<div id="qty-cart"><span id="qty">%s</span></div>', $_SESSION['cart-total']);
+            }
+                //if(isset ($_POST['checkout'])){
+            
+             //$_SESSION['cart-total'];
+                    //$_SESSION['cart']= null;
+                    //echo'hejehje ABBE'
+                
+                
+                ?>
+            </span></a>
+    </div>  
 </header>
