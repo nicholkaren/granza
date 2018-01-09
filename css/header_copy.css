@@ -18,7 +18,7 @@ body{
 header {
     width: auto;
     height: 100px;
-    background-color: #000000;
+    border-bottom: 3px solid #AE9266;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,26 +27,27 @@ header {
     padding: 0;
 }
 
+
 .menu_icons {
     margin: 35px;
     font-size: 20px;
-    color: #ffffff
 }
 
 #id_logo {
-    padding-top: 25px;
+    height: 90px;
     display: inline-block;
     margin: 0 auto;
-    padding-left: 100px;
+    padding-left: 95px;
+    padding-right: 25px;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 a:visited {
-    color: white;
+    color:black;
 }
 
 #profile::before {
@@ -67,14 +68,14 @@ a:visited {
 }
 
 #profile:hover::before, #shop_bag:hover::before {
-    color: #ffffff;
+    color: #AE9266;
 }
 
 .menu {
     width: 20%;
     height: 100%;
-    background-color: #ffffff;
-    opacity: 0.8;
+    background-color: #AE9266;
+    opacity: 0.9;
     position: fixed;
     margin: 0;
     padding: 0;
@@ -88,7 +89,6 @@ h1#menu-button {
     font-weight: normal;
     padding-top: 80px;
     color: black;
-    font-weight: 400;
 }
 
 .menu > ul {
@@ -106,7 +106,7 @@ h1#menu-button {
 }
 
 .ulmenu li a:hover {
-   color: #c17900; 
+   color: white; 
 }
 
 input#nav-trigger:checked ~ nav {
@@ -121,8 +121,29 @@ input#nav-trigger:checked ~ nav {
 
 label[for="nav-trigger"] {
     display: inline-block;
-    color: white;
     z-index: 5;
+}
+
+#search_field_menu {
+    display: flex;
+    justify-content: center;
+}
+
+#search-menu {
+    height: 30px;
+    border: 1px solid black;
+    margin-right: 4px;
+}
+
+#search-menu-icon::before {
+    font-family: 'millhouse-icons';
+    content: 's';
+    font-size: 1.6em;
+    color: black;
+}
+
+#search-menu-icon:hover::before {
+    color: white;
 }
 
 .toggle {
@@ -133,47 +154,15 @@ label[for="nav-trigger"] {
 }
 
 input#nav-trigger:checked ~ .toggle {
-    transition: right 0.9s;
+    transition: right 0.5s;
 }
-
-/* QUANTITY IN CART*/
-#qty-cart {
-    height: 20px;
-    width: 20px;
-    background-color: #f0bb29;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    bottom: 5px;
-    left: -10px;
-}
-
-#qty {
-    font-size: 0.7em;
-    color: black;
-    font-weight: 300;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-
-
-
-
-
-
-
-
-
 
 
 @media all and (max-width:890px){
     
     .menu {
     width: 30%;
-    left: -700px;
+    left: -600px;
 }
 
     
@@ -183,22 +172,15 @@ input#nav-trigger:checked ~ .toggle {
     
     .menu {
     width: 100%;
-    left: -700px;
+    left: -600px;
 }
     
     #id_logo {
         padding-left: 82px;
+        padding-right: 0;
     }
     
-}
-
-@media all and (max-width:405px){
     
-    .menu_icons {
-        margin-left: 0;
-    }
-    
-}
 @media all and (max-width:380px){
 
     #profile {
@@ -209,8 +191,9 @@ input#nav-trigger:checked ~ .toggle {
         margin-left: 0;
     }
     
-
-}
+    #id_logo {
+        padding-left: 26px;
+    }
     
 @media all and (max-width:330px){
     
@@ -223,9 +206,7 @@ input#nav-trigger:checked ~ .toggle {
 }
 
 }
-
-@media all and (max-width:270px){
-#div-qty-cart {
-display: none;
+ 
 }
+    
 }
