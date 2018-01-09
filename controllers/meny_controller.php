@@ -18,3 +18,4 @@ foreach ($result as $cat) {
 	$currcat1['category_id'] = $cat['category_id'];
 	$pagecontentcat->cat[] = $currcat1;
 }
+
