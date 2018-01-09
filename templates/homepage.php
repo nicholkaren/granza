@@ -22,12 +22,11 @@
     
     
      <!-- FÖRSTA PRODUKTRADEN -->
-    
     <a href="?action=category&id=1">
         <h2 class="our-favorites">Damdofter | Profumi Donna </h2></a>
     <div class="start_prod">
-    
-    <!-- Damdofter -->
+        
+  <!-- Damdofter -->
     <?php foreach ($pagecontent->products as $currprod) {
     echo '<div class="product_wrapper">';
     echo '<a href="?action=product&pid='.$currprod['product_id'].'">';
@@ -36,6 +35,11 @@
     echo '<p class3="price">'.$currprod['price'] .' KR'.'</p>';
     echo '</a>';
     echo '<form method="post" action="?action=addtocart">';
+    echo '<input type="hidden" value="'.$currprod['price'].'" name="price">';
+    echo '<input type="hidden" value="1" id="cart_qty" name="qty">';
+    echo '<input type="hidden" value="'.$currprod['product_id'].'" id="cart_" name="pid">';
+    echo '<button type="submit">KÖP NU</button>';
+    echo '</form>';
     echo '</div>';
     } ?>
     </div>
