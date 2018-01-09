@@ -49,9 +49,9 @@
     <!-- Ansök om medlemsskap -->
     <div id="ansok-granza">
         <div class="placement-left">
-            <img class="orange" src="img/products/doftnoter/oranges.png">
-            <img class="rockrose" src="img/products/doftnoter/rockrose.png">
-            <img class="junpierberry" src="img/products/doftnoter/junpierberry.png">
+            <img class="orange" src="img/doftnoter/oranges.png">
+            <img class="rockrose" src="img/doftnoter/rockrose.png">
+            <img class="junpierberry" src="img/doftnoter/junpierberry.png">
         </div>
         <div class="placement-right">
             <img src="img/logo/granza.png"
