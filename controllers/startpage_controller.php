@@ -22,11 +22,11 @@ if (count($result) < 1){
     $pagecontent->offer_img_url = $result['head_img_url'];
 }
 
-/**************** HÄMTAR 4 KLOCKOR ***************/
+/**************** HÄMTAR 4 Damparfymer  ***************/
 $sql = "SELECT * FROM granza.product, granza.product_img WHERE 
         product.product_id = product_img.product_id
         AND product.category_id = 1
-        AND product.inactive = 0 ORDER BY rand() LIMIT 4";
+        AND product.inactive = 0 ORDER BY rand() LIMIT 3";
 	$stmt = $pdo->prepare($sql);
 	$stmt->execute();
 
