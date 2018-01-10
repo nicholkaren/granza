@@ -10,9 +10,10 @@
         <!--SLIDER-->
         <div class="startpage_bigimage">
             <img class="topimage" src="img/slider/big_img.jpg">
-            <button id="create"> Vilken nischdoft är du? </button>
+            <button id="create"> Begin fragrance profiling </button>
         </div>
-        
+
+
          <!-- FÖRSTA PRODUKTRADEN MED DAMDOFTER -->
         <a href="?action=category&id=1">
             <h2 class="damdofter">Damdofter | Profumi donna </h2>
@@ -30,13 +31,13 @@
                 echo '<input type="hidden" value="'.$currprod['price'].'" name="price">';
                 echo '<input type="hidden" value="1" id="cart_qty" name="qty">';
                 echo '<input type="hidden" value="'.$currprod['product_id'].'" id="cart_" name="pid">';
-                echo '<button type="submit">Läs mer</button>';
+                echo '<button type="submit">Lägg i varukorgen</button>';
                 echo '</form>';
                 echo '</div>';
             } ?>
         </div>
-        
-        <!-- Ansök om medlemsskap -->
+
+ <!-- Ansök om medlemsskap -->
         <div id="ansok-granza">
             <div class="placement-left">
                 <img class="orange" src="img/doftnoter/oranges.png">
@@ -44,36 +45,47 @@
                 <img class="junpierberry" src="img/doftnoter/junpierberry.png">
             </div>
             <div class="placement-right">
-                <img src="img/logo/granza.png"
-
-                <h2></h2>
-                <p>Ansök om medlemsskap och få tillgång<br>
-                till exklusiva erbjudanden</p>
-                <button id="ansok-medlemsskap"> Ansök nu </button>
-
+                <img src="img/logo/granza.png">
+                    <p>Ansök om medlemsskap och få tillgång<br>
+                    till exklusiva erbjudanden</p>
             </div>
-        </div>
+        </div>  
+        
 
         <!-- herrdofter -->
-        <a href="?action=category&id=2"><h2 class="our-favorites">Herrdofter | Profumi Oumo</h2></a>
-        <hr>
+        <a href="?action=category&id=2"><h2 class="damdofter">Herrdofter | Profumi Oumo</h2></a>
             <div class="start_prod">
         <?php foreach ($pagecontent2->products as $currprod2) {
         echo '<div class="product_wrapper">';
         echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'">';
         echo '<img src="'.$currprod2['img_url_2'].'" class="prod_img">';
-        echo '<h3>'.$currprod2['title_2'].'</h3>';
+        echo '<h3 class="parfymnamn">'.$currprod2['title_2'].'</h3>';
         echo '<p class="price">'.$currprod2['price_2'] .' KR'.'</p>';
         echo '</a>';
         echo '<form method="post" action="?action=addtocart">';
         echo '<input type="hidden" value="'.$currprod2['price_2'].'" name="price">';
         echo '<input type="hidden" value="1" id="cart_qty" name="qty">';
         echo '<input type="hidden" value="'.$currprod2['product_id_2'].'" id="cart_" name="pid">';
-        echo '<button type="submit">KÖP NU</button>';
+        echo '<button type="submit">Lägg i varukorgen</button>';
         echo '</form>';
         echo '</div>';
         } ?>
-        </div>     
+        </div>   
+
+       
+
+                <!-- De 3 blocken med innehåll -->
+    <div class="parfymwrap wrapp">
+
+        <!-- 1:a blocket med en bild -->
+        <div class="squares eq2">
+            <img src="img/inspo/vanilla_1600x1000.jpg">
+        </div>
+        <!-- 2:a blocket med text
+        <div class="squares eq2">
+        <p> Upptäck alla damdofter här...</p>
+    </div>-->
+    </div>
         
         <!--KATEGORIER-->
         <div class="start_cat">

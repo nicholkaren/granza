@@ -10,21 +10,21 @@
   font-style: normal;
 }
 
-body, .startpage {
+body {
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
     font-family: 'Open sans', sans-serif;
 }
 
-/******* Css för toppbild ************/
-
 .startpage {
     width: 100%;
+    max-width: 2880px;
     height: auto;
     margin: auto;
 }
 
+/* Css för toppbild */
 .startpage_bigimage {
     width: 100%;
     height: 100vh;
@@ -32,7 +32,7 @@ body, .startpage {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
     position: relative;
     z-index: -1;
     margin-top: -100px; /* För att ta bort extra px från menyn*/
@@ -60,7 +60,7 @@ body, .startpage {
     font-size: 20px;
     text-decoration: none;
     cursor: pointer;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-size: 25px;
 }
 
@@ -71,9 +71,9 @@ body, .startpage {
 /* Rubrik Damdofter | Profumi Donna */
 h2.damdofter {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
     color: #000000;
+    padding: 2%;
+    margin: 0px;
 }
 
 /* Namnet på parfymerna */
@@ -82,14 +82,14 @@ h3.parfymnamn {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    margin-top: -15%;
+    margin-top: -22%;
 }
 
 /* Priset på parfymerna */
 p.price {
     color: grey;
     margin-top: -2%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .start_cat, .start_prod{
@@ -105,7 +105,7 @@ p.price {
 .product_wrapper img {
     width: 100%;
     padding-right: 1%;
-    border: 2px solid white;
+    border: 1px solid white;
 }
 
 .product_wrapper p, h3 {
@@ -116,19 +116,84 @@ p.price {
     position: relative;
 }
 
+/* knapp för läs mer om varje parfym */
+button {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    width: 100%;
+    position: relative;
+    background-color: #000000;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button:hover {
+    border: none;
+    color: white;
+    border: 1px solid #ffffff;
+    z-index: 1;
+    background-color: grey;
+    cursor: pointer;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+
+}
+
+
+
+
+/* Till startsidan, nästan identisk med footer - ta ej bort - provar lösningar */ 
+
+.squares {
+    width: 50%; /* Definiera storlek på dem */
+}
+
+.wrapp {
+    display: flex; /* Sätter dem horisontellt */
+}
+
+.parfymwrap {
+    justify-content: space-between; /* Ger jämn margin */
+}
+
+.eq2:nth-of-type(odd) {
+    border-right: 1px white solid; /* Enbart för ramens skull */
+    background-color: blue;
+    height: 700px;
+    margin-top: -5%;
+    z-index: -2;
+}
+
+.eq2:nth-of-type(even) {
+    border-right: 1px white solid; /* Enbart för ramens skull */
+    background-color: red;
+    height: 500px;
+
+}
+
+
+
+
 
 /* CSS för Ansök om medlemsskap hos Granza */
 #ansok-granza {
     width: 100%;
-    height: 500px;
+    height: 480px;
     background-color: #D4A80E; 
-    margin-top: 5%;
     display: flex;
+    margin-top: 2px;
 }
 
 .placement-left {
     width: 40%;
-    padding-left: 5%;
+    padding-left: 15%;
     flex: 1;
 }
 
@@ -143,7 +208,7 @@ img.rockrose {
     width: 240px;
     height: 240px;
     position: absolute;
-    left: 27%;
+    left: 37%;
     margin-top: 5%;
 }
 
@@ -151,7 +216,7 @@ img.junpierberry {
     width: 400px;
     height: 250px;
     position: absolute;
-    left: 16%;
+    left: 27%;
     margin-top: 12%;
 }
 
@@ -160,6 +225,7 @@ img.junpierberry {
     color: white;
     text-align: center;
     margin-top: 10%;
+    margin-right: 5%;
     flex: 0 0 60%; 
 }
 

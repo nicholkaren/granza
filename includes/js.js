@@ -117,6 +117,8 @@ window.addEventListener("load", function () {
             }
         }
     }
+
+    
     
     var elems = document.getElementsByClassName("foobar");
     console.log(elems);
