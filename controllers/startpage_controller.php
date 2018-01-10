@@ -26,7 +26,7 @@ if (count($result) < 1){
 $sql = "SELECT * FROM granza.product, granza.product_img WHERE 
         product.product_id = product_img.product_id
         AND product.category_id = 1
-        AND product.inactive = 0 ORDER BY rand() LIMIT 5";
+        AND product.inactive = 0 ORDER BY rand() LIMIT 4";
 	$stmt = $pdo->prepare($sql);
 	$stmt->execute();
 

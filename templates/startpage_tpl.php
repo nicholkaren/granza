@@ -6,6 +6,8 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Work+Sans:300,400" rel="stylesheet">
 <script src='includes/js.js'></script>
 
+        <div class="goodstuff"> (ikon) Snabb leverans! | (ikon) Över 20 000 nöjda kunder | (ikon) Blabla </div> 
+
     <div class="startpage">
         <!--SLIDER-->
         <div class="startpage_bigimage">
@@ -73,21 +75,7 @@
         </div>   
 
        
-
-                <!-- De 3 blocken med innehåll -->
-    <div class="parfymwrap wrapp">
-
-        <!-- 1:a blocket med en bild -->
-        <div class="squares eq2">
-            <img src="img/inspo/vanilla_1600x1000.jpg">
-        </div>
-        <!-- 2:a blocket med text
-        <div class="squares eq2">
-        <p> Upptäck alla damdofter här...</p>
-    </div>-->
-    </div>
-        
-        <!--KATEGORIER-->
+        <!--KATEGORIER
         <div class="start_cat">
         <?php /* foreach (){*/
         echo '<div class="category_wrapper">';
@@ -107,7 +95,7 @@
         echo '<a href="?action=category&id=1" class="start-cat-button">KLOCKOR</a>';
         echo '</div>';
     /*}*/ ?>
-        
+        -->
         </div>
         
     </div>

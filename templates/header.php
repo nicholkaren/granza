@@ -27,6 +27,8 @@
                 <li><a href="?action=about-us">FAQ</a></li>
             </ul>
         </nav>
+
+        
     
     <!--LOGOTYP-->
     <div class="div_logo">
@@ -52,5 +54,5 @@
                 
                 ?>
             </span></a>
-    </div>  
+    </div> 
 </header>
