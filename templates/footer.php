@@ -29,11 +29,7 @@
     
     <!--3:e blocket med kommande bildkollage -->
     <div class="square eq">
-        <p class="granza-foooter-text">
-        Det lilla fotokollaget placeras här, om vi vill ha det.
-        </p>
-        <p id="copyright">© Granza 2018 </p>
-        <!-- <img src="img/products/doftnoter/liljekonvalj.png" height="500" width="400"></a>-->
+        <img id="footerimg" src="img/doftnoter/kollage2.png"</a>
     </div>
   
     </div>
