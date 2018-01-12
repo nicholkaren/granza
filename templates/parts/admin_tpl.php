@@ -1,5 +1,6 @@
-<?php include('templates/header.php');?>
+<?php require_once('templates/admin_header.html');?>
 <?php require_once('includes/admin_menu.php');?>
+
 
 <link type="text/css" rel="stylesheet" href="css/admin.css">
 <link type="text/css" rel="stylesheet" href="css/navbar_admin.css">
@@ -35,16 +36,16 @@
         </nav>
 -->
 
-        <!--MAIN CONTENT STARTAR HÄR-->
+        <!--MAIN CONTENT STARTAR HÄR
 <link type="text/css" rel="stylesheet" href="css/admin_header.css">
 
 <div class="main_wrapper">
 
-    <!--BILD-->
+    <!--BILD
     <div class="admin_img_wrapper">
         <img class="admin_img" src="img/inspo/watch_inspo2.jpg">
     </div> 
-
+-->
 	<!--TITEL-->
 
 	<hgroup>
@@ -62,5 +63,3 @@
 		<a href="?action=default" class="shop_link" href="">TILL BUTIKEN</a>
 	</div>
 </div>
-<?php require_once('templates/footer.php');
-?>
