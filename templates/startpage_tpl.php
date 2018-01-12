@@ -6,10 +6,14 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Work+Sans:300,400" rel="stylesheet">
 <script src='includes/js.js'></script>
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <!-- Liten reklambanner under headern -->
-    <div class="small_banner"> (ikon) Snabb leverans! | (ikon) Över 20 000 nöjda kunder | (ikon) Parfymprov vid varje beställning </div> 
+    <div class="small_banner"> 
+        <i class="fa fa-bolt" aria-hidden="true"></i> Snabb leverans! | 
+        <i class="fa fa-smile-o" aria-hidden="true"></i> Över 20 000 nöjda kunder | 
+        <i class="fa fa-gift" aria-hidden="true"></i> Parfymprov vid varje beställning </div> 
     
     <div class="startpage">
         <!-- TOPPBILD -->
@@ -76,6 +80,17 @@
         
 
         <!-- PRODUKTRAD MED HERRDOFTER -->
+        <a href="?action=category&id=2">
+        <div class="discover_men">
+            <img src="img/products/uomo/redigerad_005.png">
+            <p class="all_men"> Discover all perfumes <br>for oumo </p>
+            <div class="arrow-right"></div>
+
+
+        </div> 
+        </a>
+
+        <!-- PRODUKTRAD MED HERRDOFTER -->
         <a href="?action=category&id=2"><h2 class="headline_gender">Herrdofter | Profumi Oumo</h2></a>
             <div class="start_prod">
                 <?php foreach ($pagecontent2->products as $currprod2) {
@@ -95,15 +110,24 @@
                 } ?>
         </div> 
 
-
-        <!-- PRODUKTRAD MED HERRDOFTER -->
-        <a href="?action=category&id=2">
-        <div class="discover_men">
-            <img src="img/products/uomo/redigerad_005.png">
-            <p class="all_men"> Discover all perfumes <br>for oumo </p>
-
+         <!-- PRODUKTRAD MED HERRDOFTER -->
+            <div class="start_prod">
+                <?php foreach ($pagecontent2->products as $currprod2) {
+                    echo '<div class="product_wrapper">';
+                    echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'">';
+                    echo '<img src="'.$currprod2['img_url_2'].'" class="prod_img">';
+                    echo '<h3 class="perfume_name">'.$currprod2['title_2'].'</h3>';
+                    echo '<p class="price">'.$currprod2['price_2'] .' KR'.'</p>';
+                    echo '</a>';
+                    echo '<form method="post" action="?action=addtocart">';
+                    echo '<input type="hidden" value="'.$currprod2['price_2'].'" name="price">';
+                    echo '<input type="hidden" value="1" id="cart_qty" name="qty">';
+                    echo '<input type="hidden" value="'.$currprod2['product_id_2'].'" id="cart_" name="pid">';
+                    echo '<button type="submit">Lägg i varukorgen</button>';
+                    echo '</form>';
+                    echo '</div>';
+                } ?>
         </div> 
-        </a>
 
         <!--En kreativ yta -->
         <div id="philosophy">
