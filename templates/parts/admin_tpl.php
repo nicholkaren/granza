@@ -1,65 +1,50 @@
 <?php require_once('templates/admin_header.html');?>
-<?php require_once('includes/admin_menu.php');?>
 
+<link type="text/css" rel="stylesheet" href="css/admin_start.css">
 
-<link type="text/css" rel="stylesheet" href="css/admin.css">
-<link type="text/css" rel="stylesheet" href="css/navbar_admin.css">
+<!--STARTSIDA för admin-->
 
-<!--ADMIN MENY SOM FÄLLS UT-->
-<!--
-<nav class="ad_menu">
-            <ul class="ad_ulmenu">
-                <li class="ad_li"><a href="">PRODUKTER</a> 
-                    <ul>
-                        <li><a class="menu_link" href="?action=create-product"><li>SKAPA PRODUKT</a></li>
-                        <li><a href="?action=edit-product" class="menu_link"><li>REDIGERA PRODUKT</a></li>
-                        <li><a href="?action=all-products" class="menu_link"><li>ALLA PRODUKTER</a></li>
-                    </ul>    
-                 
-
-                <li class="ad_li"><a href="" >KATEGORIER</a>
-                    <ul>   
-                        <li><a href="?action=create-category" class="menu_link"><li>SKAPA KATEGORI</a></li>
-                        <li><a href="?action=edit-category" class="menu_link"><li>REDIGERA KATEGORI</a></li>
-                        <li><a href="?action=all-categories" class="menu_link"><li>ALLA KATEGORIER</a></li>
-                    </ul>
-                <li class="ad_li"><a href="?action=orders">ORDRAR</a>
-                
-                <li class="ad_li"><a href="">ANVÄNDARE</a>
-                    <ul>
-                        <li><a href="?action=password" class="menu_link"><li>ÄNDRA LÖSENORD</a></li>
-                        <li><a href="?action=create_user" class="menu_link"><li>SKAPA ANVÄNDARE</a></li>
-                        <li><a href="?action=users" class="menu_link">ALLA ANVÄNDARE</a></li>
-                    </ul>
-                <li class="ad_li"><a href="?action=edit-page" >REDIGERA SIDA</a></li>
-            </ul>
-        </nav>
--->
-
-        <!--MAIN CONTENT STARTAR HÄR
-<link type="text/css" rel="stylesheet" href="css/admin_header.css">
-
-<div class="main_wrapper">
-
-    <!--BILD
-    <div class="admin_img_wrapper">
-        <img class="admin_img" src="img/inspo/watch_inspo2.jpg">
-    </div> 
--->
-	<!--TITEL-->
-
-	<hgroup>
-		<h2 class="admin_title">
-			<?php echo $pagecontent->title; ?> 
-		</h2>
-	</hgroup>
-	
-
-
-
-		<!--LOGGA UT-->
-	<div class="log_out_wrapper">
-		<a href="?action=logout"><button type="submit" id="logout_button">LOGGA UT</button></a>
-		<a href="?action=default" class="shop_link" href="">TILL BUTIKEN</a>
-	</div>
+<!--VÄLKOMMSTEXT-->
+<div id="admin_content">
+<h2 class="admin_welcome">
+<?php echo $pagecontent->title; ?> 
+</h2>
+                        <!--Första container-->
+<div class="flex-container">
+  
+        <div>
+          <img class="admin_icon" src="img/icons/perfume_color.png">
+          <span class="admin_start">Produkter</span>
+          <a href="?action=create-product" class="choose_me">välj</a>
+        </div>
+        <div>
+            <img class="admin_icon" src="img/icons/category_color.png">
+            <span class="admin_start">Kategori</span>
+            <a href="?action=create-category"class="choose_me">välj</a>
+        </div>
+        <div>
+            <img class="admin_icon" src="img/icons/order_color.png">
+            <span class="admin_start">Order</span>
+            <a href="?action=orders" class="choose_me">välj</a>
+        </div>
 </div>
+                        <!--Andra container-->
+
+<div class="flex-container">
+        <div>
+            <img class="admin_icon" src="img/icons/membership_color.png">
+            <span class="admin_start">Medlemsskap</span>
+            <a href="?action=users" class="choose_me">välj</a>
+        </div>
+        <div>
+            <img class="admin_icon" src="img/icons/edit_color.png">
+            <span class="admin_start">Redigerare</span>
+            <a href="?action=edit-page" class="choose_me">välj</a>
+        </div>
+        <div>
+            <img class="admin_icon" src="img/icons/shop_color.png">
+            <span class="admin_start">Butik</span>
+            <a href="?action=default" class="choose_me">välj</a>
+        </div>   
+</div>
+	</div>

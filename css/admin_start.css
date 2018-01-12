@@ -1,0 +1,73 @@
+/*DIV som omslutar allt*/
+#admin_content{
+     font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+    background-color:#FDFDFD;
+}
+/*Matar ut ett användarnamn*/
+h2.admin_welcome{
+ margin:0;
+}
+
+/*container som innehåller 3 divar*/
+.flex-container{
+    display: flex;
+    width:100%;
+    height: 350px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*divarna*/
+.flex-container>div{
+    background-color: white;
+    width: 300px;
+    margin: 10px;
+    line-height: 30px;
+    font-size: 30px;
+    border-radius: 15px;
+    -moz-box-shadow:     0 0 3px #000000;
+    -webkit-box-shadow:  0 0 3px #000000;
+    box-shadow:          0 0 3px #000000;
+    text-align: center;
+}
+/*INFO ? */
+
+
+
+/*Knapp ikoner bilder*/
+img.admin_icon{
+    display: table;
+    margin:0 auto;
+    margin-top: 50px;
+    
+}
+
+/*Texten i boxarna*/
+
+span.admin_start{
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+/*välj mig knappen*/
+a.choose_me{
+    color:black;
+    font-size: 0.5em;
+    margin:0 auto;
+    margin-top:60px;
+    display: block;
+    width: 100px;
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    border: solid #D3D3D3 1.5px;
+    text-decoration: none;
+}
+.choose_me:hover{
+    text-decoration: none;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
