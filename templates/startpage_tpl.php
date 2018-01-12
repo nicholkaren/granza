@@ -132,7 +132,8 @@
         <!--En kreativ yta -->
         <div id="philosophy">
                 <img id="leafs" src="img/doftnoter/leaf_3.png">
-                <p class="thephilosophy"> ”Ett filosofiskt litet citat kanske? Eller utnyttja ytan för reklamkampanj typ?” <br> - Fransesco Granza</p>
+                <p class="thephilosophy"> "In the victorian times, everyone was well versed in the language of perfume. <br> When you gifted a bouquet or a perfume, you were telling a story, or sending a message"
+                <br> - Fransesco Granza</p>
         </div> 
         
     </div> <!-- End of startpage div -->
