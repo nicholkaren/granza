@@ -1,4 +1,4 @@
-<?php require_once('templates/admin_header.html');?>
+<?php require_once('templates/admin_header.php');?>
 
 <link type="text/css" rel="stylesheet" href="css/admin_start.css">
 

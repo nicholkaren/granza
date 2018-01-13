@@ -1,4 +1,8 @@
 /*Admin menyn*/
+*{
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase;
+}
 ul.admin_menu {
     list-style-type: none;
     margin: 0;

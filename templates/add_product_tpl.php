@@ -1,5 +1,6 @@
-<?php require_once('templates/header.php');?>
-<?php require_once('includes/admin_menu.php');?>
+<?php require_once('templates/admin_header.php');?>
+<?php require_once('includes/admin_sidemenu.php');?>
+
 <link type="text/css" href="css/add_product.css" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
@@ -36,4 +37,3 @@
     
 </form>
 
-<?php require_once('templates/footer.php');?>

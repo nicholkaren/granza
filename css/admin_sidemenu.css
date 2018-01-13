@@ -1,0 +1,18 @@
+nav.side_menu{
+    background-color:#676767;
+    width: 25%;
+    height:100vh;
+    position:fixed;
+    color:white;
+}
+header.big_icon{
+    margin-top: 10%;
+    padding:2em 0.5em;
+    text-align:center;
+}
+img.side_menu_icon{
+		}
+i.fa.fa-angle-right{
+    font-size:30px;
+    color:8BC34A;
+}
