@@ -7,10 +7,17 @@ main.create_product{
     width: 100%;
     margin-left: 375px;
 }
-input[type=text]:focus {
-    border: 3px solid #555;
+form{
+    background-color:pink;
+    width: 500px;
 }
-
+input{
+    padding:10px;
+    border:solid 1px black;
+    width: 100%;
+    margin-top:15px;
+    border-radius: 12px;
+}
 /*GAMMAL KOD SKA BORT
 #create-product, #search-product {
     width: 100%;
