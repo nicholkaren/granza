@@ -13,6 +13,6 @@
     <li class="side_menu"><span>Skapa ny produkt</span><i class="fa fa-angle-right"></i></li>
     <li  class="side_menu"><span>Redigera produkt</span><i class="fa fa-angle-right"></i></li>
     <li  class="side_menu"><span>Radera produkt</span><i class="fa fa-angle-right"></i></li>
-    <li  class="side_menu_back"><span>Tillbaka</span></li>
+    <li  class="side_menu_back"><span><i class="fa fa-angle-left"></i>Tillbaka</span></li>
   </ul>
 </nav>
