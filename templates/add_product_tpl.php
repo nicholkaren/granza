@@ -20,9 +20,13 @@
     }?>
 <!--Form för att mata in nya produkter i DB-->
     <form method="post" action="?action=create-product" enctype="multipart/form-data" id="create-product" name="add-product">
+        
         <input type="file" name="file1" id="file-upload">
+        
         <input type="text" name="product[title]" id="prod-title" placeholder="Produkttitel">
+        
         <input type="text" name="product[price]" id="prod-price" placeholder="Pris">
+        
         <textarea form="create-product" rows="10" cols="50" name="product[desc]" id="prod-desc" placeholder="Produktbeskrivning"></textarea>
 
 <!--Här anger admin kategori för PID-->        
