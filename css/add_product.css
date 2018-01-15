@@ -1,19 +1,17 @@
-h1, #add-product-h1 {
-    text-align: center;
+body{
+    margin:0;
+    padding:0;
+}
+main.create_product{
+    float:left;
+    width: 100%;
+    margin-left: 375px;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
 }
 
-h2 {
-    text-align: center;
-}
-
-hr{    
-    border: 0;
-    height: 3px;
-    width: 40%;
-    background-color: rgba(174,146, 102, 1);
-    margin-bottom: 20px;
-}
-
+/*GAMMAL KOD SKA BORT
 #create-product, #search-product {
     width: 100%;
 }
@@ -90,4 +88,4 @@ select {
     text-align: center;
     color: green;
     font-size: 24px;
-}
+}*/
