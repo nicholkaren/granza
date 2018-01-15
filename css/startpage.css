@@ -64,7 +64,7 @@ button#create {
     border: 2px solid white;
     width: 30%;
     position: absolute;
-    top: 55%;
+    top: 45%;
     right: 0%;
     left: 0%;
 
@@ -75,6 +75,13 @@ button#create {
     letter-spacing: 2px;
     font-size: 25px;
     z-index: 4;
+}
+
+#create:hover {
+    background: white;
+    color: black;
+    z-index: 999999;
+    cursor: pointer;
 }
 
 /* Rubrik Damdofter | Profumi Donna */
@@ -185,7 +192,7 @@ button:hover {
     position: relative; 
 }
 
-.discover_women > img {
+.discover_women > .bigperfume {
     width: 100%;
     margin-top: 0.5%;
 }
@@ -194,6 +201,60 @@ p.all_women {
     position: absolute;
     top: 50%;
     left: 65%;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: lato;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  
+  border-left: 20px solid white;
+  position: absolute;
+  top: 68%;
+  left: 65%;
+}
+
+img.lily {
+    width: 38.5%;
+    position: absolute;
+    top: -6%;
+    left: 6%;
+}
+
+img.mint {
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.arrow-left:hover {
+      border-left: 20px solid #2A4128;
+} 
+
+
+/* Alla parfymer herr */
+.discover_men {
+    position: relative; 
+}
+
+.discover_men > .bigperfume {
+    width: 100%;
+    margin-top: 0.5%;
+}
+
+p.all_men {
+    position: absolute;
+    top: 50%;
+    left: 15%;
 
     color: white;
     text-transform: uppercase;
@@ -212,13 +273,12 @@ p.all_women {
   border-left: 20px solid white;
   position: absolute;
   top: 68%;
-  left: 65%;
+  left: 15%;
 }
 
 .arrow-right:hover {
       border-left: 20px solid #2A4128;
 } 
-
 /* CSS för ansök om medlemsskap hos Granza 
 Uppdelad i två block, en med bildkollage och en med bara text */
 #register_member {
@@ -226,7 +286,9 @@ Uppdelad i två block, en med bildkollage och en med bara text */
     height: 480px;
     background-color: #D4A80E; 
     display: flex;
-    margin-top: 2px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
 }
 
 .placement-left {
@@ -272,7 +334,7 @@ button#ansok {
 #philosophy {
     width: 100%;
     height: 480px;
-    background-color: #2A4128; 
+    background-color: #000000; 
     text-align: center;
     margin-top: 0.5%;
 }

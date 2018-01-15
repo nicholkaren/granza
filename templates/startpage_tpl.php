@@ -15,15 +15,15 @@
         <i class="fa fa-gift" aria-hidden="true"></i> Parfymprov vid varje beställning |
         <i class="fa fa-clock-o" aria-hidden="true"></i> 60 dagars öppet köp |
         <i class="fa fa-smile-o" aria-hidden="true"></i> Över 20 000 nöjda kunder | 
-
     </div> 
-            <!-- TOPPBILD -->
+
+        <!-- TOPPBILD -->
         <div class="startpage_bigimage">
             <img class="topimage" src="img/slider/big_img.jpg">  
-                <a href="#">
+        </div>
+        <a href="#">
                     <button id="create"> Begin fragrance profiling </button>
                 </a>
-        </div>
         
         
         <div class="startpage">
@@ -50,24 +50,14 @@
         <!-- UPPTÄCK ALLA DAMDOFTER -->
         <a href="?action=category&id=2">
         <div class="discover_women">
-            <img src="img/products/big/005_big.jpg">
+            <img class="bigperfume" src="img/products/big/005_big.jpg">
+            <img class="lily" src="img/doftnoter/geranium.png">
+                        <img class="mint" src="img/doftnoter/tobacco.png">
+
             <p class="all_women"> Discover all perfumes <br>for donna </p>
-            <div class="arrow-right"></div>
+            <div class="arrow-left"></div>
         </div> 
         </a>
-
-        <!--Ansök om medlemsskap-->
-        <div id="register_member">
-            <div class="placement-left">
-                <img class="kollage1" src="img/doftnoter/kollage1.png">
-            </div>
-            <div class="placement-right">
-                <img src="img/logo/granza.png">
-                    <p> Bli medlem i Granza och få tillgång till exklusiva erbjudanden.<br> Dessutom får du som medlem fri frakt på din beställning. </p>
-
-                    <button id="ansok"> Ansök här! </button>
-            </div>
-        </div>
 
         <!-- PRODUKTRAD MED HERRDOFTER -->
         <a href="?action=category&id=2"><h2 class="headline_gender">Herrdofter | Profumo Oumo</h2></a>
@@ -90,11 +80,32 @@
                 } ?>
             </div> 
 
-        <!--En kreativ yta -->
+        <!-- UPPTÄCK ALLA HERRDOFTER -->
+        <a href="?action=category&id=2">
+        <div class="discover_men">
+            <img class="bigperfume" src="img/products/big/005_big.jpg">
+            <p class="all_men"> Discover all perfumes <br>for uomo </p>
+            <div class="arrow-right"></div>
+        </div> 
+        </a>
+
+        <!--En kreativ yta 
         <div id="philosophy">
                 <p class="thephilosophy"> "In the victorian times, everyone was well versed in the language of perfume. <br> When you gifted a bouquet or a perfume, you were telling a story, or sending a message"
                 <br> - Fransesco Granza</p>
-        </div> 
+        </div> -->
+
+        <!--Ansök om medlemsskap-->
+        <div id="register_member">
+            <div class="placement-left">
+                <img class="kollage1" src="img/doftnoter/kollage1.png">
+            </div>
+            <div class="placement-right">
+                    <p> Bli medlem i Granza och få tillgång till exklusiva erbjudanden.<br> Dessutom får du som medlem fri frakt på din beställning. </p>
+
+                    <button id="ansok"> Ansök här! </button>
+            </div>
+        </div>
 
         
     </div> <!-- End of startpage div -->
