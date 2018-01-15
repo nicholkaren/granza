@@ -1,9 +1,10 @@
-<?php require_once('templates/admin_header.php');?>
-
-<link type="text/css" rel="stylesheet" href="css/admin_start.css">
-
 <!--STARTSIDA för admin-->
+<?php require_once('templates/admin_header.php');?>
+<head>
+<link type="text/css" rel="stylesheet" href="css/admin_start.css">
+</head>
 
+<body>
 <!--VÄLKOMMSTEXT-->
 <div id="admin_content">
 <h2 class="admin_welcome">
