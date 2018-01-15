@@ -39,7 +39,7 @@
     
     <!--IKONER TILL MIN PROFIL & SHOPPING BAG-->
     <div class="menu_icons">
-        <a href="?action=login"><span id="profile"></span></a>
+        <a href="?action=login">Logga in</a>
         <a href="?action=addtocart">
             <span id="shop_bag">
                 <!-- SKRIVER UT ANTALET PRODUKTER I VARUKORGEN -->

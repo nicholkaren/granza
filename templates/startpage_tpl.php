@@ -11,9 +11,12 @@
 
     <!-- Liten reklambanner under headern -->
     <div class="small_banner"> 
-        <i class="fa fa-bolt" aria-hidden="true"></i> Snabb leverans! | 
+        | <i class="fa fa-bolt" aria-hidden="true"></i> Snabb leverans | 
+        <i class="fa fa-gift" aria-hidden="true"></i> Parfymprov vid varje beställning |
+        <i class="fa fa-clock-o" aria-hidden="true"></i> 60 dagars öppet köp |
         <i class="fa fa-smile-o" aria-hidden="true"></i> Över 20 000 nöjda kunder | 
-        <i class="fa fa-gift" aria-hidden="true"></i> Parfymprov vid varje beställning </div> 
+
+    </div> 
             <!-- TOPPBILD -->
         <div class="startpage_bigimage">
             <img class="topimage" src="img/slider/big_img.jpg">  
@@ -67,7 +70,7 @@
         </div>
 
         <!-- PRODUKTRAD MED HERRDOFTER -->
-        <a href="?action=category&id=2"><h2 class="headline_gender">Herrdofter | Profumi Oumo</h2></a>
+        <a href="?action=category&id=2"><h2 class="headline_gender">Herrdofter | Profumo Oumo</h2></a>
             
             <div class="start_prod">
                 <?php foreach ($pagecontent2->products as $currprod2) {

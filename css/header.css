@@ -34,6 +34,17 @@ header {
     color: #ffffff
 }
 
+div.menu_icons a {
+    margin-right: 30px;
+    font-size: 17px;
+    margin: top: 2px;
+
+}
+
+div.menu_icons a:last-child {
+    margin-right: 0;
+}
+
 #id_logo {
     padding-top: 25px;
     display: inline-block;
@@ -43,11 +54,12 @@ header {
 
 a {
     text-decoration: none;
-    color: white;
+    color: white; 
 }
 
 a:visited {
     color: white;
+
 }
 
 #profile::before {
