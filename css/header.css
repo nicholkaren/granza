@@ -16,7 +16,8 @@ body{
 }
 
 header {
-    width: auto;
+    width: 100%;
+    max-width: 1680px;
     height: 100px;
     background-color: #000000;
     display: flex;
@@ -89,6 +90,7 @@ h1#menu-button {
     padding-top: 80px;
     color: black;
     font-weight: 400;
+    padding-top: 80%;
 }
 
 .menu > ul {

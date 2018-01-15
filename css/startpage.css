@@ -21,6 +21,7 @@ body {
 /* Liten gul banner under headern */
 .small_banner {
     width: 100%;
+    max-width: 1663px;
     background-color: #f0bb29;
     text-align: center;
     color: white;
@@ -31,9 +32,8 @@ body {
 /* Omsluter allt innehåll */
 .startpage {
     width: 100%;
-    max-width: 2880px;
+    max-width: 1680px;
     height: auto;
-    margin: auto;
 }
 
 /* Css för toppbild */
@@ -87,18 +87,22 @@ h2.headline_gender {
 
 /* Namnet på parfymerna */
 h3.perfume_name {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
+    font-size: 14px;
     margin-top: -22%;
+    z-index: 999999;
+    text-transform: uppercase;
 }
 
 /* Priset på parfymerna */
 p.price {
-    color: grey;
+    color: white;
     margin-top: -2%;
     margin-bottom: 3%;
+    z-index: 9999999;
 }
 
 .start_cat, .start_prod{
@@ -106,20 +110,43 @@ p.price {
     flex-direction: row;
     flex-wrap: nowrap;
     width: auto;
-    justify-content: center;
+    max-width: 100%;
+}
+
+/* Omsluter produktraden */
+.product_wrapper {
     margin: 0 auto;
+    overflow: hidden;
+    justify-content: space-between;
+    margin-right: 0.5%;
+}
+
+/* Tar bort margin på sista bilden*/
+.product_wrapper:last-child {
+    margin-right: 0%;
 }
 
 /* Bilder på parfymer */
 .product_wrapper img {
-    width: 100%;
-    padding-right: 1%;
-    border: 1px solid white;
+    max-width: 100%;
+    -moz-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+}
+
+/* Hover effekt med zoom */
+.product_wrapper img:hover {
+    transition: all 200ms ease-in-out;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 1;
 }
 
 .product_wrapper p, h3 {
     text-align: center;
 }
+
 .category_wrapper, .product_wrapper  {
     width: 100%;
     position: relative;
@@ -130,29 +157,67 @@ button {
     margin: 0 auto;
     padding: 20px;
     background-color: transparent;
-    border: 1px solid #ffffff;
     width: 100%;
     position: relative;
-    background-color: #000000;
-    color: #ffffff;
+    background: #f0bb29;
+
+
+    color: white;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
     z-index: 1;
+    border: none;
 }
 
 button:hover {
-    border: none;
     color: white;
-    border: 1px solid #ffffff;
     z-index: 1;
-    background-color: grey;
     cursor: pointer;
     -webkit-transition: background-color 1s ease-out;
     -moz-transition: background-color 1s ease-out;
     -o-transition: background-color 1s ease-out;
     transition: background-color 1s ease-out;
 }
+
+/* Alla parfymer */
+.discover_women {
+    position: relative; 
+}
+
+.discover_women > img {
+    width: 100%;
+    margin-top: 0.5%;
+}
+
+p.all_women {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: lato;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  
+  border-left: 20px solid white;
+  position: absolute;
+  top: 68%;
+  left: 65%;
+}
+
+.arrow-right:hover {
+      border-left: 20px solid #2A4128;
+} 
 
 /* CSS för ansök om medlemsskap hos Granza 
 Uppdelad i två block, en med bildkollage och en med bara text */
@@ -202,44 +267,6 @@ button#ansok {
     background-color: white;
 }
 
-/* Alla parfymer */
-.discover_men {
-    position: relative; 
-}
-
-.discover_men > img {
-    width: 100%;
-}
-
-p.all_men {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-
-    color: white;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-family: lato;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.arrow-right {
-  width: 0; 
-  height: 0; 
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  
-  border-left: 20px solid white;
-  position: absolute;
-  top: 68%;
-  left: 65%;
-}
-
-.arrow-right:hover {
-      border-left: 20px solid #2A4128;
-
-}
 
 /* Kreativ ruta under herrdofter */
 #philosophy {
@@ -247,6 +274,7 @@ p.all_men {
     height: 480px;
     background-color: #2A4128; 
     text-align: center;
+    margin-top: 0.5%;
 }
 
 #leafs {
@@ -262,7 +290,8 @@ p.thephilosophy {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     letter-spacing: 1.5px;
-    margin-top: -1%;
+    padding-top: 13%;
+    margin: 0;
 }
 
 /******* CSS FÖR KATEGORIBILDERNA ************/
