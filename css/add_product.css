@@ -1,23 +1,43 @@
-body{
-    margin:0;
-    padding:0;
+
+div.ad.prod.container{
+    display:flex;
+    justify-content: flex-end;
 }
 main.create_product{
-    float:left;
     width: 100%;
     margin-left: 375px;
 }
 form{
-    background-color:pink;
     width: 500px;
 }
 input{
-    padding:10px;
-    border:solid 1px black;
+    padding:12px;
+    border:solid 2px #676767;
     width: 100%;
     margin-top:15px;
     border-radius: 12px;
+    outline:none;
 }
+textarea{
+    margin-top: 15px;
+    border-radius: 12px;
+    border:solid 2px #676767;
+    padding:10px;
+    width: 100%;
+}
+div.style_select select {
+    outline: none;
+   background:  transparent;
+   width: 268px;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: #676767 solid 2px;
+   border-radius:12px;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+
 /*GAMMAL KOD SKA BORT
 #create-product, #search-product {
     width: 100%;
