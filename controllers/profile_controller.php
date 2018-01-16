@@ -1,5 +1,5 @@
 <?php 
-//$person = new Person();
+//Här finns all logik kring när användaren är inloggad samt utloggad 
 $pagecontent = new stdClass;
 include('meny_controller.php');
 require('classes/Customer_class.php');
@@ -7,7 +7,7 @@ require('classes/Admin_class.php');
 include('includes/token.php');
 
 
-
+//Om personen loggar ut så hamnar den på default dvs startpage.
 if ($_GET['action'] === "logout"){
     $person->logOut();
     // Redirect to login page after logout.
@@ -17,8 +17,8 @@ if ($_GET['action'] === "logout"){
 
 $pagecontent->title = "LOGGA IN";
 $pagecontent->h2 = "VÄLKOMMEN ATT LOGGA IN";
-//KOLLA OM DU ÄR INLOGGAD OCH AVGÖR OM ADMIN 
 
+//KOLLA OM DU ÄR INLOGGAD OCH AVGÖR OM ADMIN 
 getToken();
     if($person->isLoggedIn()) {
        
@@ -34,7 +34,6 @@ getToken();
             $id = $person->getId();
             $admin = new Admin();
             $admin->setId($id);
-           // $result1 = $admin->getAllOrders();
          
         
         } else { //HÄMTA INFO OM INLOGGAD GÄST
