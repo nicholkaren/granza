@@ -1,17 +1,30 @@
 <?php 
 require_once('templates/header.php');
 ?>
+
 <link type="text/css" rel="stylesheet" href="css/about_us.css">
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
 
-<!--OM OSS-->
-<div>
-    <div id="about_us_banner">
-        <img src="<?php echo $pagecontent->img_url; ?>"> 
-    </div>
-    <h1><?php echo $pagecontent->title; ?></h1>
-    <p><?php echo $pagecontent->content1; ?></p>
-    <h2><?php echo $pagecontent->content2; ?></h2>
-</div>
-<?php require_once('templates/footer.php');
-?>
+
+	<!--OM OSS-->
+	<img class="background_flowers" src="img/inspo/flowers_about.jpg">  
+
+    <div id="about_us_wrapper">
+    	<!-- Rubrik -->
+	    <h1 class="about_us_headline"><?php echo $pagecontent->title; ?></h1>
+	    
+	    <!-- Brödtext -->
+	    <p class="about_us_describing_text"><?php echo $pagecontent->content1; ?></p>
+
+	    <!-- Bilder -->
+	    <div id="collage">
+	    	<img class="about_content_img" src="img/inspo/more-flowers.jpg">  
+	    	<img class="about_content_img2" src="img/inspo/X-craftsmanship.jpg">  
+	    	<img class="about_content_img3" src="img/inspo/architecture.jpg">  
+		</div>
+		<br>
+
+					    <p id="signature"> / Fransesco Granza </p>
+
+	</div>

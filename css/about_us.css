@@ -1,55 +1,77 @@
-body {
+
+/* Bakgrundsbild med blommor */
+img.background_flowers {
     width: 100%;
-    margin: 0;
-    padding: 0;
+    height: 1600px;
+    
+    position: relative;
 }
 
-div #about_us_banner > img  {
-    max-width: 100%;
-    max-height: 100%;
-} 
+/* Vit canvas ovanpå bakgrundsbilden */
+#about_us_wrapper {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-family: 'Lato';
+    padding-bottom: 10%;    
 
-h1, h2, h3, p {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+
+/* Rubrik som hämtas från db */
+h1.about_us_headline {
     text-align: center;
-    color: #5a5752;
+    padding-top: 5%;
+    font-size: 30px;
 }
 
-h2 {
-    color: #AE9266;
-    margin-top: 40px;
-    margin-bottom: 60px;
-}
-p {
+/* Löpande text som hämtas från db */
+p.about_us_describing_text {
+    color: black;
+    padding-top: 2%;
+    line-height: 23px;
     margin-left: 15%;
     margin-right: 15%;
 }
 
-p:nth-child(2) {
-    color: red;
+#signature {
+    font-family: 'Dr Sugiyama', cursive;
+    font-size: 35px;
+    color: black;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: center
 }
 
 
-form {
-    text-align: center;
+#collage {
+    position: relative;
 }
 
-button {
-    background-color: #AE9266;
-    color: white;
-    border: none;
-    padding: 10px 22px 10px 22px;
+/* Bild 1*/
+img.about_content_img {
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 10%;
 }
 
-input {
-    border: 1px solid #AE9266;
-    width: 200px;
-    padding: 10px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-
-}
-input:active {
-    border: #AE9266;
+img.about_content_img2 {
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
 }
 
+img.about_content_img3 {
+    width: 20%;
+    position: absolute;
+    top: 69%;
+    left: 50%;
+
+}
