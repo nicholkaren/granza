@@ -1,6 +1,6 @@
-<!--<link type="text/css" rel="stylesheet" href="css/admin_start.css">
+<link type="text/css" rel="stylesheet" href="css/admin_start.css">
 <link type="text/css" rel="stylesheet" href="css/admin.css">
-ADMIN MENY SOM FÄLLS UT
+<!--ADMIN MENY SOM FÄLLS UT-->
 
 <nav class="ad_menu">
             <ul class="ad_ulmenu">

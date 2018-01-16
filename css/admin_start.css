@@ -3,15 +3,19 @@ body{
     padding:0;
     width: 100%;
 }
+
 /*DIV som omslutar allt*/
 #admin_content{
      font-family: 'lato', sans-serif;
     text-transform: uppercase;
     background-color:#FDFDFD;
 }
+
 /*Matar ut ett användarnamn*/
 h2.admin_welcome{
- margin:0;
+ text-align: center;
+ padding-top: 1%;
+ padding-bottom: 0.5%;
 }
 
 /*container som innehåller 3 divar*/
@@ -30,10 +34,10 @@ h2.admin_welcome{
     margin: 10px;
     line-height: 30px;
     font-size: 30px;
-    border-radius: 15px;
-    -moz-box-shadow:     0 0 3px #000000;
-    -webkit-box-shadow:  0 0 3px #000000;
-    box-shadow:          0 0 3px #000000;
+    /*border-radius: 15px;*/
+    -moz-box-shadow:     0 0 35px #dcdcdc;
+    -webkit-box-shadow:  0 0 35px #dcdcdc;
+    box-shadow: 0 0 35px #dcdcdc;
     text-align: center;
 }
 /*INFO ? */
@@ -43,8 +47,9 @@ h2.admin_welcome{
 /*Knapp ikoner bilder*/
 img.admin_icon{
     display: table;
-    margin:0 auto;
-    margin-top: 50px;
+    margin: 0 auto;
+    margin-top: 37%;
+    width: 17%;
     
 }
 
@@ -53,26 +58,73 @@ img.admin_icon{
 span.admin_start{
     letter-spacing: 1px;
     display: inline-block;
+    margin-top: 4%;
+    font-size: 17px;
 }
 
 /*välj mig knappen*/
 a.choose_me{
-    color:black;
+    color: black;
     font-size: 0.5em;
-    margin:0 auto;
-    margin-top:60px;
+    margin: 0 auto;
+    margin-top: 6%;
     display: block;
-    width: 100px;
+    width: 80px;
     -webkit-border-radius: 20;
     -moz-border-radius: 20;
-    border-radius: 20px;
+    border-radius: 14px;
     padding: 5px 15px 5px 15px;
-    border: solid #D3D3D3 1.5px;
+    border: solid #D3D3D3 1px;
     text-decoration: none;
+    letter-spacing: 2px;
+    -moz-box-shadow: 0 0 35px #dcdcdc;
+    -webkit-box-shadow: 0 0 35px #dcdcdc;
+    box-shadow: 0 0 6px #dcdcdc;
 }
 .choose_me:hover{
     text-decoration: none;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+    background-color: white;
+    color: black;
 }
+
+/* Enskild hover för varje kategori */
+.choose_me.green:hover {
+    background-color: #98c15b;
+    color: white;
+    border: none;
+}
+
+.choose_me.yellow:hover {
+    background-color: #FFD700;
+    color: white;
+    border: none;
+}
+
+.choose_me.orange:hover {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+}
+
+.choose_me.red:hover {
+    background-color: #ec6334;
+    color: white;
+    border: none;
+}  
+
+.choose_me.magenta:hover {
+    background-color: #d73764;
+    color: white;
+    border: none;
+}
+
+.choose_me.blue:hover {
+    background-color: #4080b6;
+    color: white;
+    border: none;
+}
+
+
