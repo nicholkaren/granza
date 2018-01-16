@@ -93,7 +93,7 @@ if(!function_exists('isPassword') ) {
     
             } else {
 
-            $errors[] = 'Något är vajsing med ditt lösenord';
+            $errors[] = 'Ditt lösenord måste innehålla minst 6 tecken med både bokstäver och siffor';
     }
     }
 }

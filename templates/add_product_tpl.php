@@ -29,15 +29,16 @@
 
 <!--Här anger admin kategori för PID-->
     
-        <label for ="choose_cat">Ange kategori:</label>
+    <label for ="choose_cat">Ange kategori:</label>
         <div class="style_select">
-        <select id="choose_cat" name="product[cat_id]">
-            <?php foreach ($pagecontent->category as $currcat) {
-                echo '<option value="'.$currcat["cat_id"].'">'.$currcat['title'].'</option>';
-            }?>
-            <i class="fa fa-caret-down" style="font-size:24px"></i>
-        </select>
+            <select id="choose_cat" name="product[cat_id]">
+                <?php foreach ($pagecontent->category as $currcat) {
+                    echo '<option value="'.$currcat["cat_id"].'">'.$currcat['title'].'</option>';
+                }?>
+                <i class="fa fa-caret-down" style="font-size:24px"></i>
+            </select>
     </div>
+        
 <!-- Väljer status för PID i DB-->
         <label for ="prod_status">Ange status:</label>
         <select id="prod_status" name="product[status]">
