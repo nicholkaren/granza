@@ -27,9 +27,9 @@ getToken();
 //HÄMTA INFO FRÅN DB OM ADMIN
             $person->getUserInfoFromDB();
 
-            $pagecontent->title = "Välkommen ".$person->getUserInfo('fname')."!";
+            $pagecontent->title = "Benvenuto ".$person->getUserInfo('fname')."!";
 
-            require('templates/parts/admin_tpl.php');
+            require('templates/parts/admin_start.php');
             
             $id = $person->getId();
             $admin = new Admin();

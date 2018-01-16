@@ -1,7 +1,7 @@
 <!--Här ligger admin menyn-->
 <html>
     <head>
-        <link type="text/css" rel="stylesheet" href="css/admin_menu.css">
+        <link type="text/css" rel="stylesheet" href="css/admin_header.css">
     </head>
 <body>
 
