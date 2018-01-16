@@ -27,15 +27,15 @@ textarea{
 }
 div.style_select select {
     outline: none;
-   background:  transparent;
-   width: 268px;
-   padding: 5px;
-   font-size: 16px;
-   line-height: 1;
-   border: #676767 solid 2px;
-   border-radius:12px;
-   height: 34px;
-   -webkit-appearance: none;
+    background:  transparent;
+    width: 268px;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: #676767 solid 2px;
+    border-radius:12px;
+    height: 34px;
+    -webkit-appearance: none;
    }
 
 /*GAMMAL KOD SKA BORT
