@@ -6,7 +6,7 @@ body{
 
 /*DIV som omslutar allt*/
 #admin_content{
-     font-family: 'lato', sans-serif;
+    font-family: 'lato', sans-serif;
     text-transform: uppercase;
     background-color:#FDFDFD;
 }
@@ -34,7 +34,6 @@ h2.admin_welcome{
     margin: 10px;
     line-height: 30px;
     font-size: 30px;
-    /*border-radius: 15px;*/
     -moz-box-shadow:     0 0 35px #dcdcdc;
     -webkit-box-shadow:  0 0 35px #dcdcdc;
     box-shadow: 0 0 35px #dcdcdc;
@@ -80,6 +79,7 @@ a.choose_me{
     -moz-box-shadow: 0 0 35px #dcdcdc;
     -webkit-box-shadow: 0 0 35px #dcdcdc;
     box-shadow: 0 0 6px #dcdcdc;
+    transition:all 0.20s linear;
 }
 .choose_me:hover{
     text-decoration: none;
@@ -92,37 +92,37 @@ a.choose_me{
 
 /* Enskild hover för varje kategori */
 .choose_me.green:hover {
-    background-color: #98c15b;
+    background-color: #8BC34A;
     color: white;
     border: none;
 }
 
 .choose_me.yellow:hover {
-    background-color: #FFD700;
+    background-color: #FFEB3B;
     color: white;
     border: none;
 }
 
 .choose_me.orange:hover {
-    background-color: #FFA500;
+    background-color: #FFC108;
     color: white;
     border: none;
 }
 
 .choose_me.red:hover {
-    background-color: #ec6334;
+    background-color: #FF5821;
     color: white;
     border: none;
 }  
 
 .choose_me.magenta:hover {
-    background-color: #d73764;
+    background-color: #E91F63;
     color: white;
     border: none;
 }
 
 .choose_me.blue:hover {
-    background-color: #4080b6;
+    background-color: #2880B9;
     color: white;
     border: none;
 }
