@@ -33,17 +33,21 @@
         <!--Form för att mata in nya produkter i DB-->
         <form method="post" action="?action=create-product" enctype="multipart/form-data" id="create-product" name="add-product">
 
+            <label for="file-upload">Bild</label>
             <input type="file" name="file1" id="file-upload" required>
 
+            <label for="prod-title">Produkt titel</label>
             <input type="text" name="product[title]" id="prod-title" placeholder="Produkttitel" required>
 
+            <label for="prod-price">Pris</label>
             <input type="text" name="product[price]" id="prod-price" placeholder="Pris" required>
 
+            <label for="prod-desc">Beskrivning</label>
             <textarea form="create-product" rows="10" cols="50" name="product[desc]" id="prod-desc" placeholder="Produktbeskrivning">
             </textarea>
 
             <!--Här anger admin kategori och status för PID-->
-            <label for ="choose_cat">Ange kategori:</label>
+            <label for ="choose_cat">Ange kategori</label>
                 <div class="style_select">
                     <select id="choose_cat" name="product[cat_id]">
                         <?php foreach ($pagecontent->category as $currcat) {
@@ -55,7 +59,7 @@
                 </div>
 
     <!-- Väljer status för PID i DB-->
-            <label for ="prod_status">Ange status:</label>
+            <label for ="prod_status">Ange status</label>
                 <div class="style_select">
                     <select id="prod_status" name="product[status]">
                         <option value="active" name="product[active]">Aktiv</option>
