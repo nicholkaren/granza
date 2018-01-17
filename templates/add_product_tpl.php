@@ -49,7 +49,7 @@
         <!-- FORM TOKEN-->
         <?php echo getTokenField(); ?>
 
-        <button type="submit" id="save-product-button" name ="save-product">Spara produkt</button>
+        <button type="submit" id="save-product-button" name ="save-product" class="btn_save">Spara produkt</button>
 
     </form>
 </main>

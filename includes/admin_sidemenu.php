@@ -23,7 +23,7 @@
                     <a href="?action=all-products" class="txt">Visa produkter</a>
                         <i class="fa fa-angle-right"></i>
             </li>
-            <li  class="side_menu">
+            <li  class="side_menu" id="back">
                 <i class="fa fa-angle-left"></i><a href="?action=login" class="txt1">Tillbaka</a>
             </li>
       </ul>

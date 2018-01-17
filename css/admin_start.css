@@ -6,7 +6,7 @@ body{
 
 /*DIV som omslutar allt*/
 #admin_content{
-     font-family: 'lato', sans-serif;
+    font-family: 'lato', sans-serif;
     text-transform: uppercase;
     background-color:#FDFDFD;
 }
