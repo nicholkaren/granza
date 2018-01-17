@@ -2,6 +2,8 @@
 *{
     font-family: 'lato', sans-serif;
     text-transform: uppercase;
+    margin:0;
+    padding:0;
 }
 ul.admin_menu {
     list-style-type: none;
@@ -11,8 +13,12 @@ ul.admin_menu {
     background-color: black;
     font-family: 'lato', sans-serif;
     text-transform: uppercase;
+    width: auto;
 }
 
+img#logo_admin{
+    float: left;
+}
 li.a_list {
     float: right;
 }
