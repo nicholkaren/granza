@@ -9,16 +9,52 @@
 	object-fit: cover;
     width: 100%;
 	height: 500px;
-	margin-bottom: 2%;
+	margin-bottom: 1%;
 }
 
+/* Rubrik Profumi Donna */
+h1.bigheadline_category {
+	padding-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #5a5752;
+	font-family: 'Lato';
+}
 
+/* Beskrivande text om kategorin */
+.category_banner_text {
+    margin: 0 auto;
+	width: 100%;
+	padding-bottom: 4%;
+	padding-top: 24px;
+	line-height: 1.3em;
+    text-align: center;
+    max-width: 900px;
+}
 
+/* Wrappern som omsluter alla parfymer */
+.main_wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: auto;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-bottom: 10%;
+	overflow: hidden;
+	margin-right: 6%;
+	margin-left: 6%;
+}
 
+.prod_img {
+	width: 100%;
+	display: inline-block;
+}
 
-
-
-
+/* Storlek på varje parfymbild i helskärm */
+.product_wrapper {
+	width: 24.5%;
+}
 
 /* Namnet på parfymerna */
 h3.perfume_name {
@@ -30,32 +66,24 @@ h3.perfume_name {
     margin-top: -22%;
     z-index: 999999;
     text-transform: uppercase;
+    text-align: center;
 }
 
 /* Priset på parfymerna */
 p.price {
     color: white;
-    margin-top: 2.5%;
+    margin-top: 2.2%;
     margin-bottom: 3%;
     z-index: 9999999;
     text-align: center;
 
 } 
 
-/* Hover effekt med zoom 
-.product_wrapper img:hover {
-    transition: all 200ms ease-in-out;
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    z-index: 1;
-}*/
-
 /* Knapp för lägg i varukorg */
 button {
     margin: 0 auto;
     padding: 20px;
-    margin-bottom: 2%;
+    margin-bottom: 2.5%;
     background-color: transparent;
     width: 100%;
     position: relative;
@@ -70,78 +98,11 @@ button {
     border: none;
 }
 
-button:hover {
-    color: white;
+/* Hover effekt med zoom 
+.product_wrapper img:hover {
+    transition: all 200ms ease-in-out;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     z-index: 1;
-    cursor: pointer;
-    -webkit-transition: background-color 1s ease-out;
-    -moz-transition: background-color 1s ease-out;
-    -o-transition: background-color 1s ease-out;
-    transition: background-color 1s ease-out;
-}
-
-/* Storlek på varje parfymbild i helskärm */
-.product_wrapper {
-	width: 24.5%;
-}
-
-/* Beskrivande text om Profumi Donna */
-.category_banner_text {
-    margin: 0 auto;
-	width: 100%;
-	padding-bottom: 4%;
-	padding-top: 24px;
-	line-height: 1.3em;
-    text-align: center;
-    max-width: 900px;
-}
-
-/* Wrappern som omsluter parfymerna */
-.main_wrapper {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	width: auto;
-	justify-content: space-between;
-	margin: 0 auto;
-	padding-bottom: 20%;
-	overflow: hidden;
-	margin-right: 6%;
-	margin-left: 6%;
-}
-
-
-.prod_img {
-	width: 100%;
-	display: inline-block;
-}
-
-/* Stor rubrik Profumi Donna */
-h1.bigheadline_category {
-	padding-bottom: 20px;
-	text-align: center;
-	text-transform: uppercase;
-	color: #5a5752;
-	font-family: 'Lato';
-}
-
-p.description {
-	color: #5a5752;
-}
-
-h3 {
-	text-align: center; 
-    color: #5a5752;
-}
-
- 
-
-
-/******* MEDIA QUERIES FÖR SKÄRM > 1025px ************/
-
-@media (min-width: 1025px) {
-
-	.product_wrapper {
-	width: 24.5%;
-	}
-	
+}*/
