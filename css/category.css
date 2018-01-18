@@ -4,6 +4,9 @@
 	font-family: 'Lato';
 }
 
+.test {
+    z-index: -1;
+}
 /* Kategoribild */
 .cat_img {
 	object-fit: cover;
