@@ -1,5 +1,5 @@
 <?php require_once('templates/admin_header.php');?>
-<?php require_once('includes/admin_sidemenu.php');?>    
+<?php require_once('includes/admin_sidemenu_prod.php');?>    
 
 <link type="text/css" href="css/edit_product.css" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1"> 

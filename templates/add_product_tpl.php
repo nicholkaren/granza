@@ -1,6 +1,6 @@
 <!--ADMIN SKAPA PRODUKT SIDA-->
 <?php require_once('templates/admin_header.php');?>
-<?php require_once('includes/admin_sidemenu.php');?>
+<?php require_once('includes/admin_sidemenu_prod.php');?>
 
 <link type="text/css" href="css/add_product.css" rel="stylesheet"> 
 

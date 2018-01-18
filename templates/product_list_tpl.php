@@ -1,5 +1,5 @@
 <?php require_once('templates/admin_header.php');?>
-<?php require_once('includes/admin_sidemenu.php');?>
+<?php require_once('includes/admin_sidemenu_prod.php');?>
 
 <link type="text/css" href="css/admin_list.css" rel="stylesheet"> 
 
