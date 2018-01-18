@@ -32,6 +32,7 @@ div.goback > i {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5%; /* Håller avstånd till nästa innehåll */
     display: block;
 }
 
@@ -135,65 +136,8 @@ input {
 }
 
 .product_single {
-    margin-bottom: 50px;
+    margin-bottom: 10%;
 }
-
- /************ LIKNANDE PRODUKTER *******/
-
- hr {    
-    margin: 0 auto;
-    border: 0;
-    height: 3px;
-    width: 90%;
-    background-color: rgba(174,146, 102, 1);
-    margin-bottom: 20px;
-}
-
-.product_upsale {
-    width: 100%;
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-    
-.product_wrapper_upsale {
-        width: 50%;
-    }
-
-
-.prod_img_upsale {
-    width: 70%;
-    margin-left:15%;
-    margin-right: 15%;
-}
-
-.button-upsale {
-	margin: 0 auto;
-	padding: 15px;
-	background-color: #AE9266;
-	border: none;
-	width: 40%;
-	position: relative;
-	margin-left: 30%;
-	margin-right: 30%;
-	color: white;
-	font-size: 1em;
-	text-transform: uppercase;
-    text-decoration: none;
-}
-
-
-h2, h3, h4, p {
-    color: #5a5752;
-    text-decoration: none;
-    text-align: center;
-}
-
-.upsale_title {
-    margin-bottom: 15px;
-}
-
 
 /* Ikoner för att dela på sociala medier */
 .share-prod {
@@ -217,16 +161,122 @@ h2, h3, h4, p {
     content:'\69';
 }
 
-#pint-font::before {
-    content:'\70';
-}
-
 #mail-font::before {
     content:'\6d';
 }
 
 hgroup> h2 {
     padding-top: 10px;
+}
+
+ /******* Liknande produkter *******/
+
+.product_upsale {
+    width: 100%;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+    
+.product_wrapper_upsale {
+    width: 50%;
+}
+
+
+.prod_img_upsale {
+    width: 70%;
+    margin-left:15%;
+    margin-right: 15%;
+}
+
+h2, h3, h4, p {
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+.upsale_title {
+    margin-bottom: 3%;
+    text-transform: uppercase;
+}
+
+/****** Produktrad med bilder Upsale ******/
+/* Namnet på parfymerna */
+h3.perfume_name {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -22%;
+    z-index: 999999;
+    text-transform: uppercase;
+}
+
+/* Priset på parfymerna */
+p.price {
+    color: white;
+    margin-top: -2%;
+    margin-bottom: 3%;
+    z-index: 9999999;
+}
+
+.start_cat, .start_prod{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Omsluter produktraden */
+.product_wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    justify-content: space-between;
+    margin-right: 0.5%;
+}
+
+/* Tar bort margin på sista bilden*/
+.product_wrapper:last-child {
+    margin-right: 0%;
+}
+
+/* Bilder på parfymer */
+.product_wrapper img {
+    max-width: 100%;
+    -moz-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+}
+
+/* Knapp för lägg i varukorg */
+button {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    background: #f0bb29;
+
+
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+}
+
+button:hover {
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
 }
 
 /************* MEDIA QUERIES!!!! *********/

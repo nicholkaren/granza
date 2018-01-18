@@ -14,19 +14,19 @@
       </div>
     
       <div class="prod_info_wrapper">
-          <!--PRODUKT TITEL-->
+          <!-- Produkttitel -->
         <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>">
           <div class="goback"><i class="fa fa-angle-left"></i> Tillbaka </div>
         </a>
         <hgroup>
             <h2 class="product_title"><?php echo $pagecontent->title;?></h2>
        </hgroup>
-        <!--PRODUKTPRIS-->
+        <!-- Produktpris -->
         <span class="product_price"><?php echo $pagecontent->price.' SEK '; ?></span>
         <p class="product_details"><?php echo $pagecontent->description;?></p>
 
 
-        <!--KNAPP TILL VARUKORG-->  
+        <!-- Knapp till varukorg -->  
         <form method="post" action="?action=addtocart">
           <input type="hidden" value="<?php echo $pagecontent->price;?>" name="price">
           <label for="cart_qty"> Antal: </label>
@@ -36,17 +36,14 @@
           <button type="submit" id="single-prod-button">Lägg i varukorg</button>
         </form>
 
-        <!--PRODUKT DETALJER-->
+        <!-- Sociala medier -->
        <div>
         <div class="share-prod">
             <a href="http://www.facebook.com"><span id="fb-font"></span></a>
             <a href="http://www.instagram.com"><span id="inst-font"></span></a>
-            <a href="http://www.pinterest.com"><span id="pint-font"></span></a>
             <a href="mailto:info@granza.se" data-email="info@granza.se"><span id="mail-font"></span></a>
           </div>
        </div>
-     
-     <!--META TAGGAR-->
 
         <meta property="og:url" content="" />
         <meta property="og:type" content="product" />
@@ -55,21 +52,21 @@
         <meta property="og:image" content="<?php echo $pagecontent->img_url;?> " />
      </div>
 
-    <!--LIKNANDE PRODUKTER-->
-    <div class="product_upsale">
-    <h2 class="upsale_title">Liknande produkter</h2>
-    </div>
-        <hr>
-    <div class="product_upsale">
-            <?php foreach ($pagecontent2->products as $currprod2) {
-        echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'"><div class="product_wrapper_upsale">';
-        echo '<img src="'.$currprod2['img_url_2'].'" class="prod_img_upsale">';
-        echo '<h4>'.$currprod2['title_2'].'</h4>';
-        echo '<p class ="price_upsale">'.$currprod2['price_2'] .' KR'.'</p>';
-        echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'" class="upsale-button-a"><button class="button-upsale" type="button">KÖP</button></a>';
-        echo '</div></a>';
-        } ?>
-    </div>
+      <!--LIKNANDE PRODUKTER-->
+      <div class="product_upsale">
+        <h2 class="upsale_title"> Parfymer i samma doftfamilj </h2>
+      </div>
+      
+      <div class="product_upsale">
+          <?php foreach ($pagecontent2->products as $currprod2) {
+          echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'"><div class="product_wrapper">';
+          echo '<img src="'.$currprod2['img_url_2'].'" class="prod_img">';
+          echo '<h3 class="perfume_name">'.$currprod2['title_2'].'</h3>';
+          echo "<br>";         
+          echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'" class="upsale-button-a"><button class="button" type="button"> Lägg i varukorg </button></a>';
+          echo '</div></a>';
+          } ?>
+      </div>
  
 </div>
 </div>
