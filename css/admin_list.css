@@ -1,0 +1,72 @@
+/*CSS för alla tabeller på Admin - produktlista, kategorilista & medlemslista*/
+
+/* Bakgrundsbild med blommor */
+img.background {
+    width: 100%;
+    background-repeat: repeat;
+    height: 900px;
+    position: relative;
+    z-index: -1;
+}
+/*Vita diven*/
+div.all_product{
+    position: absolute;
+    top:25%;
+    right:0;
+    left:0;
+    margin-right: auto;
+    margin-left: 30%;
+    width: 50%;
+    background-color:white;
+    height: 700px;
+    opacity: 0.9;
+}
+
+
+#h1-cat{
+    position: absolute;
+    top:-15%;
+    right:0;
+    left:0;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    color:white;
+}
+
+.list-wrapper{
+    margin-top: 170%;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);   
+}
+thead{
+    background-color: black;
+
+}
+
+table{
+    width: 100%;
+	border-collapse: collapse;
+    font-size: 12px;   
+}
+
+th, td{
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+td {
+    color:black;
+    text-align: center;
+}
+tr:hover{
+    background-color: lightgray;
+}
+
+.cat-list-img {
+    width: 100px;
+    height: 100px;
+}

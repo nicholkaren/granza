@@ -1,6 +1,6 @@
 <?php require_once('templates/header.php');?>
 <?php require_once('includes/admin_menu.php');?>
-<link type="text/css" href="css/cat_list.css" rel="stylesheet"> 
+<link type="text/css" href="css/admin_list.css" rel="stylesheet"> 
 
 <h1 id="h1-cat"><?php echo strtoupper($pagecontent->title); ?></h1>
 <hr>
