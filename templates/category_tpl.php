@@ -11,7 +11,7 @@
         <img src="<?php echo $pagecontent->category['img']; ?>" class="cat_img">
     </div>
     
-    <!-- Kategoritext som presenterar Donna -->
+    <!-- Kategoritext som presenterar Donna/Ouomo -->
     <div class="category_banner_text">
         <h1 class="bigheadline_category"><?php echo $pagecontent->category['title']; ?></h1>
         <p class="description"><?php echo $pagecontent->category['desc'];?></p>

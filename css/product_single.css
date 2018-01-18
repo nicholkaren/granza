@@ -13,17 +13,135 @@
 * {
 	margin: 0;
 	box-sizing: border-box;
-    
 }
 
+/* Tillbaka knapp */
+.goback {
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* fa fa icon */
+div.goback > i {
+    color: white;
+}
+
+/* Produktbildsdiv */
+.single_img {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%; /* Håller avstånd till nästa innehåll */
+    display: block;
+}
+
+/* Egenskaper för produktbilden */
 figure {
     width: 300px;
     margin: 0 auto;
+    background: #000000;
+    position: relative;
 }
 
-.share-prod {
+/* Produktinfo div */
+div.prod_info_wrapper {
+    width: 45%;
+    position: absolute;
+    top: 25%;
+    left: 8%;
+
+    font-family: 'Lato';
+}
+
+/* Produkttitel från db */
+.product_title {
+	margin-top: 15px;
+	font-size: 2em;
+    letter-spacing: 1px;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* Priset på produkten från db */
+.product_price {
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    color: white;
+    display: table;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+/* Detaljer om produkten från db */
+.product_details {
+	padding-top: 20px;
+	margin-bottom: 50px;
+	width: 75%;
+	line-height: 1.2em;
+    line-height: 1.5em;
+    text-align: left;
+    color: white;
+}
+
+/* Löpande brödtext om produkten från db */
+.product_details {
+    width: 60%;
+    line-height: 1.5em;
+}
+
+form {
+    margin-top: 10px;
+}
+
+/* Text antal */
+label[for="cart_qty"] {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 2%; 
+    letter-spacing: 2px;
+}
+
+/* Fältet */
+#cart_qty {
+    width: 13%;
+    display: block;
+	border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px;
+    margin-top: 1.5%;
+
+    font-family: 'Lato'; 
+    font-size: 1em;
     text-align: center;
-    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+input {
+    background-color: transparent;
+}
+
+#single-prod-button {
+    width: 60%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 12px;
+    font-size: 0.8em;
+    margin-top: 18px;
+    text-transform: uppercase;
+}
+
+.product_single {
+    margin-bottom: 10%;
+}
+
+/* Ikoner för att dela på sociala medier */
+.share-prod {
+    margin-top: 3%;
     margin-bottom: 60px;
     width: 75%;
 }
@@ -43,97 +161,15 @@ figure {
     content:'\69';
 }
 
-#pint-font::before {
-    content:'\70';
-}
-
 #mail-font::before {
     content:'\6d';
-}
-
-.single_img {
-	width: 100%;
 }
 
 hgroup> h2 {
     padding-top: 10px;
 }
 
-.product_title {
-	text-align: center;
-	margin-top: 15px;
-	font-size: 2em;
-	color:#5a5752;
-}
-
-.product_details {
-	text-align: center;
-	padding-top: 45px;
-	margin: 0 auto;
-	margin-bottom: 20px;
-	width: 75%;
-	line-height: 1.2em;
-	color: #807b74;
-    line-height: 1.5em;
-}
-
-.product_price {
-	font-size: 2em;
-	color: #807b74;
-    display: table;
-	margin: 0 auto;
-	margin-top: 10px;
-	text-align: center; 
-	padding-bottom: 10px;
-}
-
-form {
-    text-align: center;
-    margin-top: 10px;
-}
-
-label[for="cart_qty"] {
-    color: #807b74;
-    text-align: center;
-}
-
-#cart_qty {
-	padding: 5px;
-	margin: 0 auto;
-	display: block;
-	border: 1px solid #AE9266;
-    color: #5a5752;
-	width: 16%;
-	text-transform: uppercase;
-	text-align: center;
-    font-size: 1.5em;
-}
-
-#single-prod-button {
-    width: 60%;
-    color: white;
-    text-align: center;
-    background-color: rgba(174,146, 102, 1);
-    border: none;
-    padding: 12px;
-    font-size: 1.3em;
-    margin-top: 18px;
-}
-
-.product_single {
-    margin-bottom: 50px;
-}
-
- /************ LIKNANDE PRODUKTER *******/
-
- hr {    
-    margin: 0 auto;
-    border: 0;
-    height: 3px;
-    width: 90%;
-    background-color: rgba(174,146, 102, 1);
-    margin-bottom: 20px;
-}
+ /******* Liknande produkter *******/
 
 .product_upsale {
     width: 100%;
@@ -144,8 +180,8 @@ label[for="cart_qty"] {
 }
     
 .product_wrapper_upsale {
-        width: 50%;
-    }
+    width: 50%;
+}
 
 
 .prod_img_upsale {
@@ -154,32 +190,94 @@ label[for="cart_qty"] {
     margin-right: 15%;
 }
 
-.button-upsale {
-	margin: 0 auto;
-	padding: 15px;
-	background-color: #AE9266;
-	border: none;
-	width: 40%;
-	position: relative;
-	margin-left: 30%;
-	margin-right: 30%;
-	color: white;
-	font-size: 1em;
-	text-transform: uppercase;
-    text-decoration: none;
-}
-
-
 h2, h3, h4, p {
-    color: #5a5752;
+    color: #000000;
     text-decoration: none;
     text-align: center;
+    font-family: 'Lato';
 }
 
 .upsale_title {
-    margin-bottom: 15px;
+    margin-bottom: 3%;
+    text-transform: uppercase;
 }
 
+/****** Produktrad med bilder Upsale ******/
+/* Namnet på parfymerna */
+h3.perfume_name {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -22%;
+    z-index: 999999;
+    text-transform: uppercase;
+}
+
+/* Priset på parfymerna */
+p.price {
+    color: white;
+    margin-top: -2%;
+    margin-bottom: 3%;
+    z-index: 9999999;
+}
+
+.start_cat, .start_prod{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Omsluter produktraden */
+.product_wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    justify-content: space-between;
+    margin-right: 0.5%;
+}
+
+/* Tar bort margin på sista bilden*/
+.product_wrapper:last-child {
+    margin-right: 0%;
+}
+
+/* Bilder på parfymer */
+.product_wrapper img {
+    max-width: 100%;
+    -moz-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+}
+
+/* Knapp för lägg i varukorg */
+button {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    background: #f0bb29;
+
+
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+}
+
+button:hover {
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
 
 /************* MEDIA QUERIES!!!! *********/
 
@@ -198,37 +296,20 @@ h2, h3, h4, p {
     hgroup> h2 {
     padding-top: 50px;
 }
-    .product_details {
-	width: 50%;
-   
-}
-    #single-prod-button{
-        width: 50%;
-    }
-
-      
-}
+ 
 
 /******* MEDIA QUERIES FÖR SKÄRM > 700px ************/
 
 @media (min-width: 700px) {
     .single_img_wrapper {
         display: inline;
-        float:left;
         width: 50%;
     }
-    
-    .share-prod {
-   margin-right: 2%;
-    width: 50%;
-}
-        .product_details {
-	margin-right: 2%;
-    line-height: 1.5em;
-   
-}
+
      #single-prod-button{
         width: 40%;
+        border: 1px solid #ffffff;
+
     }
       
 }
@@ -242,7 +323,7 @@ h2, h3, h4, p {
     }
     
     figure {
-        width: 420px;
+        width: 100%;
 }
     
       
@@ -255,62 +336,7 @@ h2, h3, h4, p {
 	.product_single {
 		width: 100%;
 	}
-	
-	.single_img_wrapper {
-		width: 30%;
-		display: inline-block;
-		margin-left: 20%;
-	}
-    
-    .share-prod {
-        margin-right: 15%;
-        width: 70%;
-}
-    
 
-	div.prod_info_wrapper {
-		width: 45%;
-		float: right;
-		margin-right: 5%;
-	}
-    
-    h2 {
-        float: none;
-        clear:both;
-    }
-
-	.product_title {
-		font-size: 2.5em;
-	}
-
-	.product_details {
-		width: 70%;
-        text-align: center;
-        margin-right:auto;
-        line-height: 1.5em;
-	}
-	
-	.product_price {
-		font-size: 2em;
-
-	}
-	
-	input {
-		padding: 10px;
-		font-size: 1em;
-	}
-	
-	.product_price {
-		display: table;
-
-	}
-
-	#single-prod-button {
-		font-size: 1em;
-		padding: 10px;
-        width: 50%;
-	}
-    
   
 }
     
