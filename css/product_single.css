@@ -48,7 +48,7 @@ a.button_2:hover {
   background: #fff;
   width: 40%;
   position: relative;
-  transition: all 1.5s ease-in-out;
+  transition: all 2.5s ease-in-out;
 }
 
 .popup h2 {
