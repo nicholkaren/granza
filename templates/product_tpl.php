@@ -36,7 +36,37 @@
           <button type="submit" id="single-prod-button">Lägg i varukorg</button>
         </form>
 
-        <!-- Sociala medier -->
+        <!-- Leveransalternativ knapp -->
+        <a class="button_2" href="#popup1"> Leveransalternativ </a>
+        <div id="popup1" class="overlay">
+          <div class="popup">
+            <!-- Rubrik -->
+            <h2>Leveransalternativ</h2>
+            <!-- Stäng knapp -->
+            <a class="close" href="#">&times;</a>
+           
+            <!-- Content div delivery options -->
+            <div class="content">
+
+              <div class="delivery_options">
+                <table>
+                    <tr>
+                      <td>Postnord </td>
+                      <td> 0 SEK</td>
+                      <td> Leverans 2-5 arbetsdagar </td>
+                    </tr>
+                    <tr>
+                      <td>DHL </td>
+                      <td>0 SEK</td>
+                      <td> Leverans 2-5 arbetsdagar </td>
+                    </tr>
+                </table>
+              </div><!-- delivery options div -->
+            </div><!-- End of content div -->
+          </div> <!-- End of popup div -->
+        </div> <!-- End of overlay -->
+     
+      <!-- Sociala medier
        <div>
         <div class="share-prod">
             <a href="http://www.facebook.com"><span id="fb-font"></span></a>
@@ -44,13 +74,13 @@
             <a href="mailto:info@granza.se" data-email="info@granza.se"><span id="mail-font"></span></a>
           </div>
        </div>
-
         <meta property="og:url" content="" />
         <meta property="og:type" content="product" />
         <meta property="og:title" content="<?php echo $pagecontent->title;?>" />
         <meta property="og:description" content="<?php echo $pagecontent->description;?> "/>
         <meta property="og:image" content="<?php echo $pagecontent->img_url;?> " />
-     </div>
+        -->
+</div> <!-- End of product single div -->
 
       <!--LIKNANDE PRODUKTER-->
       <div class="product_upsale">

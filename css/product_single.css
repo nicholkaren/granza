@@ -10,6 +10,103 @@
   font-style: normal;
 }
 
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Underline för Delivery Options popup */
+.button_2 {
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px
+    padding-top: 5%;
+}
+
+a.button_2:hover {
+    color: grey;
+    border-bottom: 1px solid grey;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Delivery options popup info div */
+.popup {
+  margin: 350px auto;
+  padding: 20px;
+  background: #fff;
+  width: 40%;
+  position: relative;
+  transition: all 1.5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: grey;
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  max-width: 100%;
+}
+
+
+.delivery_options {
+    width: 100%;
+    float: left;
+}
+
+table {
+    font-family: 'Lato', sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+img.delivery_image {
+    width: 80%;
+    margin-top: 3%;
+}
+
+
+
+
+
+
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -132,6 +229,7 @@ input {
     padding: 12px;
     font-size: 0.8em;
     margin-top: 18px;
+    margin-bottom: 18px;
     text-transform: uppercase;
 }
 

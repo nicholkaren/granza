@@ -115,7 +115,6 @@ p.price {
 .start_cat, .start_prod{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     width: auto;
     max-width: 100%;
 }
