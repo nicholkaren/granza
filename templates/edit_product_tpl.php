@@ -20,22 +20,22 @@
         if (isset($_GET['pid']) && $pagecontent->error !== ""){
             echo '<p id="p-error">'.$pagecontent->error.'</p>';
         } else if (isset($_POST['save-product']) && $pagecontent->error === "") {
-            echo '<p id="p-success">Ändringar sparade!</p>';
+            echo '<p id="p-success">Ändringar sparade <i class="fa fa-check" style="font-size:20px;color:	limegreen"></i></p>';
         }?>
 
         <!-- SÖK FORMULÄR -->
         <form method="post" action="?action=edit-product" id="search-product" name="search-product">
-            <input type="search" name="prod-search" placeholder="Sök produkt">
-            <button type="submit" id="search-product-button">SÖK</button>
+            <div class="container-4">
+            <input id="search" type="search" name="prod-search" placeholder="Sök produkt" required>
+            <button type="submit" id="search-product-button" class="icon"><i class="fa fa-search"></i>
+            </button>
+            </div>
         </form>
 
         <!-- REDIGERA FORMULÄR -->
         <form method="post" action="?action=update-product&pid=<?php echo $pagecontent->pid?>" enctype="multipart/form-data" id="update-product" name="edit-product">
 
-            <!--Produktbild på aktuell PID-->
-            <div id="prod-pic-div">
-                <img src="<?php echo $pagecontent->img_url;?>" id="prod-pic">
-            </div>
+            
             <label for="file-upload">Bild</label>
             <input type="file" name="file1" id="file-upload">
 
@@ -78,10 +78,15 @@
             <!-- FORM TOKEN-->
             <?php echo getTokenField(); ?>
 
-            <button type="submit" id="save-product-button" name="save-product">Spara produkt
+            <button type="submit" class="btn_save" id="save-product-button" name="save-product">Spara produkt
             </button>
-
+<!--Produktbild på aktuell PID-->
+            <div id="prod-pic-div">
+                <img src="<?php echo $pagecontent->img_url;?>" id="prod-pic">
+            </div>
         </form>
     </div>
+    
 </div>
+
 

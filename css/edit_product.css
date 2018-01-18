@@ -16,8 +16,19 @@ div.edit_product{
     margin-left: 30%;
     width: 50%;
     background-color:white;
-    height: 660px;
+    height: 700px;
     opacity: 0.9;
+}
+/*SUCCESS Feedback på ifall produkten matats in*/
+p#p-success{
+    padding-top:10px; 
+    color:	limegreen;
+    font-size: 20px;
+}
+/*ERROR Feedback på ifall produkten matats in*/
+p#p-error{
+     color:	red;
+    font-size: 20px;
 }
 /*Titel*/
 h1#add-product-h1{
@@ -30,6 +41,69 @@ h1#add-product-h1{
     text-align: center;
     color:white;
 }
+/*Sökfältet*/
+.container-4{
+  overflow: hidden;
+  width: 100%;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.container-4 input#search{
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: black 2px solid;
+  font-size: 10pt;
+  float: left;
+  color: black;
+  padding-left: 15px;
+}
+.container-4 input#search:focus{
+    background: lightgrey;
+}
+.container-4 button.icon{
+    border: 2px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background: white;
+    height: 48px;
+    width: 49px;
+    color: black;
+    opacity: 0;
+    font-size: 10pt;
+    margin-top: 16px;
+ 
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+
+.container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+  outline: green;
+  opacity: 1;
+  margin-left: -50px;
+}
+ 
+.container-4:hover button.icon:hover{
+  background: white;
+}
+/*Produkt bild*/
+#prod-pic-div{
+    top: 0;
+    position: absolute;
+    width: 250px;
+    right: 0;
+    margin-right: -33%;
+    background: red;
+}
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
 /*Formuläret - fil, titel, pris*/
 form{
     width: 500px;
@@ -56,6 +130,7 @@ label{
     font-size: 13px;
     float: left;
 }
+
 /*Ange kategori & status SELECTS*/
 div.style_select select {
     margin-top: 3%;
@@ -63,19 +138,47 @@ div.style_select select {
     outline: none;
     background:  transparent;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     font-size: 12px;
     line-height: 1;
     border-radius: 0;
     border: black solid 2px;
     height: 34px;
     -webkit-appearance: none;
-   }
-#update-product > div:nth-child(12) > i{
+    }
+#update-product > div:nth-child(11) > i{
     margin-left: 90%;
     margin-top: -5%; 
 }
-#update-product > div:nth-child(14) > i{
+#update-product > div:nth-child(13) > i{
     margin-left: 90%;
     margin-top: -5%;
+}
+/*Spara knapp*/
+button.btn_save{
+    float:right;
+    color: black;
+    font-size: 0.7em;
+    margin: 0 auto;
+    margin-top: 7%;
+    display: block;
+    width: 150px;
+    padding: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    -moz-box-shadow: 0 0 35px #dcdcdc;
+    -webkit-box-shadow: 0 0 35px #dcdcdc;
+    box-shadow: 0 0 6px #dcdcdc;
+    transition:all 0.20s linear;
+}
+button.btn_save:hover{
+    text-decoration: none;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: white;
+    color: white;
+    background-color: black;
+    border: none;
 }
