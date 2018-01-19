@@ -1,8 +1,7 @@
 <?php
+// här hämtas kategori titel & cat_id till menyn.
+
 $pagecontentcat = new stdClass;
-
-
-/***** HÄMTAR KATEGORITITEL OCH ID TILL MENYN *****/
 
 $sql1 = "SELECT title, category_id FROM category;";
 	$stmt = $pdo->prepare($sql1);

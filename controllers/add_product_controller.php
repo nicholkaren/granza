@@ -7,7 +7,7 @@ include('includes/token.php');
 
 getToken();
 
-/***** HÄMTAR KATEGORITITEL OCH ID TILL RULLISTAN *****/
+// hämtar kategori titel och cat_id till SELECT fälten
 
 $sql = "SELECT title, category_id FROM category;";
 	$stmt = $pdo->prepare($sql);

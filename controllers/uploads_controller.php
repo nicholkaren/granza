@@ -1,4 +1,5 @@
 <?php
+//Logik för uppladningen av filer som används i admin när produkt eller kategori skapas.
 
 if(!empty($_FILES['file1']['name'])) {
     
@@ -14,7 +15,8 @@ if(!empty($_FILES['file1']['name'])) {
     
     $url = $upload_dir."/".$_FILES['file1']['name'];
     if (!$error){
-    // här flyttar vi filen till den valda mappen eller det valda stället i filstrukturen.
+    //Hör flyttas den uppladdade filen till rätt mapp i filstrukturen.
+        
         move_uploaded_file($_FILES['file1']['tmp_name'], $url);
     } else {
         $pagecontent->error = 'Det finns errors: <br>'.$message;

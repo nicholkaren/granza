@@ -1,5 +1,5 @@
-<?php require_once('templates/header.php');?>
-<?php require_once('includes/admin_menu.php');?>
+<?php require_once('templates/admin_header.php');?>
+<?php require_once('includes/admin_sidemenu_cat.php');?>
 
 <link type="text/css" href="css/add_category.css" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">  
@@ -42,7 +42,3 @@ if ($pagecontent->error !== ""){
     <button type="submit" id="save-cat-button" name="save-cat">Spara kategori</button>
 
 </form>
-
-
-<?php require_once('templates/footer.php');
-?>

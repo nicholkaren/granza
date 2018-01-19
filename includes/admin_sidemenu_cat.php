@@ -10,18 +10,18 @@
   </header>
         <ul class="second_menu">
             
-            <a href="?action=create-product" class="txt">
+            <a href="?action=create-category" class="txt">
                 <li class="side_menu">Skapa ny kategori
                     <i class="fa fa-angle-right"></i>
                 </li>
             </a>
             
-            <a href="?action=edit-product"class="txt">
+            <a href="?action=edit-category"class="txt">
                 <li class="side_menu">Redigera kategori
                     <i class="fa fa-angle-right"></i>
                 </li>
             </a>
-            <a href="?action=all-products" class="txt">
+            <a href="?action=all-categories" class="txt">
                 <li class="side_menu"> Alla kategorier
                         <i class="fa fa-angle-right"></i>
                 </li>

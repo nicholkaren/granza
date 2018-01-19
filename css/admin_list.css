@@ -15,7 +15,7 @@ div.all_product{
     right:0;
     left:0;
     margin-right: auto;
-    margin-left: 30%;
+    margin-left: auto;
     width: 50%;
     background-color:white;
     height: 700px;
@@ -23,7 +23,6 @@ div.all_product{
     -webkit-box-shadow:  0 0 35px grey;
     box-shadow: 0 0 35px grey;
 }
-
 
 #h1-cat{
     position: absolute;
@@ -37,30 +36,27 @@ div.all_product{
 }
 
 .list-wrapper{
-    margin-top: 170%;
     position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);   
 }
 thead{
     background-color: black;
-
+    overflow: hidden;
+    font-size: 14px;
 }
-
+tbody{
+    
+}
 table{
     width: 100%;
 	border-collapse: collapse;
     font-size: 12px;   
 }
-
 th, td{
 	padding: 15px;
 	background-color: rgba(255,255,255,0.2);
 	color: #fff;
 }
-
-td {
+td{
     color:black;
     text-align: center;
 }
@@ -71,4 +67,26 @@ tr:hover{
 .cat-list-img {
     width: 100px;
     height: 100px;
+}
+/*Redigera knappen*/
+td > a{
+    color: black;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-top: 7%;
+    display: block;
+    width: 75px;
+    padding: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    -moz-box-shadow: 0 0 35px #dcdcdc;
+    -webkit-box-shadow: 0 0 35px #dcdcdc;
+    box-shadow: 0 0 6px #dcdcdc;
+    transition:all 0.20s linear;
+}
+
+div.scrollable {
+    height: 100%;
+    overflow: auto;
 }

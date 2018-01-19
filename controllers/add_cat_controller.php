@@ -7,7 +7,7 @@ include('meny_controller.php');
 include('includes/token.php');
 
 getToken();
-/***** HÄMTAR KATEGORITITEL OCH ID TILL RULLISTAN *****/
+//hämtar kategori titel och cat_id till selects
 
 $sql = "SELECT title, category_id FROM category;";
 	$stmt = $pdo->prepare($sql);

@@ -1,13 +1,13 @@
 <?php
 
-/****************** HÄR HÄMTAS FILEN SOM LADDAS UPP ******************/
-// till denna mappen flyttas filerna
+//Här hämtas filerna som laddas upp
+// och hamnar i mappen nedan.
 $upload_dir = 'uploads/category';
 
 include('uploads_controller.php');
 include('includes/token.php');
 
-/****************** TRYCK IN DATAN I DB ******************/
+//här matas datan in i databasen - när kategorier skapas.
 if (isset($_POST['cat'])){
 
 
