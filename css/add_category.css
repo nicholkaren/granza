@@ -16,6 +16,9 @@ div.create_cat{
     width: 50%;
     background-color:white;
     height: 660px;
+    -moz-box-shadow:     0 0 35px grey;
+    -webkit-box-shadow:  0 0 35px grey;
+    box-shadow: 0 0 35px grey;
 }
 h1#add-cat-h1 {
     text-align: center;

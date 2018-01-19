@@ -3,7 +3,7 @@
 <link type="text/css" href="css/add_category.css" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">  
 <!--BAKGRUNDBILD-->
-<img class="background" src="img/products/big/wallpaper_9.jpg">
+<img class="background" src="img/products/big/marble-wallpaper-white.jpg">
 <div class="create_cat">
     <h1 id="add-cat-h1"><?php echo strtoupper($pagecontent->title); ?></h1>
         <?php

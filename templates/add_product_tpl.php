@@ -10,7 +10,7 @@
 
 
 <!--BAKGRUNDBILD-->
-<img class="background" src="img/inspo/flowers_about.jpg">  
+<img class="background" src="img/products/big/marble-wallpaper-white.jpg">  
 
 
 <!--Här börjar hela innehållet-->

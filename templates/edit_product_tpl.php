@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
 <!--BAKGRUNDBILD-->
-<img class="background" src="img/inspo/flowers_about.jpg">
+<img class="background" src="img/products/big/marble-wallpaper-white.jpg">
 
 <!--VITA DIVEN-->
 <div class="edit_product">

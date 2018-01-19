@@ -17,7 +17,9 @@ div.edit_product{
     width: 50%;
     background-color:white;
     height: 700px;
-    opacity: 0.9;
+     -moz-box-shadow:     0 0 35px grey;
+    -webkit-box-shadow:  0 0 35px grey;
+    box-shadow: 0 0 35px grey;
 }
 /*SUCCESS Feedback på ifall produkten matats in*/
 p#p-success{
@@ -39,7 +41,7 @@ h1#add-product-h1{
     font-size: 40px;
     padding: 10px;
     text-align: center;
-    color:white;
+    color:black;
 }
 /*Sökfältet*/
 .container-4{
