@@ -102,10 +102,15 @@
           echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'" class="upsale-button-a"><button class="button" type="button"> Lägg i varukorg </button></a>';
           echo '</div></a>';
           } ?>
-      </div>
+      </div>                                    
  
+</div>          
 </div>
+<<<<<<< HEAD
 
   <div class="before_footer"></div>
+=======
+    
+>>>>>>> e6e464108f43af1a6d950751377787e78fa3e160
 <?php require_once('templates/footer.php');
 ?>

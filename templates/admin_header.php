@@ -2,15 +2,16 @@
 <html>
     <head>
         <link type="text/css" rel="stylesheet" href="css/admin_header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 <body>
-
+<header class="admin" align="center">
 <ul class ="admin_menu">
-    <img id="logo_admin" src="img/logo/granza.png">
+    
+  <li class="a_list"><a href="?action=login"> Admin panel <i class="fa fa-home" aria-hidden="true" style="color:white font-size:32px;"></i></a></li>
+    <li class="a_list"><img src="img/logo/granza.png" alt="logotype granza" id="id_logo"></li>
     <li class="a_list"><a href="?action=logout">LOGGA UT</a></li>
-  <li class="a_list"><a href="?action=login">Startsida</a></li>
   
 </ul>
 
-</body>
-</html>
+    </header>

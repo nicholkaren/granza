@@ -4,7 +4,7 @@
 <link type="text/css" href="css/admin_list.css" rel="stylesheet"> 
 
 <!--BAKGRUNDBILD-->
-<img class="background" src="img/inspo/flowers_about.jpg">
+<img class="background" src="img/products/big/marble-wallpaper-white.jpg">
 <!--VITA DIVEN-->
 <div class="all_product">
     <!--RUBRIK-->
