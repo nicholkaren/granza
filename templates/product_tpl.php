@@ -50,21 +50,21 @@
             <div class="content">
 
               <div class="delivery_options">
-                <table>
-                    <tr>
-                      <td>Postnord </td>
-                      <td> 0 SEK</td>
-                      <td> Leverans 2-5 arbetsdagar </td>
-                    </tr>
-                    <tr>
-                      <td>DHL </td>
-                      <td>0 SEK</td>
-                      <td> Leverans 2-5 arbetsdagar </td>
-                    </tr>
-                </table>
+                  <table>
+                      <tr>
+                          <td>Postnord </td>
+                          <td> 0 SEK</td>
+                          <td> Leverans 2-5 arbetsdagar </td>
+                      </tr>
+                      <tr>
+                          <td>DHL </td>
+                          <td>0 SEK</td>
+                          <td> Leverans 2-5 arbetsdagar </td>
+                      </tr>
+                  </table>
               </div><!-- delivery options div -->
             </div><!-- End of content div -->
-          </div> <!-- End of popup div -->
+            </div> <!-- End of popup div -->
         </div> <!-- End of overlay -->
      
       <!-- Sociala medier
@@ -83,31 +83,34 @@
         -->
 
 </div> <!-- End of product single div -->
-    <hr>
+      
+      <hr>
+
+      <!-- Block med doftfamiljs-hjul -->
       <div id="block">
-        <img class="scent-wheel" src="img/products/big/scent_wheel.png"> 
+          <img class="scent-wheel" src="img/products/big/scent_wheel.png"> 
       </div>
 
-      <!--LIKNANDE PRODUKTER-->
+      <!--Liknande produkter 4 st -->
       <div class="product_upsale">
-        <h2 class="upsale_title"> Parfymer i samma doftfamilj </h2>
+          <h2 class="upsale_title"> Parfymer i samma doftfamilj </h2>
       </div>
       
       <div class="product_upsale">
           <?php foreach ($pagecontent2->products as $currprod2) {
-          echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'"><div class="product_wrapper">';
-          echo '<img src="'.$currprod2['img_url_2'].'" class="prod_img">';
-          echo '<h3 class="perfume_name">'.$currprod2['title_2'].'</h3>';
-          echo "<br>";         
-          echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'" class="upsale-button-a"><button class="button" type="button"> Lägg i varukorg </button></a>';
-          echo '</div></a>';
+              echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'"><div class="product_wrapper">';
+              echo '<img src="'.$currprod2['img_url_2'].'" class="prod_img">';
+              echo '<h3 class="perfume_name">'.$currprod2['title_2'].'</h3>';
+              echo "<br>";         
+              echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'" class="upsale-button-a"><button class="button" type="button"> Lägg i varukorg </button></a>';
+              echo '</div></a>';
           } ?>
-      </div>                                    
+      </div>   
+        <div class="before_footer">hej</div>
+                                 
  
 </div>          
 </div>
-
-  <div class="before_footer"></div>
 
 <?php require_once('templates/footer.php');
 ?>

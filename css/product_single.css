@@ -229,10 +229,6 @@ input {
     text-transform: uppercase;
 }
 
-.product_single {
-    margin-bottom: 10%;
-}
-
 /* Ikoner för att dela på sociala medier */
 .share-prod {
     margin-top: 3%;
@@ -289,7 +285,7 @@ hgroup> h2 {
 }
 
 .scent-wheel {
-  max-width: 50%;
+  max-width: 60%;
   margin-right: auto;
   margin-left: auto;
   display: block;
@@ -410,9 +406,13 @@ button:hover {
     transition: background-color 1s ease-out;
 }
 
+
+/* Block innan footern */
 .before_footer {
   width: 100%;
-  color: red;
+  height: 400px;
+  background-color: #001E00;
+  margin-top: 0.5%;
 
 }
 
