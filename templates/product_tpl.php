@@ -1,49 +1,50 @@
-<?php require_once('templates/header.php');
-
-?>
+<?php require_once('templates/header.php'); ?>
 <link type="text/css" rel="stylesheet" href="css/product_single.css">
 
 <!--Produktsida för singelprodukt -->
 <div class="product_single">
      
-      <!-- Stor produktbild -->
-      <div class="single_img_wrapper">
+  <!-- Stor produktbild -->
+    <div class="single_img_wrapper">
         <figure>
-          <img src="<?php echo $pagecontent->img_url;?>" class="single_img">
+            <img src="<?php echo $pagecontent->img_url;?>" class="single_img">
         </figure>
-      </div>
+    </div>
     
-      <div class="prod_info_wrapper">
-          <!-- Produkttitel -->
+    <div class="prod_info_wrapper">
+        
+        <!-- Produkttitel -->
         <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>">
-          <div class="goback"><i class="fa fa-angle-left"></i> Tillbaka </div>
+            <div class="goback"><i class="fa fa-angle-left"></i> Tillbaka </div>
         </a>
         <hgroup>
             <h2 class="product_title"><?php echo $pagecontent->title;?></h2>
-       </hgroup>
+        </hgroup>
+        
         <!-- Produktpris -->
         <span class="product_price"><?php echo $pagecontent->price.' SEK '; ?></span>
         <p class="product_details"><?php echo $pagecontent->description;?></p>
 
-
         <!-- Knapp till varukorg -->  
         <form method="post" action="?action=addtocart">
-          <input type="hidden" value="<?php echo $pagecontent->price;?>" name="price">
-          <label for="cart_qty"> Antal: </label>
-          <input type="text" value="1" id="cart_qty" name="qty">
-          <input type="hidden" name="pid" value="<?php echo $pagecontent->pid;?>">
-          <!--<input type="hidden" name="cart-token">-->
-          <button type="submit" id="single-prod-button">Lägg i varukorg</button>
+            <input type="hidden" value="<?php echo $pagecontent->price;?>" name="price">
+            <label for="cart_qty"> Antal: </label>
+            <input type="text" value="1" id="cart_qty" name="qty">
+            <input type="hidden" name="pid" value="<?php echo $pagecontent->pid;?>">
+            <!--<input type="hidden" name="cart-token">-->
+            <button type="submit" id="single-prod-button">Lägg i varukorg</button>
         </form>
 
         <!-- Leveransalternativ knapp -->
         <a class="button_2" href="#popup1"> Leveransalternativ </a>
         <div id="popup1" class="overlay">
-          <div class="popup">
+            
+            <!-- Popup -->
+            <div class="popup">
             <!-- Rubrik -->
-            <h2>Leveransalternativ</h2>
-            <!-- Stäng knapp -->
-            <a class="close" href="#">&times;</a>
+                <h2>Leveransalternativ</h2>
+                <!-- Stäng knapp -->
+                <a class="close" href="#">&times;</a>
            
             <!-- Content div delivery options -->
             <div class="content">
@@ -80,7 +81,12 @@
         <meta property="og:description" content="<?php echo $pagecontent->description;?> "/>
         <meta property="og:image" content="<?php echo $pagecontent->img_url;?> " />
         -->
+
 </div> <!-- End of product single div -->
+    <hr>
+      <div id="block">
+        <img class="scent-wheel" src="img/products/big/scent_wheel.png"> 
+      </div>
 
       <!--LIKNANDE PRODUKTER-->
       <div class="product_upsale">
@@ -99,7 +105,7 @@
       </div>
  
 </div>
-</div>
 
+  <div class="before_footer"></div>
 <?php require_once('templates/footer.php');
 ?>
