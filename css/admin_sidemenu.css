@@ -1,85 +1,98 @@
 /*Sidomeny*/
-nav.side_menu{
-    background-color:#FFFFFF;
+
+nav.side_menu {
+    background-color: #FFFFFF;
     width: 15%;
-    height:900px;
-    position:absolute;
-    color:black;
+    height: 900px;
+    position: absolute;
+    color: black;
     opacity: 0.5;
-    top:107px;
+    top: 107px;
 }
 
 /*Omsluter ikon och titel*/
-header.big_icon{
+
+header.big_icon {
     margin-left: 6%;
     font-size: 16px;
-    color:black;
-    
+    color: black;
+
 }
+
 /*PARFYM IKONEN*/
-img.side_menu_icon{
+
+img.side_menu_icon {
     display: table;
     margin-top: 37%;
     width: 17%;
     margin-bottom: 4%;
-    }
+}
 
 /*LISTAN*/
-ul.second_menu{
-    list-style:none;
-    padding:0.5em 0;
-    margin:0;
+
+ul.second_menu {
+    list-style: none;
+    padding: 0.5em 0;
+    margin: 0;
     font-size: 15px;
 }
-li.side_menu{
-    padding:22px;
-    transition:all 0.15s linear;
-    cursor:pointer;
+
+li.side_menu {
+    padding: 22px;
+    transition: all 0.15s linear;
+    cursor: pointer;
     height: 6px;
-    color:black;
+    color: black;
 }
-li#back{
+
+li#back {
     margin-top: 100%;
 }
+
 /*LÄNKARNA*/
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
-a.txt1{
-    margin-left:8px;
+
+a.txt1 {
+    margin-left: 8px;
 }
 
 /*Hover effekten Höger pil*/
-li.side_menu:hover{
-    background-color:rgba(0,0,0,0.1);
+
+li.side_menu:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
-li.side_menu:focus{
-    outline:none;
+
+li.side_menu:focus {
+    outline: none;
 }
 
 /*PIL IKON höger*/
-i.fa.fa-angle-right{
-    font-size:25px;
-    color:#000000;
-    float:right;
+
+i.fa.fa-angle-right {
+    font-size: 25px;
+    color: #000000;
+    float: right;
 }
 
 /*Hover effekten VÄNSTER pil*/
-li.side_menu_back:hover{
-    background-color:rgba(0,0,0,0.1);
+
+li.side_menu_back:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
-li.side_menu_back:focus{
-    outline:none;
+
+li.side_menu_back:focus {
+    outline: none;
 }
 
 /*PIL IKON vänster*/
-i.fa.fa-angle-left{
-    font-size:25px;
-    color:#000000;
+
+i.fa.fa-angle-left {
+    font-size: 25px;
+    color: #000000;
     float: left;
     margin-right: 10px;
 }
-
-
-

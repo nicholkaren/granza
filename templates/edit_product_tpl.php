@@ -1,8 +1,8 @@
 <?php require_once('templates/admin_header.php');?>
-<?php require_once('includes/admin_sidemenu_prod.php');?>    
+<?php require_once('includes/admin_sidemenu_prod.php');?>
 
-<link type="text/css" href="css/edit_product.css" rel="stylesheet"> 
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link type="text/css" href="css/edit_product.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--BAKGRUNDBILD-->
 <img class="background" src="img/products/big/marble-wallpaper-white.jpg">
@@ -11,9 +11,11 @@
 <div class="edit_product">
     <!-- CENTRERA DIV-->
     <div class="form_container" align="center">
-        
+
         <!--Titel redigera produkt-->
-        <h1 id="add-product-h1"><?php echo strtoupper($pagecontent->title); ?></h1>
+        <h1 id="add-product-h1">
+            <?php echo strtoupper($pagecontent->title); ?>
+        </h1>
 
         <!--SUCCESS VS ERRORMEDD-->
         <?php 
@@ -26,8 +28,8 @@
         <!-- SÖK FORMULÄR -->
         <form method="post" action="?action=edit-product" id="search-product" name="search-product">
             <div class="container-4">
-            <input id="search" type="search" name="prod-search" placeholder="Sök produkt" required>
-            <button type="submit" id="search-product-button" class="icon"><i class="fa fa-search"></i>
+                <input id="search" type="search" name="prod-search" placeholder="Sök produkt" required>
+                <button type="submit" id="search-product-button" class="icon"><i class="fa fa-search"></i>
             </button>
             </div>
         </form>
@@ -35,7 +37,7 @@
         <!-- REDIGERA FORMULÄR -->
         <form method="post" action="?action=update-product&pid=<?php echo $pagecontent->pid?>" enctype="multipart/form-data" id="update-product" name="edit-product">
 
-            
+
             <label for="file-upload">Bild</label>
             <input type="file" name="file1" id="file-upload">
 
@@ -80,13 +82,11 @@
 
             <button type="submit" class="btn_save" id="save-product-button" name="save-product">Spara produkt
             </button>
-<!--Produktbild på aktuell PID-->
+            <!--Produktbild på aktuell PID-->
             <div id="prod-pic-div">
                 <img src="<?php echo $pagecontent->img_url;?>" id="prod-pic">
             </div>
         </form>
     </div>
-    
+
 </div>
-
-

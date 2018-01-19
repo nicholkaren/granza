@@ -1,10 +1,12 @@
 <?php require_once('templates/admin_header.php');?>
 <?php require_once('includes/admin_sidemenu_cat.php');?>
 
-<link type="text/css" href="css/add_category.css" rel="stylesheet"> 
-<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link type="text/css" href="css/add_category.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h1 id="add-cat-h1"><?php echo strtoupper($pagecontent->title); ?></h1>
+<h1 id="add-cat-h1">
+    <?php echo strtoupper($pagecontent->title); ?>
+</h1>
 <hr>
 
 <?php 
@@ -15,14 +17,14 @@ if ($pagecontent->error !== ""){
 }?>
 
 <form method="post" action="?action=edit-category" id="search-cat" name="search-category">
-<input type="search" name="cat-search" placeholder="Sök Kategori">
-<button type="submit" id="search-cat-button">SÖK</button>
+    <input type="search" name="cat-search" placeholder="Sök Kategori">
+    <button type="submit" id="search-cat-button">SÖK</button>
 </form>
 
 <hr>
 
 <form method="post" action="?action=update-category&id=<?php echo $pagecontent->category_id;?>" enctype="multipart/form-data" id="create-cat" name="edit-category">
-      <div id="cat-pic-div">
+    <div id="cat-pic-div">
         <img src="<?php echo $pagecontent->img_url;?>" id="cat-pic">
     </div>
     <input type="file" name="file1" id="file-upload-cat">
@@ -34,10 +36,10 @@ if ($pagecontent->error !== ""){
         <option value="active" name="cat[active]">Aktiv</option>
         <option value="inactive" name="cat[inactive]">Inaktiv</option>
     </select>
-    
+
     <!-- FORM TOKEN-->
     <?php echo getTokenField(); ?>
-    
+
 
     <button type="submit" id="save-cat-button" name="save-cat">Spara kategori</button>
 

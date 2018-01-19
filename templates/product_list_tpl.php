@@ -1,31 +1,33 @@
 <!--Admin visa alla produkter-->
 <?php require_once('templates/admin_header.php');?>
 <?php require_once('includes/admin_sidemenu_prod.php');?>
-<link type="text/css" href="css/admin_list.css" rel="stylesheet"> 
+<link type="text/css" href="css/admin_list.css" rel="stylesheet">
 
-    <!--BAKGRUNDBILD-->
-    <img class="background" src="img/products/big/marble-wallpaper-white.jpg">
-    <!--VITA DIVEN-->
+<!--BAKGRUNDBILD-->
+<img class="background" src="img/products/big/marble-wallpaper-white.jpg">
+<!--VITA DIVEN-->
 <div class="all_product">
     <!--Sid titel-->
-    <h1 id="h1-cat"><?php echo strtoupper($pagecontent->title); ?></h1>
-    
-    <!-- Tabell som echoar ut alla produkter som finns i DB i ID ordning--> 
-    
+    <h1 id="h1-cat">
+        <?php echo strtoupper($pagecontent->title); ?>
+    </h1>
+
+    <!-- Tabell som echoar ut alla produkter som finns i DB i ID ordning-->
+
     <table class="list-wrapper">
         <thead>
-          <tr>
-            <th>Id</th>
-            <th>Bild</th>
-            <th>Titel</th>
-            <th>Pris</th>
-            <th>Kategori</th>
-            <th>Status</th>
-            <th>Redigera</th>
-          </tr>
+            <tr>
+                <th>Id</th>
+                <th>Bild</th>
+                <th>Titel</th>
+                <th>Pris</th>
+                <th>Kategori</th>
+                <th>Status</th>
+                <th>Redigera</th>
+            </tr>
         </thead>
-<tbody>
-        <?php foreach ($pagecontent->products as $currprod) {
+        <tbody>
+            <?php foreach ($pagecontent->products as $currprod) {
             
             echo '<tr>';
             printf ('<td>%s</td>',$currprod['product_id']);
@@ -49,8 +51,7 @@
             echo '<td><a class="edit-btn" href="?action=edit-product&pid='.$currprod['product_id'].'">Redigera</a></td>';
             echo '</tr>';
     };?>
-    </tbody>
+        </tbody>
     </table>
-        </div>
 </div>
-
+</div>

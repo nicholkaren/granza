@@ -1,13 +1,14 @@
-
 /* Bakgrundsbild med blommor */
+
 img.background_flowers {
     width: 100%;
     height: 1600px;
-    
+
     position: relative;
 }
 
 /* Vit canvas ovanpå bakgrundsbilden */
+
 #about_us_wrapper {
     width: 80%;
     height: auto;
@@ -15,7 +16,7 @@ img.background_flowers {
     margin-right: auto;
     background-color: white;
     font-family: 'Lato';
-    padding-bottom: 10%;    
+    padding-bottom: 10%;
 
     position: absolute;
     top: 30%;
@@ -24,6 +25,7 @@ img.background_flowers {
 }
 
 /* Rubrik som hämtas från db */
+
 h1.about_us_headline {
     text-align: center;
     padding-top: 5%;
@@ -31,6 +33,7 @@ h1.about_us_headline {
 }
 
 /* Löpande text som hämtas från db */
+
 p.about_us_describing_text {
     color: black;
     padding-top: 2%;
@@ -55,6 +58,7 @@ p.about_us_describing_text {
 }
 
 /* Bild 1*/
+
 img.about_content_img {
     width: 40%;
     margin-left: 15%;
