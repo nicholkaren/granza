@@ -24,24 +24,6 @@ if ($_GET['action'] === 'addtocart' && !empty($_POST['pid'])){
     }
        
 }
-// vi måste ha med en pid för att kunna ta bort den aktuella varan.
-// det som ska unsettas är pid inte hela $_SESSION.
-if ($_GET['action'] === 'removecartitem' && isset($_GET['pid'])){
-    unset($_SESSION['cart'][$_GET['pid']]);
-    unset($_SESSION['price'][$_GET['pid']]);
-}
-
-if ($_GET['action'] === 'updatecart'){
-    foreach ($_POST['cartitems'] as $pid => $qty){
-    if ($qty < 1){
-    unset($_SESSION['cart'][$pid]);
-    
-    } else {
-        $_SESSION['cart'][$pid] = $qty;
-    }
-}
-  
-}
 
 /*** UPPDATERAR VARUKORGSIKONEN MED ANTAL PRODUKTER I CART ****/
 

@@ -5,48 +5,54 @@ require('templates/header.php');
 <link type="text/css" href="css/cart.css" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--Här är vår varukorg.-->
-<div id="cart-wrapper">
-<p class="kundvagn">Din kundvagn</p>
-<hr id="hr-cart">
+    <!--Här är varukorgen -->
+    <div id="cart-wrapper">
+        <p class="shoppingbag">Varukorg</p>
 
-<form method="post" action="?action=updatecart" id="update-cart-form">
-    
-<div class="cart-content">
-    <?php if (!array_key_exists('cartItems', $cart)){
-        print '<p id="empty-cart">Din varukorg är tom!</p>';
-            
-};?>
-    <?php if (isset($cart['cartItems'])):
-    foreach ($cart['cartItems'] as $cartItemPid => $cartItemData): ?>
-        
-<div class="item">
-        <div class="delete-icon">
-        <a href="?action=removecartitem&pid=<?php echo $cartItemPid;?>">
-        <span class="tabort"></span>
-        </a>
+
+    <!-- Formuläret med varorna -->
+    <form method="post" action="?action=updatecart" id="update-cart-form">
+     
+    <!-- Content -->   
+    <div class="cart-content">
+        <?php if (!array_key_exists('cartItems', $cart)){
+            print '<p id="empty-cart">Din varukorg är tom!</p>';         
+    };?>
+        <?php if (isset($cart['cartItems'])):
+        foreach ($cart['cartItems'] as $cartItemPid => $cartItemData): ?>
+       
+
+
+
+        <div class="item">
+
+        <div class="item-img">
+            <img id="cart_img" src="<?php echo $cartItemData['img_url'];?>">
+        </div>
+                    
+        <div class="item-title">
+            <span class="desc"><?php echo $cartItemData['title'];?></span>
+        </div>
+                    
+        <div class="item-qty">
+            <input type="number" name="cartitems[<?php echo $cartItemPid;?>]" value="<?php echo $cartItemData['qty'];?>">
+        </div>
+                    
+        <div class="item-price">
+            <?php echo $cartItemData['price'].' KR';?>
+        </div>
+                    
+        <div class="cart-sum">
+            <?php echo $cartItemData['sum'].' KR';?>
+
+              <a href="?action=removecartitem&pid=<?php echo $cartItemPid;?>">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+
+                </a>
+        </div>
+
+
     </div>
-                
-    <div class="item-img">
-        <img id="cart_img" src="<?php echo $cartItemData['img_url'];?>">
-    </div>
-                
-    <div class="item-title">
-        <span class="desc"><?php echo $cartItemData['title'];?></span>
-    </div>
-                
-    <div class="item-qty">
-        <input type="number" name="cartitems[<?php echo $cartItemPid;?>]" value="<?php echo $cartItemData['qty'];?>">
-    </div>
-                
-    <div class="item-price">
-        <?php echo $cartItemData['price'].' KR';?>
-    </div>
-                
-    <div class="cart-sum">
-        <?php echo $cartItemData['sum'].' KR';?>
-    </div>
-</div>
         
 <?php endforeach ?>
 <?php endif ?>

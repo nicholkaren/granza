@@ -14,30 +14,34 @@
     font-family: 'Work Sans', sans-serif;
     }
 
+
+i {
+    color: black;
+    margin-left: 54px;
+}
+
+i:hover {
+    color: red;
+}
+
 #cart-wrapper {
     max-width: 900px;
     width: 100%;
     margin: 0 auto;
 }
 
-.kundvagn {
-    width: 90%;
+/* text Varukorg */
+.shoppingbag {
+    width: 100%;
     margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 2em;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 1.5em;
     text-align: center;
     text-transform: uppercase;
-	color: #5a4c36;   
+	color: #000000;   
 }
 
-#hr-cart {
-    border: 0;
-    height: 3px;
-    width: 50%;
-    background-color: rgba(174,146, 102, 1);
-    margin-bottom: 20px;
-}
 #update-cart-form{   
     margin-left: 10px;
     margin-right: 10px;
@@ -53,15 +57,17 @@
     box-sizing: border-box;
     }
 
-.item{
+.item {
     margin:0 auto;
     padding:0px;
-    height: 190px;
     display: flex;
     flex-direction: row;
     width:100%;
-    border-bottom: solid #AE9266 1px;
-    }
+    border-bottom: solid #000000 1px;
+
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 /*--Produktbilden---*/
 
