@@ -1,6 +1,7 @@
 /*CSS för alla tabeller på Admin - produktlista, kategorilista & medlemslista*/
 
-/* Bakgrundsbild med blommor */
+/* Bakgrundsbild med marmor */
+
 img.background {
     width: 100%;
     background-repeat: repeat;
@@ -8,59 +9,66 @@ img.background {
     position: relative;
     z-index: -1;
 }
+
 /*Vita diven*/
-div.all_product{
+
+div.all_product {
     position: absolute;
-    top:25%;
-    right:0;
-    left:0;
+    top: 25%;
+    right: 0;
+    left: 0;
     margin-right: auto;
     margin-left: auto;
     width: 50%;
-    background-color:white;
+    background-color: white;
     height: 700px;
-    -moz-box-shadow:     0 0 35px grey;
-    -webkit-box-shadow:  0 0 35px grey;
+    -moz-box-shadow: 0 0 35px grey;
+    -webkit-box-shadow: 0 0 35px grey;
     box-shadow: 0 0 35px grey;
 }
 
-#h1-cat{
+#h1-cat {
     position: absolute;
-    top:-15%;
-    right:0;
-    left:0;
+    top: -15%;
+    right: 0;
+    left: 0;
     font-size: 40px;
     padding: 10px;
     text-align: center;
-    color:black;
+    color: black;
 }
 
-.list-wrapper{
+.list-wrapper {
     position: absolute;
 }
-thead{
+
+thead {
     background-color: black;
     overflow: hidden;
     font-size: 14px;
 }
-tbody{
-    
-}
-table{
+
+tbody {}
+
+table {
     width: 100%;
-	border-collapse: collapse;
-    font-size: 12px;   
+    border-collapse: collapse;
+    font-size: 12px;
 }
-th, td{
-	padding: 15px;
-	background-color: rgba(255,255,255,0.2);
-	color: #fff;
+
+th,
+td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
 }
-td{
-    color:black;
+
+td {
+    color: black;
     text-align: center;
 }
-tr:hover{
+
+tr:hover {
     background-color: lightgray;
 }
 
@@ -68,8 +76,10 @@ tr:hover{
     width: 100px;
     height: 100px;
 }
+
 /*Redigera knappen*/
-td > a{
+
+td > a {
     color: black;
     font-size: 12px;
     margin: 0 auto;
@@ -83,10 +93,29 @@ td > a{
     -moz-box-shadow: 0 0 35px #dcdcdc;
     -webkit-box-shadow: 0 0 35px #dcdcdc;
     box-shadow: 0 0 6px #dcdcdc;
-    transition:all 0.20s linear;
+    transition: all 0.20s linear;
 }
 
 div.scrollable {
     height: 100%;
     overflow: auto;
+}
+
+/*Admin singleOrder DIV med totalsumma*/
+
+#totalSumma {
+    justify-content: flex-end;
+    display: flex;
+    position: relative;
+    top: 8px;
+    border: 2px black solid;
+    padding: 10px;
+}
+
+#goback-order {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    bottom: 4px;
+    margin-left: 1%;
 }
