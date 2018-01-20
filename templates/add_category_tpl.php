@@ -11,7 +11,6 @@
         <h1 id="add-cat-h1">
             <?php echo strtoupper($pagecontent->title); ?>
         </h1>
-
         <?php
         if ($pagecontent->error !== ""){
             echo '<p id="p-error">'.$pagecontent->error.'</p>';

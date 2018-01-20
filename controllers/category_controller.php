@@ -3,7 +3,7 @@ $pagecontent = new stdClass;
 include('meny_controller.php');
 
 if (isset($_GET['id'])) {
-	// SQL för att hämta produkter från en kategori
+	// SQL för att hämta alla kategorier.
 	$sql = "SELECT DISTINCT category.category_id, category.img_url as cat_img, 
 			category.description as cat_desc, 
 			category.title as cat_title, 
@@ -44,7 +44,7 @@ while ($product = $stmt->fetch(PDO::FETCH_ASSOC) ) {
 		$pagecontent->category['img'] = $theLastProduct['cat_img'];
 		$pagecontent->category['desc'] = $theLastProduct['cat_desc'];
 		$pagecontent->category['title'] = $theLastProduct['cat_title'];
-		//spara $product i $theLastProduct för att det skall finnas kvar när while loopen är körd och $product då blir false.
+		//sparar $product i $theLastProduct för att det ska finnas kvar när while loopen är körd och $product då blir false.
 
 
 if (is_null($theLastProduct)) {
