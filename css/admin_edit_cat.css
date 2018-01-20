@@ -177,7 +177,9 @@ div.style_select select {
     -webkit-appearance: none;
 }
 
-i {
+/*pilen som pekar nedåt för selects*/
+
+#create-cat > div.style_select > i {
     margin-left: 90%;
     margin-top: -5%;
 

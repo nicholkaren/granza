@@ -26,7 +26,7 @@ if ($pagecontent->error !== ""){
         <form method="post" action="?action=edit-category" id="search-cat" name="search-category">
             <div class="container-4">
                 <input type="search" name="cat-search" id="search" placeholder="Sök Kategori">
-                <button type="submit" id="search-cat-button" class="icon"><i class="fa fa-search"></i></button>
+                <button type="submit" id="search-cat-button" class="icon"><i class="fa fa-search" style="margin-left:0; margin-right:0;"></i></button>
             </div>
         </form>
 
