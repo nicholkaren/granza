@@ -53,12 +53,13 @@
                             <img class="mint" src="img/doftnoter/tobacco.png">
 
                 <p class="all_women"> Discover all perfumes <br>for donna </p>
-                <div class="arrow-left"></div>
             </div> 
             </a>
-
+        </div>
             <!-- PRODUKTRAD MED HERRDOFTER -->
             <a href="?action=category&id=2"><h2 class="headline_gender">Herrdofter | Profumo Oumo</h2></a>
+                    <div class="main_wrapper">
+
                 
             <?php 
                 foreach ($pagecontent->products as $currprod) {
