@@ -173,7 +173,11 @@ button.btn-placeorder{
 	text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-    }
+}
+
+button.btn-placeorder:hover {
+    background-color: gray;
+}
 
 #last-hr{
     margin-top: 60px;
