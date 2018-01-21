@@ -1,16 +1,16 @@
-<?php
+<?php //Här hämtas alla ordrar från DB samt uppdatera status på order och skickar iväg bekräftelsemejl.
 include('meny_controller.php');
 
 $pagecontent = new stdClass;
 $pagecontent->title = "Alla ordrar";
 
 
-/*****Hämtar och visar alla ordrar*****/
+//hämtar oh visar alla ordrar när man söker på order.
 if (($_GET['action'] === 'orders') ||($_GET['action'] === 'searchOrder') ){
     //Logiken om tryckt på sök knappen
     if($_GET['action'] === 'searchOrder' && $_POST['order_search'] !== ""){ 
         if (isset($_POST['order_search'])){
-            /****************** HÄR HÄMTAS SÖKRESULTATET ******************/
+            //sök resultatet
               $sql1 = "SELECT * FROM orders WHERE order_id = :id;";         
                 $stmt1 = $pdo->prepare($sql1);
                 $stmt1->bindParam(':id', $_POST['order_search']);
@@ -27,7 +27,7 @@ if (($_GET['action'] === 'orders') ||($_GET['action'] === 'searchOrder') ){
                 $result1 = $stmt1->fetchAll(PDO::FETCH_ASSOC);
     }
 
-        // Hämta statusar till <select><options>
+        // Hämtar status till selects, aktiv eller inaktiva
         $sql = "SELECT * FROM order_status";    
             $stmt = $pdo->prepare($sql);
             $stmt->execute();  
@@ -72,7 +72,7 @@ if (($_GET['action'] === 'orders') ||($_GET['action'] === 'searchOrder') ){
     require('templates/admin_order_tpl.php');
 
 }
-/*****Visar detaljer för en specifik orderr*****/
+//hämtar orderinformation om specifik order.
 if ($_GET['action'] === 'singleOrder'){
   
     $sql = "SELECT * FROM order_items WHERE order_id = :oid;";         
@@ -80,32 +80,29 @@ if ($_GET['action'] === 'singleOrder'){
     $stmt ->bindParam(':oid', $_GET['oid']);
     $stmt->execute();
     $result = $stmt->fetchAll();
-   // echo '<pre>';
-    //
-    //var_dump($result);
+   
         $totalsumma = 0;
         foreach ($result as $orderItemRow){
             // Skappar vi en tom array där vi placerar element från $order som vi loopar över
             
             $currItem = array();
             $currItem['OrderNr'] = $orderItemRow['order_id'];
-            //$currItem['Artikel_id'] = $orderItemRow['order_items_id'];
             $currItem['Produkt_id'] = $orderItemRow['product_id'];
             $currItem['Pris'] = $orderItemRow['price'];
             $currItem['Antal'] = $orderItemRow['quantity'];        
             $currItem['Total'] = $orderItemRow['price'] *  $orderItemRow['quantity']; 
             $totalsumma += $currItem['Total'];
+            
             //Allt som ligger i $currorder läggs i $pagecontent->order[] som vi skapar. 
             $pagecontent->orderItems[] = $currItem;
         }
 
             //Här trycker vi in allt i $pagecontent
             $pagecontent->OrderNr = $orderItemRow['order_id'];
-           // $pagecontent->Artikel_id = $orderItemRow['order_items_id'];
             $pagecontent->Produkt_id = $orderItemRow['product_id'];
             $pagecontent->Pris = $orderItemRow['price'];
             $pagecontent->Antal = $orderItemRow['quantity'];
-            $pagecontent->Total = $orderItemRow['price'] *  $orderItemRow['quantity']; 
+            $pagecontent->Total = $orderItemRow['price'] * $orderItemRow['quantity']; 
     
     
     require('templates/admin_singleOrder_tpl.php'); 
@@ -124,22 +121,18 @@ if ($_GET['action'] === 'singleOrder'){
         $stmt1 = $pdo->prepare($sql1);
         $stmt1 ->bindParam(':oid', $_GET['oid']);
         $stmt1->execute();
-        // var_dump($stmt1->errorInfo());
         
         $result1 = $stmt1->fetchAll(PDO::FETCH_ASSOC);
-       // var_dump($result1);
     
     
     
 }
-
+//Uppdaterar orderstatus i databasen
 if ($_GET['action'] === 'updateOrderStatus'){
     
-/************** UPPDATERAR DB MED ORDERSTATUS  ****************/
-
 $oid = $_GET['oid'];
 
-    // Om man har tryckt på knappen uppdatera finns updateStatus i $_POST
+    // Om man har tryckt på button -updatestatus- finns updateStatus i $_POST
     if (array_key_exists('updateStatus', $_POST)){
         
         $sql = "UPDATE orders SET order_status_id = :order_status, updated_at = NOW() WHERE order_id = :order_id";
@@ -149,7 +142,7 @@ $oid = $_GET['oid'];
         $stmt->bindParam(':order_status', $status);
         $stmt->execute();
         
-    /****************** SKICKA EMAIL MED STATUS ******************/
+    //skickar mejl till med uppdaterad orderstatus
         
     $sql = "SELECT title FROM order_status WHERE order_status_id = :order_status";    
     $stmt = $pdo->prepare($sql);
@@ -157,16 +150,15 @@ $oid = $_GET['oid'];
     $stmt->execute();  
     $result = $stmt->fetch();
 
-    // the message
+    // meddelandet till kund
     $msg = "Hej!\n Din order är nu ".strtolower($result['title'])."! \n Vänligen, Lorenzo Granza";
     
     // use wordwrap() if lines are longer than 70 characters
     $msg = wordwrap($msg,70);
 
-    // send email
+    // skicka mejl
     mail("someone@example.com","Din order",$msg);
-    //echo $msg;
 
-    }
+    }//skickas tillbaka till action=orders
      header("Location:?action=orders");
 }
