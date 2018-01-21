@@ -1,8 +1,6 @@
 
-
 * {
     font-family: 'Lato', sans-serif;
-
 }
 
 body {
@@ -27,7 +25,7 @@ ul {
     padding: 0px;
 }
 
-span#hej {
+span#order {
     margin-left: 20px;
 }
 
@@ -63,7 +61,6 @@ span#hej {
     margin-left: 2%;
     padding: 3%;
 }
-
 
 /* h1 Din varukorg */
 h1.shoppingbag {
@@ -198,6 +195,7 @@ input[type="number"] {
     margin-bottom: 20px;
 }
 
+/* Uppdatera cart */
 button.update-cart-btn{
     margin-top: 4%;
     padding: 15px;
@@ -245,7 +243,7 @@ p#empty-cart {
 
 
 
-/*--MEDIA QUERY--*/
+/* MEDIA QUERY */
 
 @media all and (max-width:900px){
     

@@ -78,7 +78,7 @@ require('templates/header.php');
     <!-- Aside bredvid varukorg -->
     <div class="aside"> Har du frågor om din order?
         <ul>
-            <li><i class="fa fa-phone" aria-hidden="true"></i> <span id="hej"> 020 - 53 53 52 </span></li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i> <span id="order"> 020 - 53 53 52 </span></li>
         </ul>
     </div>
     <!-- Checkout knapp -->
