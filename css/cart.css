@@ -217,7 +217,7 @@ button.update-cart-btn{
     text-align: left;
 }
 
-#checkoutknapp{
+#checkoutknapp {
     margin: 0 auto;
     margin-top: 2%;
     margin-bottom: 10%;
@@ -232,6 +232,10 @@ button.update-cart-btn{
     text-decoration: none;
     cursor: pointer;
     margin-left: 2%;
+}
+
+#checkoutknapp:hover {
+    background-color: grey;
 }
 
 p#empty-cart {
