@@ -114,8 +114,10 @@
                   };
                       echo'</table>';
                       echo '<hr id="minicart">';
-                      echo'<div id="to-pay">'.'Att betala '.$totalSum .' KR'.'</div>';
-                      echo'<div id="moms">'.'varav moms '.ceil($momsSats).' KR'.'</div>';
+                      echo'<div id="to-pay">'.'Att betala '.$totalSum .' SEK'.'</div>';
+                      echo'<div id="moms">'.'varav moms '.ceil($momsSats).' SEK'.'</div>';
+                      echo'<div id="moms">'.'frakt'.' 0 SEK'.'</div>';
+
                   ?>
               </table>
 
