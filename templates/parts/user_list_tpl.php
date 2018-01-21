@@ -1,4 +1,10 @@
-<link type="text/css" rel="stylesheet" href="css/user_list.css">
+<link type="text/css" rel="stylesheet" href="css/admin_list.css">
+
+
+
+<h1 id="h1-cat">Medlemmar hos Granza</h1>
+<a href="?action=login" id="goback-order">
+                <i class="fa fa-angle-left " style="font-size:20px; margin-right:4px; "></i>Tillbaka</a>
 <tbody>
     <td>
         <?php echo $pagecontent->uid?>
@@ -12,21 +18,21 @@
     <td>
         <?php echo $pagecontent->email?>
     </td>
-    <td>
-        <?php echo $pagecontent->street1?>
+    <!--<td>
+        <?php //echo $pagecontent->street1?>
     </td>
     <td>
-        <?php echo $pagecontent->street2?>
+        <?php //echo $pagecontent->street2?>
     </td>
     <td>
-        <?php echo $pagecontent->zip?>
+        <?php //echo $pagecontent->zip?>
     </td>
     <td>
-        <?php echo $pagecontent->city?>
+        <?php //echo $pagecontent->city?>
     </td>
     <td>
-        <?php echo $pagecontent->phone?>
-    </td>
+        <?php //echo $pagecontent->phone?>
+    </td>-->
     <td>
         <?php echo $pagecontent->newletter?>
     </td>
@@ -44,3 +50,5 @@
 
 
 </tbody>
+
+</div>

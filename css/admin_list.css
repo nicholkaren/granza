@@ -48,8 +48,6 @@ thead {
     font-size: 14px;
 }
 
-tbody {}
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -118,4 +116,10 @@ div.scrollable {
     position: absolute;
     bottom: 4px;
     margin-left: 1%;
+}
+
+/*Users list*/
+
+#memberlist {
+    width: 1075px;
 }
