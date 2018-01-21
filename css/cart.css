@@ -59,6 +59,7 @@ span#order {
     display: inline-block;
     margin-right: 7%;
     margin-left: 2%;
+    margin-top: 2%;
     padding: 3%;
 }
 
@@ -237,8 +238,21 @@ p#empty-cart {
     text-align: center;
 }
 
+/* Tillbaka knapp */
+.goback2 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+}
 
+/* fa fa icon */
+div.goback > i {
+    color: white;
+}
 
+#cart-wrapper > a > div > i {
+    margin: 0px;
+}
 
 
 
