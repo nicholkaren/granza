@@ -29,7 +29,7 @@
                 <input type="text" name="phone"     placeholder="Telefon"    value="<?php echo $person->getUserInfo('phone');?>">
 
             <!-- Steg Välj annan leveransadress -->
-            <p> Vill du leverera ditt paket till en annan adress än den ovan? </p>
+            <p> Vill du leverera ditt paket till en annan adress än ovan? </p>
             <input type="checkbox"> Välj en annan leveransadress
                 <div id="street2-hidden">
                     <h3 class= "form-header"> Annan leveransadress </h3>
