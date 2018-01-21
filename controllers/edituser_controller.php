@@ -1,13 +1,12 @@
-	<?php
+<?php // här är logiken för att kunna redigera en medlem.
 $pagecontent= new stdClass;
 include('meny_controller.php');
-require('templates/header.php');
-include('includes/validations.php');
+//include('includes/validations.php');
 
 $errors = array();
 	
 	$pagecontent->title ="REDIGERA KONTO";
-	$pagecontent->h2 ="REDIGERA KONTO FÖR ID ".$_GET['uid'];
+	$pagecontent->h2 ="Medlems ID ".$_GET['uid'];
 
 
 //SÄTT GET TILL ANVÄNDARE VARS KONTO SKALL UPPDATERAS
@@ -24,7 +23,3 @@ $result = $stmt->fetch();
 
 }
 require('templates/edit_user_tpl.php');
-require('templates/footer.php');
-
-
-

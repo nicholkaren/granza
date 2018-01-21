@@ -1,0 +1,99 @@
+/* Bakgrundsbild - marmor */
+
+img.background {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    z-index: -1;
+}
+
+/*Vit canvas*/
+
+div.edit_cat {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    background-color: white;
+    height: 660px;
+    -moz-box-shadow: 0 0 35px grey;
+    -webkit-box-shadow: 0 0 35px grey;
+    box-shadow: 0 0 35px grey;
+}
+
+/*Sid titel*/
+
+h2 {
+    position: absolute;
+    top: -15%;
+    right: 0;
+    left: 0;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+/*Formuläret - fil, titel, pris*/
+
+form {
+    margin-top: 2.5%;
+    width: 500px;
+}
+
+#update-product {
+    margin-top: 0;
+}
+
+/*Alla inputfält - fil, titel, pris*/
+
+input {
+    padding: 12px;
+    border: solid 2px black;
+    width: 100%;
+    margin-top: 15px;
+    outline: none;
+
+}
+
+label {
+    margin-top: 2%;
+    margin-bottom: -3%;
+    font-size: 13px;
+    float: left;
+}
+
+/*Spara knapp*/
+
+button.btn_save {
+    float: right;
+    color: black;
+    font-size: 0.7em;
+    margin: 0 auto;
+    margin-top: 7%;
+    display: block;
+    width: 150px;
+    padding: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    -moz-box-shadow: 0 0 35px #dcdcdc;
+    -webkit-box-shadow: 0 0 35px #dcdcdc;
+    box-shadow: 0 0 6px #dcdcdc;
+    transition: all 0.20s linear;
+}
+
+button.btn_save:hover {
+    text-decoration: none;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: white;
+    color: white;
+    background-color: black;
+    border: none;
+}
