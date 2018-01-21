@@ -123,7 +123,7 @@
   </form> <!-- Rad 19 -->
 
           <!-- Vill du shoppa mer knapp -->
-          <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>">
+          <a href="?action=default">
               <div class="goback3"> Eller vill du shoppa mer? 
                   <i class="fa fa-angle-right" aria-hidden="true"></i>
               </div>
