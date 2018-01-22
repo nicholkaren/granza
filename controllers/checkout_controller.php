@@ -2,7 +2,7 @@
 $pagecontent = new stdClass;
 $pagecontent->title = "Checkout";
 include('meny_controller.php');
-//include('includes/token.php');
+include('includes/token.php');
 //getToken();
 
 

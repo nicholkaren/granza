@@ -10,13 +10,12 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 
 
-    <!-- Liten reklambanner under headern 
+   <!-- Liten reklambanner under headern -->
     <div class="small_banner"> 
         | <i class="fa fa-bolt" aria-hidden="true"></i> Snabb leverans | 
         <i class="fa fa-gift" aria-hidden="true"></i> Parfymprov vid varje beställning |
         <i class="fa fa-clock-o" aria-hidden="true"></i> 60 dagars öppet köp |
-        <i class="fa fa-smile-o" aria-hidden="true"></i> Över 20 000 nöjda kunder | 
-    </div> -->
+    </div>
 
         <!-- TOPPBILD -->
         <div class="startpage_bigimage">
@@ -56,6 +55,18 @@
             </div> 
             </a>
         </div>
+
+        <!--Ansök om medlemsskap-->
+        <div id="register_member">
+            <div class="placement-left">
+                <img class="kollage1" src="img/doftnoter/kollage1.png">
+            </div>
+            <div class="placement-right">
+                    <p> Bli medlem i Granza och få tillgång till exklusiva erbjudanden.<br> Dessutom får du som medlem fri frakt på din beställning. </p>
+
+                    <button id="ansok"> Ansök här! </button>
+            </div>
+        </div>
             <!-- PRODUKTRAD MED HERRDOFTER -->
             <a href="?action=category&id=2"><h2 class="headline_gender">Herrdofter | Profumo Oumo</h2></a>
                     <div class="main_wrapper">
@@ -82,23 +93,13 @@
             </div> 
             </a>
 
-        <!--En kreativ yta 
+        <!--En kreativ yta -->
         <div id="philosophy">
                 <p class="thephilosophy"> "In the victorian times, everyone was well versed in the language of perfume. <br> When you gifted a bouquet or a perfume, you were telling a story, or sending a message"
                 <br> - Fransesco Granza</p>
-        </div> -->
+        </div> 
 
-        <!--Ansök om medlemsskap-->
-        <div id="register_member">
-            <div class="placement-left">
-                <img class="kollage1" src="img/doftnoter/kollage1.png">
-            </div>
-            <div class="placement-right">
-                    <p> Bli medlem i Granza och få tillgång till exklusiva erbjudanden.<br> Dessutom får du som medlem fri frakt på din beställning. </p>
-
-                    <button id="ansok"> Ansök här! </button>
-            </div>
-        </div>
+        
 
         </div> <!-- main wrapper -->
     </div> <!-- End of startpage div -->
