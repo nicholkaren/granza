@@ -1,0 +1,341 @@
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+/* papperskorg ikon */
+i {
+    color: black;
+    margin-left: 25px; /* Avstånd till summa */
+}
+
+i:hover {
+    color: grey;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0px;
+}
+
+span#order {
+    margin-left: 20px;
+}
+
+#fullwidth > div.aside > ul > li > i {
+    margin-left: 0px;
+}
+
+
+#fullwidth {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    display: block;
+}
+
+/* Omsluter hela varukorgen */
+#cart-wrapper {
+    max-width: 900px;
+    width: 60%;
+    margin: 0 auto;
+    float: left;
+    display: inline-block;
+    margin-left: 7%;
+}
+
+.aside {
+    float: left;
+    width: 24%;
+    height: 60px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-right: 7%;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 3%;
+}
+
+/* h1 Din varukorg */
+h1.shoppingbag {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 1em;
+    text-transform: uppercase;
+	color: #000000;   
+    display: flex;
+    align-items: center;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+h1:before {
+    display: block;
+    height: 1px;
+    content: '';
+    background: #D3D3D3; 
+    width: 35%;
+    margin-right: 2.3em;
+}
+
+h1:after {
+    display: block;
+    height: 1px;
+    content: '';
+    background: #D3D3D3; 
+    width: 35%;
+    margin-left: 2.3em;
+}
+
+/* Här i ligger items */
+.cart-content {
+    margin:0 auto;
+    width: 100%;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 7%;
+    margin-bottom: 5%;
+}
+
+/* En eskild rad med en produkt och dess info */
+.item {
+    margin:0 auto;
+    padding:0px;
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    border-bottom: solid #D3D3D3 1px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* Produktbilden */
+.item-img{
+    max-width:150px;
+    max-height:180px;
+}
+
+#cart_img{
+    width:100%;
+    height: 100%;
+}
+
+/* Produkt beskrivning */
+
+.item-title{
+    text-align: center;
+    padding-top: 8%;
+    width: 26%;
+}
+
+span.desc{
+    display: block;
+    font-size: 14px;
+    color: #43484D;
+    font-weight: 400;
+}
+
+/* Antal produkter i varukorgen */
+
+.item-qty{
+    width: 17%;
+    padding-top: 6%; 
+}
+
+input[type="number"] {
+    color: #000000;
+	padding: 5px 10px;
+	margin-top: 10px;
+    width: 50%;
+}
+
+.item-price {
+    margin-left: 25px;
+    width: 17%;
+    padding-top: 8%;
+    text-align: center;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+.cart-sum{
+    width: 17%;
+    margin-left: 25px;
+    padding-top: 8%;
+}
+
+.total {
+    margin-top: 1%;
+    text-align: right;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cart-total{
+    text-align: right;
+    font-weight: 700;
+}
+
+#hr-cart {
+    border: 0;
+    height: 3px;
+    width: 40%;
+    background-color: rgba(174,146, 102, 1);
+    margin-bottom: 20px;
+}
+
+/* Uppdatera cart */
+button.update-cart-btn{
+    margin-top: 4%;
+    padding: 15px;
+	background-color: #000000;
+	border: none;
+	width: 25%;
+	position: relative;
+	color: white;
+	font-size: 10px;
+	text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-box{
+    width: 100%;
+    text-align: left;
+}
+
+#checkoutknapp {
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 10%;
+	padding: 15px;
+	background-color: #000000;
+	border: none;
+	width: 30%;
+	position: relative;
+	color: white;
+	font-size: 1em;
+	text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 2%;
+}
+
+#checkoutknapp:hover {
+    background-color: grey;
+}
+
+p#empty-cart {
+    text-align: center;
+}
+
+/* Tillbaka knapp */
+.goback2 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+/* fa fa icon */
+div.goback > i {
+    color: white;
+}
+
+#cart-wrapper > a > div > i {
+    margin: 0px;
+}
+
+
+
+
+/* MEDIA QUERY */
+
+@media all and (max-width:900px){
+    
+    #cart-wrapper {
+        max-width: 850px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .btn-box{
+        width:100%;
+        margin: 0 auto;
+    }
+        
+    .btn-box > form{
+        text-align: center;
+    }
+
+    #checkoutknapp{
+    	width: 95%;
+    }
+
+    button.update-cart-btn{
+    	width: 35%;
+    }
+
+    
+}
+
+
+@media all and (max-width:550px){
+
+    .item-img{
+        max-width:120px;
+        max-height:150px;
+    }
+
+/* Produkt beskrivning */
+
+    .item-title{
+        text-align: center;
+        padding-top: 12%;
+        width: 20%; 
+    }
+
+    span.desc{
+        font-size: 12px;
+    }
+
+/* Antal produkter i varukorgen */
+
+    .item-qty{
+        width:12%; 
+    }
+
+    input[type="number"] {
+        width: 70%;
+    }
+
+    .item-price {
+        margin-left: 15px;
+        font-size: 12px;
+        padding-top: 15%;
+    }
+
+    .cart-sum{
+        width: 17%;
+        margin-left: 10px;
+        padding-top: 15%;
+        font-size: 12px;
+    }
+
+    button.update-cart-btn{
+    	width: 100%;
+        text-align: center;
+        }
+    }

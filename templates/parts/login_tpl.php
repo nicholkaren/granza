@@ -1,7 +1,7 @@
 <link type="text/css" rel="stylesheet" href="css/login.css">
 
 <?php
-include('templates/header.php');
+include('templates/storefront_tpl/header.php');
 ?>
 
 <div class="main_wrapper">
@@ -43,5 +43,5 @@ include('templates/header.php');
 </div>
 
 <?php
-include('templates/footer.php');
+include('templates/storefront_tpl/footer.php');
 ?>

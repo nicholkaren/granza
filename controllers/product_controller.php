@@ -68,4 +68,4 @@ if (is_null($theLastProduct)) {
     $pagecontent2->title = "";
 }
 
-require('templates/product_tpl.php');
+require('templates/storefront_tpl/singleproduct_tpl.php');

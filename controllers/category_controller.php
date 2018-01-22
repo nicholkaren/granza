@@ -55,4 +55,4 @@ if (is_null($theLastProduct)) {
 }
 
 
-require ("templates/category_tpl.php");
+require ("templates/storefront_tpl/category_tpl.php");

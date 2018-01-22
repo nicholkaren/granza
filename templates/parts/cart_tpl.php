@@ -1,8 +1,8 @@
 <?php
-require('templates/header.php');
+require('templates/storefront_tpl/header.php');
 ?>
 
-<link type="text/css" href="css/cart.css" rel="stylesheet"> 
+<link type="text/css" href="css/storefront/cart.css" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -93,3 +93,5 @@ require('templates/header.php');
 
 
 </div> <!-- The wrapper -->
+
+<!-- Ingen footer här, fokus på betalning -->

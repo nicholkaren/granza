@@ -1,21 +1,24 @@
-<!--MENY-->
+<!-- HAR TAGIT BORT / KATERINA 22/1-->
+
+
+<!--MENY
 <div class="menu">
-    <span></span> <!-- ::before fontello-icon X -->
+    <span></span>  ::before fontello-icon X
     <h1>MENY</h1>
     
     <hr>
 
-    <!--SÖK RUTA-->
+    SÖK RUTA
     <input type="text" name="search">
-    <button type="submit" name="submit_search">SÖK</button>
+    <button type="submit" name="submit_search">SÖK</button>-->
     
-    <!--MENY ALTERNATIV-->
+    <!--MENY ALTERNATIV
     
-    <?php
+<?php
 
-$pagecontent = new stdClass;
+$pagecontent //= new stdClass;
 
-/***** HÄMTAR KATEGORITITEL OCH ID *****/
+/***** HÄMTAR KATEGORITITEL OCH ID
 
 $sql = "SELECT title, category_id FROM category;";
 	$stmt = $pdo->prepare($sql);
@@ -29,16 +32,17 @@ foreach ($result as $category) {
 	$currcat['title'] = $category['title'];
 	$currcat['cat_id'] = $category['category_id'];
 	$pagecontent->category[] = $currcat;
-}
-    <p>SOLGLASÖGON</p>
-    <hr>
-    <p>KLOCKOR</p>
-    <hr>
-    <p>INREDNING</p>
-    <hr>
-    <p>OM OSS</p>
-    <hr>
-    <p>FAQ</p>
+}?>*****/
 
-</div>
+   // <p>SOLGLASÖGON</p>
+   // <hr>
+  //  <p>KLOCKOR</p>
+  //  <hr>
+  //  <p>INREDNING</p>
+  //  <hr>
+   // <p>OM OSS</p>
+   // <hr>
+  //  <p>FAQ</p>
+
+//</div>
 

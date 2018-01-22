@@ -127,5 +127,5 @@ if(in_array('placeorder',$_POST)) {
 $_SESSION['cart-total'] = 0;
 unset($_SESSION['cart']);
 
-include('templates/thank_you_tpl.php');
+include('templates/storefront_tpl/thank_you_tpl.php');
 ?>

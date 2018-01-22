@@ -85,7 +85,7 @@ if(isset($_GET['action'])){
         require('controllers/'.$routes[$_GET['action']]);
     } else {
     	
-        require('templates/404.php');
+        require('templates/storefront_tpl/404.php');
     }
     
 } else {

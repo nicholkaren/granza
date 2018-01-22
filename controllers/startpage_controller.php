@@ -107,4 +107,4 @@ while ($product = $stmt->fetch(PDO::FETCH_ASSOC) ) {
 		$pagecontent3->start['price_3'] = $theLastProduct2['price'];
 		$pagecontent3->start['title_3'] = $theLastProduct2['title'];
 
-require('templates/startpage_tpl.php');
+require('templates/storefront_tpl/startpage_tpl.php');

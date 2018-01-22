@@ -22,4 +22,4 @@ if (count($result) < 1){
 }
 
 
-include('templates/about_tpl.php');
+include('templates/storefront_tpl/about_tpl.php');

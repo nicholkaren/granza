@@ -81,4 +81,4 @@ while ($product = $stmt->fetch(PDO::FETCH_ASSOC) ) {
 
 }
     
-require ('templates/checkout_tpl.php');
+require ('templates/storefront_tpl/checkout_tpl.php');

@@ -1,0 +1,509 @@
+@font-face {
+  font-family: 'millhouse-arrow';
+  src: url('fontello_icons/arrows/font/millhouse-arrow.eot?43336856');
+  src: url('fontello_icons/arrows/font/millhouse-arrow.eot?43336856#iefix') format('embedded-opentype'),
+       url('fontello_icons/arrows/font/millhouse-arrow.woff2?43336856') format('woff2'),
+       url('fontello_icons/arrows/font/millhouse-arrow.woff?43336856') format('woff'),
+       url('fontello_icons/arrows/font/millhouse-arrow.ttf?43336856') format('truetype'),
+       url('fontello_icons/arrows/font/millhouse-arrow.svg?43336856#millhouse-arrow') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Allmänna inställningar */
+body {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+
+/* Liten gul banner under headern */
+.small_banner {
+    width: 105%;
+    max-width: 1680px;
+    background-color: #1a3b6e; /* blå 1a3b6e*/ /*krämvit #ccd1d1*/
+    text-align: center;
+    color: white;
+    padding: 0.5%;
+    font-size: 13px;
+}
+
+/* Omsluter allt innehåll */
+.startpage {
+    width: 100%;
+    max-width: 1680px;
+    height: auto;
+}
+
+/* Css för toppbild */
+.startpage_bigimage {
+    width: 100%;
+    height: 1150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*margin-bottom: 25px;*/
+    position: relative;
+    z-index: -1;
+    margin-top: -220px; /* För att ta bort extra px från menyn*/
+}
+
+.topimage {
+    max-width: 100%;
+    max-height: 950px;
+    object-fit: cover;
+}
+
+/* Upptäck din nischdoft-button */
+button#create {
+    margin: 0 auto;
+    padding: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    width: 30%;
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    left: 0%;
+
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 25px;
+    z-index: 4;
+}
+
+#create:hover {
+    background: white;
+    color: black;
+    z-index: 999999;
+    cursor: pointer;
+}
+
+/* Rubrik Damdofter | Profumi Donna */
+h2.headline_gender {
+    text-align: center;
+    color: #000000;
+    padding: 2%;
+    margin: 0px;
+    width: 100%;
+}
+
+/* Namnet på parfymerna */
+h3.perfume_name {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: -22%;
+    z-index: 999999;
+    text-transform: uppercase;
+}
+
+/* Priset på parfymerna */
+p.price {
+    color: white;
+    margin-top: -2%;
+    margin-bottom: 3%;
+    z-index: 9999999;
+}
+
+.start_cat, .start_prod{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    max-width: 100%;
+}
+
+/* Omsluter produktraden */
+.product_wrapper {
+    margin: 0;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+/* Tar bort margin på sista bilden*/
+.product_wrapper:last-child {
+    margin-right: 0%;
+}
+
+/* Bilder på parfymer */
+.product_wrapper img {
+    max-width: 100%;
+    -moz-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+}
+
+/* Hover effekt med zoom */
+.product_wrapper img:hover {
+    transition: all 200ms ease-in-out;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.product_wrapper p, h3 {
+    text-align: center;
+}
+
+.category_wrapper, .product_wrapper  {
+    width: 100%;
+    position: relative;
+}
+
+/* Knapp för lägg i varukorg */
+button {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    background: #f0bb29;
+
+
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+    border: none;
+}
+
+button:hover {
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+}
+
+/* Alla parfymer */
+.discover_women {
+    position: relative; 
+}
+
+.discover_women > .bigperfume {
+    width: 100%;
+}
+
+p.all_women {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: lato;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  
+  border-left: 20px solid white;
+  position: absolute;
+  top: 68%;
+  left: 65%;
+}
+
+img.lily {
+    width: 38.5%;
+    position: absolute;
+    top: -10%;
+    left: 6%;
+}
+
+img.mint {
+    width: 20%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+}
+
+.arrow-left:hover {
+      border-left: 20px solid #2A4128;
+} 
+
+
+/* Alla parfymer herr */
+.discover_men {
+    position: relative; 
+}
+
+.discover_men > .bigperfume {
+    width: 100%;
+    margin-bottom: 0.5%;
+}
+
+p.all_men {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: lato;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  
+  border-left: 20px solid white;
+  position: absolute;
+  top: 68%;
+  left: 15%;
+}
+
+.arrow-right:hover {
+      border-left: 20px solid #2A4128;
+} 
+/* CSS för ansök om medlemsskap hos Granza 
+Uppdelad i två block, en med bildkollage och en med bara text */
+#register_member {
+    width: 100%;
+    height: 480px;
+    background-color: #D4A80E; 
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+}
+
+.placement-left {
+    width: 40%;
+    padding-left: 10%;
+    flex: 1;
+}
+
+.kollage1 {
+    width: 145%;
+    padding-top: 8%;
+}
+
+.placement-right {
+    width: 50%;
+    color: white;
+    text-align: center;
+    margin-top: 12%;
+    margin-right: 5%;
+    flex: 0 0 60%; 
+}
+
+/* knapp för att ansöka */
+button#ansok {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 13px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 25%;
+}
+
+#ansok:hover { 
+    color: black;
+    background-color: white;
+}
+
+
+/* Kreativ ruta under herrdofter */
+#philosophy {
+    width: 100%;
+    height: 480px;
+    background-color: #000000; 
+    text-align: center;
+    margin-top: 0.5%;
+}
+
+#leafs {
+    width: 15%;
+    margin: 0 auto;
+}
+
+p.thephilosophy {
+    width: 100%;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    padding-top: 13%;
+    margin: 0;
+}
+
+/******* CSS FÖR KATEGORIBILDERNA ************/
+
+.category_wrapper {
+    margin: 20px;
+}
+
+.start-cat-button {
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    color: white;
+    z-index: 234;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.start-cat-button:visited {
+    color: white;
+}
+
+.category_wrapper:hover > .start-cat-button {
+    display: inline-block;
+    outline: 5px solid white;
+}
+
+.category_wrapper img{
+    width: 100%;
+    filter: grayscale(0%);
+    height: 100%;
+}
+
+.category_wrapper img:hover {
+     -webkit-filter: blur(2 px); /* Safari 6.0 - 9.0 */
+    filter: blur(2px);
+}
+
+
+/******* MEDIA QUERIES FÖR SKÄRM < 950px ************/
+
+
+@media all and (max-width:950px){
+    
+        
+    #banner-title {
+        font-size: 35px;
+    }
+    #offer-link > .banner-p {
+    font-size: 16px;
+}
+
+    
+}
+
+
+/******* MEDIA QUERIES FÖR SKÄRM < 800px ************/
+
+
+@media all and (max-width:800px){
+    
+    .product_wrapper:nth-child(4) {
+        display: none;
+    }
+    
+    .start_cat, .start_prod {
+    flex-wrap: wrap;
+}
+        #offer-link > .banner-p {
+    font-size: 14px;
+}
+}
+
+/******* MEDIA QUERIES FÖR SKÄRM < 700px ************/
+
+
+@media all and (max-width:700px){
+    #banner-title {
+        font-size: 28px;
+    }
+    #offer-link > .banner-p {
+    font-size: 13px;
+}
+
+    
+    
+    
+}
+
+/******* MEDIA QUERIES FÖR SKÄRM < 650px ************/
+
+
+@media all and (max-width:650px){
+    
+   .product_wrapper:nth-child(4) {
+        display: inline;
+    }
+    
+    .product_wrapper  {
+    width: 50%;
+    }
+    
+    .category_wrapper {
+        width: 80%;
+    }
+    
+    .startpage_slider {
+        height: 250px;
+    }
+
+    .sliderPic {
+    max-height: 250px;
+    
+    }
+    
+    #offer-link > .banner-p {
+    font-size: 12px;
+}
+    
+    
+
+}
+
+/******* MEDIA QUERIES FÖR SKÄRM < 580px ************/
+
+
+@media all and (max-width:580px){
+    
+    #banner-title {
+        font-size: 18px;
+    }
+    #offer-link > .banner-p {
+        margin-top: 5px;
+        font-size: 11px;
+}
+    .banner-p {
+font-size: 13px;
+}
+    
+    #offer-link {
+    width: 65%;
+}
+    #newsletter-input {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+    #newsletter-h3 {
+        font-size: 23px;
+}
+    
+}
+
+

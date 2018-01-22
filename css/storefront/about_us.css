@@ -1,0 +1,81 @@
+/* Bakgrundsbild med blommor */
+
+img.background_flowers {
+    width: 100%;
+    height: 1600px;
+
+    position: relative;
+}
+
+/* Vit canvas ovanpå bakgrundsbilden */
+
+#about_us_wrapper {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-family: 'Lato';
+    padding-bottom: 10%;
+
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+
+/* Rubrik som hämtas från db */
+
+h1.about_us_headline {
+    text-align: center;
+    padding-top: 5%;
+    font-size: 30px;
+}
+
+/* Löpande text som hämtas från db */
+
+p.about_us_describing_text {
+    color: black;
+    padding-top: 2%;
+    line-height: 23px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#signature {
+    font-family: 'Dr Sugiyama', cursive;
+    font-size: 35px;
+    color: black;
+    margin-top: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: center
+}
+
+
+#collage {
+    position: relative;
+}
+
+/* Bild 1*/
+
+img.about_content_img {
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 10%;
+}
+
+img.about_content_img2 {
+    width: 30%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+img.about_content_img3 {
+    width: 20%;
+    position: absolute;
+    top: 69%;
+    left: 50%;
+
+}
