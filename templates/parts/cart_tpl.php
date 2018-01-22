@@ -10,7 +10,10 @@ require('templates/header.php');
         <h1 class="shoppingbag"> Din varukorg ( steg 2 ) </h1>
     <!--Här är varukorgen -->
     <div id="cart-wrapper">
-        
+        <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>">
+            <div class="goback2"><i class="fa fa-angle-left"></i> Tillbaka </div>
+        </a>
+        <br>
         <!-- Formuläret med varorna -->
         <form method="post" action="?action=updatecart" id="update-cart-form">
      
@@ -54,7 +57,6 @@ require('templates/header.php');
                     <i class="fa fa-trash" aria-hidden="true"></i>
                 </a>
             </div> <!-- /content -->
-
     </div>  
         
             <?php endforeach ?>
@@ -88,5 +90,6 @@ require('templates/header.php');
             value="<?php $cartItemData;?>"> Fortsätt till betalning </button>
          </form>
     </div>
+
 
 </div> <!-- The wrapper -->

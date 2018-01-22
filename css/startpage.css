@@ -90,6 +90,7 @@ h2.headline_gender {
     color: #000000;
     padding: 2%;
     margin: 0px;
+    width: 100%;
 }
 
 /* Namnet på parfymerna */
@@ -121,10 +122,9 @@ p.price {
 
 /* Omsluter produktraden */
 .product_wrapper {
-    margin: 0 auto;
+    margin: 0;
     overflow: hidden;
     justify-content: space-between;
-    margin-right: 0.5%;
 }
 
 /* Tar bort margin på sista bilden*/
@@ -193,7 +193,6 @@ button:hover {
 
 .discover_women > .bigperfume {
     width: 100%;
-    margin-top: 0.5%;
 }
 
 p.all_women {
@@ -224,7 +223,7 @@ p.all_women {
 img.lily {
     width: 38.5%;
     position: absolute;
-    top: -6%;
+    top: -10%;
     left: 6%;
 }
 
@@ -247,7 +246,7 @@ img.mint {
 
 .discover_men > .bigperfume {
     width: 100%;
-    margin-top: 0.5%;
+    margin-bottom: 0.5%;
 }
 
 p.all_men {

@@ -1,66 +1,65 @@
 *   {
     font-family:'Work Sans', sans-serif;
-    }
-/*--Linjerna--*/
+}
+
+/* Linjerna */
 hr  {
     border: 0;
-    height: 3px;
-    width: 40%;
-    background-color: rgba(174,146, 102, 1);
-    margin-bottom: 20px;
-}
-.checkout-wrapper {
-    max-width:800px;
-}
-/*--DIV som omsluter alla formulär--*/
-.checkout-content {
-    margin:0 auto;
-    width:100%;
-}
-
-/*--RUBRIKER LEVERANS UPPGIFTER, BETALNINGSMETOD & FRAKTSÄTT--*/
-h2.site_title {
-    margin-top: 70px;
-    margin-bottom: 30px;
-    color: black;
-    font-size: 2em;
-    text-align: center;
-    text-transform: uppercase;
-	color: #5a4c36;
-}
-
-/*--FORMULÄR TITLAR--*/
-h3.form-header {
+    height: 1px;
+    width: 65%;
+    background-color: #000000;
     margin-top: 60px;
     margin-bottom: 20px;
-    color: black;
-    font-size: 1em;
-    text-align: center;
-    text-transform: uppercase;
-	color: #5a4c36;
 }
 
-/*--DIV FÖR 1A FORMULÄRET--*/
+
+/* Rubriker */
+h2.site_title {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    margin-left: -10%;
+}
+
+#your-info > h2:nth-child(18) {
+    margin-left: -19%;
+
+}
+
+/* Titlar på formulären */
+h3.form-header {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Formulär 1:a leveransadress */
 #your-info {
     margin:0 auto;
     text-align: center;
 }
 
-/*--ALLA INPUTFÄLT--*/
+/* Alla inputfält */
  input[type="text"]{
     margin:0 auto;
-    border: 1px solid #AE9266;
+    border: 1px solid #000000;
 	padding: 10px;
 	font-size: 10px;
 	margin-bottom: 8px;
-	width: 50%;
+	width: 60%;
+    font-size: 0.8em;
 }
 
-/*--LISTA FÖR BETALNINGSMETOD--*/
+/* Listan för betalningsmetod */
 
 .payment-lista > label > input {
     margin-right: 10px;
 }
+
 ul.payment-method {
     margin:0 auto;
     list-style: none;
@@ -68,7 +67,7 @@ ul.payment-method {
     padding: 0;
 }
 
-/*--LISTA FÖR FRAKTSÄTT--*/
+/* Fraktsätt */
 ul.shipping-method{
     margin:0 auto;
     list-style: none;
@@ -90,7 +89,7 @@ ul.shipping-method{
     margin-right: 10px;
 }
 
-/*--ANNAN LEVERANSADRESS--*/
+/* Annan leveransadress */
 #street2-hidden {
 	display: none;
 }
@@ -116,56 +115,56 @@ table, th, td {
 
 td  {
     width: 15%;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 tr {
     height: 40px;
 }
 
+/* Summan i minicart */
 #prod-sum {
-    font-weight: bold;
-    font-size: 22px;
+    font-size: 12px;
 }
 
 #to-pay {
-    font-size: 20px;
-    border: solid #AE9266 1px;
+    font-size: 18px;
     float: right;
-    padding: 10px;
-    text-align: center;
-    margin-right:15%;
+    text-align: right;
     margin-top: 20px;
 }
 
 #moms {
-    font-size: 14px;
+    font-size: 12px;
     clear: both;
     float: right;
-    padding: 10px;
     text-align: right;
-    margin-right:15%;
+    color: grey;
 }
 
 .checkout-img {
     width: 80px;
-    height: 100px;
+    height: 80px;
 }
 
-/*--DIV FÖR ATT OMSLUTA HELA MINI CARTEN--*/
+/* Omsluter hela minicart på aside */
 .mini-cart{
     margin: 0 auto;
     width: 80%;
 }
 
-/*--Lägg order knapp--*/
+body > div.aside_checkout > div > a > div > i {
+    margin-left: 0px;
+}
+
+/* Lägg order */
 
 button.btn-placeorder{
     margin:0 auto;
     margin-top:8%;
     margin-bottom:5%;
 	padding: 15px;
-	background-color: #AE9266;
+	background-color: #000000;
 	border: none;
 	width: 100%;
 	position: relative;
@@ -174,12 +173,45 @@ button.btn-placeorder{
 	text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
-    }
+}
+
+button.btn-placeorder:hover {
+    background-color: gray;
+}
 
 #last-hr{
     margin-top: 60px;
     margin-bottom:0;
 }
+
+hr#minicart {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Aside med mini checkout */
+.aside_checkout {
+    float: left;
+    width: 24%;
+    height: auto;
+    background-color: #ffffff;
+    display: inline-block;
+    margin-right: 7%;
+    margin-left: 2%;
+    margin-top: 2%;
+    padding: 3%;
+}
+
+.goback3 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 13px;
+    float: right;
+}
+
+
+
 
 
 
@@ -280,10 +312,7 @@ margin-right: 40px;
     margin-left: 25%;
 
 }
-.checkout-img {
-    width: 60px;
-    height: 80px;
-}
+
     #prod-sum {
 
     font-size: 13px;

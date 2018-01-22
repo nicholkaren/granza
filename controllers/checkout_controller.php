@@ -3,8 +3,6 @@ $pagecontent = new stdClass;
 $pagecontent->title = "Checkout";
 include('meny_controller.php');
 //include('includes/token.php');
-
-
 //getToken();
 
 
@@ -16,7 +14,6 @@ include('meny_controller.php');
             $sql = "SELECT * FROM product, product_img 
                     WHERE product.product_id = product_img.product_id AND product.product_id 
                     IN ($idsInCart)";
-
 
             $stmt = $pdo->prepare($sql);
             $stmt->execute();
@@ -38,7 +35,6 @@ include('meny_controller.php');
             $totalSum += $currprod['sum'];
             $momsSats += $currprod['moms'];
 
-
             $pagecontent->products[] = $currprod; 
 
             $cart['cartItems'][$product['product_id']]=$currprod;
@@ -59,7 +55,6 @@ while ($product = $stmt->fetch(PDO::FETCH_ASSOC) ) {
         $currprod['moms'] = $currprod['sum'] * 0.2;
         $totalSum += $currprod['sum'];
         $momsSats += $currprod['moms'];
-        
         
 		$pagecontent->products[] = $currprod; 
         
