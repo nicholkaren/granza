@@ -80,6 +80,10 @@ a:visited {
     color: #ffffff;
 }
 
+#shop_bag > i {
+    color:white;
+}
+
 .menu {
     width: 20%;
     height: 100%;

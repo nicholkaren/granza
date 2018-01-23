@@ -259,7 +259,7 @@ img.mint {
 
 .discover_men > .bigperfume {
     width: 100%;
-    margin-bottom: 0.5%;
+    margin-bottom: 0.3%;
 }
 
 p.all_men {
@@ -299,6 +299,7 @@ Uppdelad i två block, en med bildkollage och en med bara text */
     display: flex;
     padding-top: 2%;
     padding-bottom: 2%;
+    margin-top: 0.3%;
 
 }
 
@@ -348,8 +349,8 @@ button#ansok {
     height: 480px;
     background-color: #000000; 
     text-align: center;
-    margin-top: 0.5%;
     margin-bottom: 10%;
+
 }
 
 #leafs {
@@ -360,9 +361,9 @@ button#ansok {
 p.thephilosophy {
     width: 100%;
     color: white;
-    font-size: 23px;
+    font-size: 40px;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Dr Sugiyama', cursive;
     font-weight: 400;
     letter-spacing: 1.5px;
     padding-top: 13%;

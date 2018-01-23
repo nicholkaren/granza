@@ -7,6 +7,8 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Work+Sans:300,400" rel="stylesheet">
 <script src='includes/js.js'></script>
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
+
 
 
    <!-- Liten reklambanner under headern -->
