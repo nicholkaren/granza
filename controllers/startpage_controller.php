@@ -3,24 +3,6 @@ $pagecontent = new stdClass;
 include('meny_controller.php');
 $pagecontent->title = "startpagecontrollerna körs";
 
-/**************** HÄMTAR ERBJUDANDE ***************/
-
-$sql = "SELECT * FROM granza.pages WHERE pages_id = 2";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
-
-$result = $stmt->fetch();
-
-
-if (count($result) < 1){
-    $pagecontent->title = 'Inget hittades';
-} else {
-    
-    $pagecontent->offer_title = $result['title'];
-    $pagecontent->content1 = $result['content1'];
-    $pagecontent->content2 = $result['content2'];
-    $pagecontent->offer_img_url = $result['head_img_url'];
-}
 
 /**************** HÄMTAR 4 Damparfymer  ***************/
 $sql = "SELECT * FROM granza.product, granza.product_img WHERE 
@@ -54,7 +36,7 @@ if (is_null($theLastProduct)) {
 	$pagecontent->title = "Startsida";
 }
 
-/**************** HÄMTAR 4 SOLGLASÖGON ***************/
+/**************** Hämtar 4 herrparfymer ***************/
 $sql2 = "SELECT * FROM granza.product, granza.product_img WHERE 
         product.product_id = product_img.product_id
         AND product.category_id = 2
@@ -81,7 +63,7 @@ while ($product = $stmt->fetch(PDO::FETCH_ASSOC) ) {
 
 
 
-/**************** HÄMTAR 4 DOFTLJUS ***************/
+/**************** Hämtar 4 dofter
 $sql3 = "SELECT * FROM granza.product, granza.product_img WHERE 
         product.product_id = product_img.product_id
         AND product.category_id = 3
@@ -105,6 +87,6 @@ while ($product = $stmt->fetch(PDO::FETCH_ASSOC) ) {
         $pagecontent3->start['product_id_3'] = $theLastProduct2['product_id'];
 		$pagecontent3->start['img_url_3'] = $theLastProduct2['img_url'];
 		$pagecontent3->start['price_3'] = $theLastProduct2['price'];
-		$pagecontent3->start['title_3'] = $theLastProduct2['title'];
+		$pagecontent3->start['title_3'] = $theLastProduct2['title'];***************/
 
 require('templates/storefront_tpl/startpage_tpl.php');
