@@ -33,6 +33,7 @@
   width: 80%;
   display: flex;
   margin-top: 5%;
+  position: relative;
 }
 
 .container > div > img {
@@ -46,8 +47,3 @@ img:last-child {
 }
 
 
-p.one, p.two, p.three {
-  color: black;
-  text-align: center;
-  font-size: 25px;
-}
