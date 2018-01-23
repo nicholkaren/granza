@@ -53,9 +53,13 @@ p.granza-foooter-links {
 }
 
 p.granza-foooter-links a:hover {
-       color: #c17900; 
+       color: grey; 
 }
 
+span.who {
+    text-transform: uppercase;
+    font-weight: 700;
+}
 #copyright {
     color: white;
     font-size: 10px;

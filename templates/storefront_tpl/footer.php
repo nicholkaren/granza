@@ -10,6 +10,7 @@
     <!-- 1:a blocket med beskrivande text -->
     <div class="square eq">
         <p class="granza-foooter-text">
+        <span class="who">Vilka är vi?</span><br><br>
         Granza Perfume is a Italian luxury perfume company, 
         with craftsmanship at its heart. With a passion for 
         transforming the expected into the extraordinary, 
