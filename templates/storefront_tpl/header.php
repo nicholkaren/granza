@@ -9,8 +9,10 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
+
 <body>
 <!--HEADER-->
 <header>
@@ -42,6 +44,7 @@
         <a href="?action=login">Logga in</a>
         <a href="?action=addtocart">
             <span id="shop_bag">
+                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
                 <!-- SKRIVER UT ANTALET PRODUKTER I VARUKORGEN -->
               <?php if(isset($_SESSION['cart-total']) && $_SESSION['cart-total'] > 0){
                 printf ('<div id="qty-cart"><span id="qty">%s</span></div>', $_SESSION['cart-total']);

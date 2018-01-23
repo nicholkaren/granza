@@ -1,5 +1,6 @@
 <!--FOOTER-->
 </body>
+<script src="app.js"></script>
 
 <footer>
 

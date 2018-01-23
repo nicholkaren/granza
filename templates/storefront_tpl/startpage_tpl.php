@@ -20,17 +20,18 @@
         <div class="startpage_bigimage">
             <img class="topimage" src="img/slider/big_img.jpg">  
         </div>
+        <!-- Knapp för quiz -->
         <a href="?action=fragrancequiz">
             <button id="create"> Begin fragrance profiling </button>
         </a>
-        
-        
+
+        <!-- MAIN CONTENT -->
         <div class="startpage">
-        <!-- FÖRSTA PRODUKTRADEN MED DAMDOFTER -->
+        <!-- Första produktraden med damdofter -->
         <a href="?action=category&id=1"> <h2 class="headline_gender"> Damdofter | Profumi donna </h2></a>
         
-        <!-- Produkter visas -->
-        <div class="main_wrapper">
+        <!-- Produkter -->
+        <div class="main_wrapper_startpage">
             <?php 
                 foreach ($pagecontent->products as $currprod) {
                     echo '<div class="product_wrapper">';
@@ -53,24 +54,26 @@
                 <p class="all_women"> Discover all perfumes <br>for donna </p>
             </div> 
             </a>
-        </div>
-
-        <!--Ansök om medlemsskap-->
-        <div id="register_member">
-            <div class="placement-left">
-                <img class="kollage1" src="img/doftnoter/kollage1.png">
+            <!-- BLI MEDLEM -->
+            <div id="register_member">
+                <div class="placement-left">
+                    <img class="kollage1" src="img/doftnoter/kollage1.png">
+                </div>
+                <div class="placement-right">
+                        <p> Bli medlem i Granza och få tillgång till exklusiva erbjudanden! <br> 
+                            Prenumerera på nyhetsbrevet och ta del av spännande resereportage <br> om när vi besöker våra parfymerier i Italien. </p>
+                        <a href="?action=login"><button id="ansok"> Ansök här! </button></a>
+                </div>
             </div>
-            <div class="placement-right">
-                    <p> Bli medlem i Granza och få tillgång till exklusiva erbjudanden.<br> Dessutom får du som medlem fri frakt på din beställning. </p>
 
-                    <button id="ansok"> Ansök här! </button>
-            </div>
-        </div>
+        </div> <!-- / Första main -->
+
+        
+            
             <!-- PRODUKTRAD MED HERRDOFTER -->
             <a href="?action=category&id=2"><h2 class="headline_gender">Herrdofter | Profumo Oumo</h2></a>
-                    <div class="main_wrapper">
-
-                
+            
+            <div class="main_wrapper_startpage">   
             <?php 
                 foreach ($pagecontent->products as $currprod) {
                     echo '<div class="product_wrapper">';
@@ -97,9 +100,6 @@
                 <p class="thephilosophy"> "In the victorian times, everyone was well versed in the language of perfume. <br> When you gifted a bouquet or a perfume, you were telling a story, or sending a message"
                 <br> - Fransesco Granza</p>
         </div> 
-
-        
-
         </div> <!-- main wrapper -->
     </div> <!-- End of startpage div -->
 </div>
