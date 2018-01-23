@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link type="text/css" rel="stylesheet" href="css/storefront/startpage.css">
 <link type="text/css" rel="stylesheet" href="css/storefront/category.css">
-
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Work+Sans:300,400" rel="stylesheet">
 <script src='includes/js.js'></script>
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
@@ -21,7 +20,7 @@
         <div class="startpage_bigimage">
             <img class="topimage" src="img/slider/big_img.jpg">  
         </div>
-        <a href="#">
+        <a href="?action=fragrancequiz">
             <button id="create"> Begin fragrance profiling </button>
         </a>
         

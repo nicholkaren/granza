@@ -77,7 +77,9 @@ $routes = array(
 'orders' => 'admin_orders_controller.php',
 'searchOrder' => 'admin_orders_controller.php',
 'singleOrder' => 'admin_orders_controller.php',
-'updateOrderStatus' => 'admin_orders_controller.php'
+'updateOrderStatus' => 'admin_orders_controller.php',
+
+'fragrancequiz' => 'fragrance_quiz_controller.php'
 );
 
 if(isset($_GET['action'])){
