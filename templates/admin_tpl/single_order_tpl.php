@@ -1,5 +1,5 @@
-<?php require_once('templates/admin_header.php');?>
-<link type="text/css" rel="stylesheet" href="css/admin_list.css">
+<?php require_once('templates/admin_tpl/admin_header.php');?>
+<link type="text/css" rel="stylesheet" href="css/admin/admin_list.css">
 
 <!--BAKGRUNDBILD-->
 <img class="background" src="img/products/big/marble-wallpaper-white.jpg">

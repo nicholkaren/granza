@@ -29,5 +29,5 @@ foreach ($result as $pages) {
 
 
 
-include('templates/edit_page_tpl.php');
+include('templates/admin_tpl/edit_page_tpl.php');
 ?>

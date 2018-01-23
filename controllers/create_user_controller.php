@@ -164,4 +164,4 @@ $sql = "INSERT INTO person (fname, lname, street1, street2, zip, city, phone, em
           
                     
 
-        require('templates/create_new_user_tpl.php');
+        require('templates/admin_tpl/create_new_user_tpl.php');

@@ -1,8 +1,7 @@
-<?php require_once('templates/header.php');
-      require_once('includes/admin_menu.php');
+<?php require_once('templates/storefront_tpl/header.php');
 ?> 
 
-<link type="text/css" rel="stylesheet" href="css/create_new_user.css">
+<link type="text/css" rel="stylesheet" href="css/admin/create_new_user.css">
 
 <!-- SKAPA KONTO BÖRJAR HÄR -->
 <div class="login">
@@ -62,4 +61,3 @@
     </div>  
 </div>
 
-<?php require_once('templates/footer.php');

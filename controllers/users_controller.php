@@ -1,5 +1,5 @@
 <?php
- require('templates/admin_header.php');
+ require('templates/admin_tpl/admin_header.php');
 $pagecontent = new stdClass;
 $pagecontent->title = 'Användare';
 include('meny_controller.php');

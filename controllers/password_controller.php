@@ -77,4 +77,4 @@ getToken();
 
 
 
-require('templates/change_password_tpl.php');
+require('templates/admin_tpl/change_password_tpl.php');

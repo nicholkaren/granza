@@ -1,7 +1,7 @@
 <!--Admin visa alla kategorier-->
-<?php require_once('templates/admin_header.php');?>
-<?php require_once('includes/admin_sidemenu_cat.php');?>
-<link type="text/css" href="css/admin_list.css" rel="stylesheet">
+<?php require_once('templates/admin_tpl/admin_header.php');?>
+<?php require_once('templates/admin_tpl/sidemenu_category_tpl.php');?>
+<link type="text/css" href="css/admin/admin_list.css" rel="stylesheet">
 
 <!--BAKGRUNDBILD-->
 <img class="background" src="img/products/big/marble-wallpaper-white.jpg">

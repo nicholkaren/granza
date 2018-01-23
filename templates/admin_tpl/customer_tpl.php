@@ -1,13 +1,13 @@
-<?php require_once('templates/header.php');
+<?php require_once('templates/admin_tpl/admin_header.php');
   //require('classes/Customer_class.php');
 ?>
-<link type="text/css" rel="stylesheet" href="css/customer_profile.css">
-<!--INLOGGAD MEMBER--->
+<link type="text/css" rel="stylesheet" href="css/admin/customer_profile.css">
+<!--INLOGGAD MEMBER-->
 <div class="my_profile_member">
     
-    <!--SIDEBAR MENU--->
+    <!--SIDEBAR MENU-->
     <aside>
-        <span></span> <!--::before element = profil_icon--->
+        <span></span> <!--::before element = profil_icon-->
         <h3>MIN PROFIL</h3>
         <ul>
             <li><a href="?action=password"><button type="button" class="change_password">ÄNDRA LÖSENORD</button></li>
@@ -17,10 +17,10 @@
     </aside>
    
     <main>
-        <!--VÄLKOMMEN--->
+        <!--VÄLKOMMEN-->
        <h1><?php echo "Välkommen ".$result['fname'];?></h1>
        
-        <!--MINA SENASTE ORDRAR--->
+        <!--MINA SENASTE ORDRAR-->
         <fieldset>
             <legend>MINA SENASTE ORDRAR</legend>
                 <table class="orders_table">
@@ -45,7 +45,7 @@
                 </table>
         </fieldset>
 
-        <!--MINA UPPGIFTER--->
+        <!--MINA UPPGIFTER-->
         <form action="?action=saveProfileChanges" method="post" class="myForm">
             <fieldset>
                 <legend>MINA UPPGIFTER</legend>
@@ -62,7 +62,5 @@
         </form>
     </main>
     <div class="fix"></div>
-</div>
-<?php require_once('templates/footer.php');?>
-    
+</div>    
 

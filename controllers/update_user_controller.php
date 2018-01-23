@@ -2,11 +2,11 @@
 $pagecontent = new stdClass;
 $pagecontent->title= "Redigera användare";
 $pagecontent->h2 = "";
-require('templates/header.php');
+require('templates/admin_tpl/admin_header.php');
 include('meny_controller.php');
 require_once('classes/Customer_class.php');
 include('includes/validations.php');
-echo "errors :";
+echo " Errors ";
 $errors = array();
 
 //KOLLA OM KNAPPEN DELETE TRYCKTS. KÖR ISF DEN HÄR FÖR ATT TA BORT ANVÄNDARE

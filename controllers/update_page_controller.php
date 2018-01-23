@@ -112,4 +112,4 @@ $upload_dir = 'uploads/pages';
 }
 
 
-require('templates/edit_page_tpl.php');
+require('templates/admin_tpl/edit_page_tpl.php');

@@ -41,7 +41,6 @@ li.side_menu {
     padding: 22px;
     transition: all 0.15s linear;
     cursor: pointer;
-    height: 6px;
     color: black;
 }
 

@@ -45,5 +45,5 @@ if (count($result)> 1){
 }
 
 
-require('templates/edit_cat_tpl.php');
+require('templates/admin_tpl/edit_category_tpl.php');
 ?>

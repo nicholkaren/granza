@@ -1,7 +1,7 @@
-<?php require_once('templates/admin_header.php');?>
-<?php require_once('includes/admin_sidemenu_prod.php');?>
+<?php require_once('templates/admin_tpl/admin_header.php');?>
+<?php require_once('templates/admin_tpl/sidemenu_product_tpl.php');?>
 
-<link type="text/css" href="css/edit_product.css" rel="stylesheet">
+<link type="text/css" href="css/admin/edit_product.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!--BAKGRUNDBILD-->

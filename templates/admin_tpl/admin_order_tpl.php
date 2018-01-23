@@ -1,7 +1,7 @@
-<!--Visar alla ordrar--->
-<?php require_once('templates/admin_header.php');?>
-<link type="text/css" rel="stylesheet" href="css/admin_list.css">
-<link type="text/css" rel="stylesheet" href="css/admin_order_list.css">
+<!--Visar alla ordrar-->
+<?php require_once('templates/admin_tpl/admin_header.php');?>
+<link type="text/css" rel="stylesheet" href="css/admin/admin_list.css">
+<link type="text/css" rel="stylesheet" href="css/admin/admin_order_list.css">
 <script src='includes/js.js'></script>
 
 <!--BAKGRUNDBILD-->

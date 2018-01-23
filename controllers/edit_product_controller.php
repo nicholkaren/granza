@@ -62,5 +62,5 @@ if (count($result)> 1){
 }
 }
 
-require('templates/edit_product_tpl.php');
+require('templates/admin_tpl/edit_product_tpl.php');
 ?>

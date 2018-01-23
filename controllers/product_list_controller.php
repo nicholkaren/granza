@@ -41,4 +41,4 @@ if (is_null($theLastProduct)) {
 	$pagecontent->title = $pagecontent->title = "Produkter";
 }
 
-include('templates/product_list_tpl.php');
+include('templates/admin_tpl/product_list_tpl.php');

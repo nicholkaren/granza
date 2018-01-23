@@ -98,4 +98,4 @@ else if (strlen($_FILES['file1']['name']) > 1 ){
        $pagecontent->error = 'Något blev fel: <br>'.$message;
     }   
 }
-require('templates/edit_product_tpl.php');
+require('templates/admin_tpl/edit_product_tpl.php');

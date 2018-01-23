@@ -1,4 +1,4 @@
-<?php
+<?php //HÄR SKRIVER DEN UT DET ENGELSKA FELMEDDELANDET NÄR DU KLICKAR PÅ UPPDATERA I ADMIN, REDIGERA ANVÄNDARE
 /*echo 'Logiken för att inserta i databasen profil ändringar.';
 echo "<pre>";
 var_dump($_POST);

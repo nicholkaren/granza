@@ -1,4 +1,4 @@
-<link type="text/css" rel="stylesheet" href="css/admin_list.css">
+<link type="text/css" rel="stylesheet" href="css/admin/admin_list.css">
 
 
 

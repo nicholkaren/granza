@@ -32,4 +32,4 @@ while ($category = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
 
 
-include('templates/categories_list_tpl.php');
+include('templates/admin_tpl/categories_list_tpl.php');

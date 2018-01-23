@@ -1,7 +1,7 @@
 <!--STARTSIDA för admin-->
-<?php require_once('templates/admin_header.php');?>
+<?php require_once('templates/admin_tpl/admin_header.php');?>
 <head>
-<link type="text/css" rel="stylesheet" href="css/admin_start.css">
+<link type="text/css" rel="stylesheet" href="css/admin/admin_startpage.css">
 </head>
 
 <body>

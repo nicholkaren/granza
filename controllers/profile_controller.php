@@ -29,7 +29,7 @@ getToken();
 
             $pagecontent->title = "Benvenuto ".$person->getUserInfo('fname')."!";
 
-            require('templates/parts/admin_start.php');
+            require('templates/admin_tpl/admin_startpage.php');
             
             $id = $person->getId();
             $admin = new Admin();
@@ -76,7 +76,7 @@ getToken();
                     $pagecontent->summa = ""; 
             }
 
-            require('templates/customer_tpl.php');
+            require('templates/admin_tpl/customer_tpl.php'); //Denna jäveln behövde ligga i admin_tpl för att routa rätt
         }
     
    } else {

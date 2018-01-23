@@ -23,5 +23,5 @@ if (isset($_POST['delete'])){
 
 }
 
-require_once('templates/delete_profile_tpl.php');
+require_once('templates/admin_tpl/delete_profile_tpl.php');
 

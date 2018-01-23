@@ -23,5 +23,5 @@ foreach ($result as $category) {
 	$pagecontent->category[] = $currcat;
 }
 
-require('templates/add_product_tpl.php');
+require('templates/admin_tpl/addproduct_tpl.php');
 ?>

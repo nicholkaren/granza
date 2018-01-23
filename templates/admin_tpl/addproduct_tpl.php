@@ -1,8 +1,8 @@
 <!--ADMIN SKAPA PRODUKT SIDA-->
-<?php require_once('templates/admin_header.php');?>
-<?php require_once('includes/admin_sidemenu_prod.php');?>
+<?php require_once('templates/admin_tpl/admin_header.php');?>
+<?php require_once('templates/admin_tpl/sidemenu_product_tpl.php');?>
 
-<link type="text/css" href="css/add_product.css" rel="stylesheet">
+<link type="text/css" href="css/admin/add_product.css" rel="stylesheet">
 
 <!--Länk till ikoner-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

@@ -1,8 +1,7 @@
-<?php require_once('templates/header.php');?>
-<?php require_once('includes/admin_menu.php');?>
+<?php require_once('templates/admin_tpl/admin_header.php');?>
 
 
-<link type="text/css" href="css/change_password.css" rel="stylesheet"> 
+<link type="text/css" href="css/admin/change_password.css" rel="stylesheet"> 
 
                 <!--BYT PASSWORD BÖRJAR HÄR-->
  <div class="change_password">
@@ -38,5 +37,3 @@
         <br>
     </form>
 </div>
-
-<?php require_once('templates/footer.php');?>

@@ -69,7 +69,7 @@ if (($_GET['action'] === 'orders') ||($_GET['action'] === 'searchOrder') ){
             $pagecontent->Status = $orderRow['order_status_id'];
         }  
 
-    require('templates/admin_order_tpl.php');
+    require('templates/admin_tpl/admin_order_tpl.php');
 
 }
 //hämtar orderinformation om specifik order.
@@ -105,7 +105,7 @@ if ($_GET['action'] === 'singleOrder'){
             $pagecontent->Total = $orderItemRow['price'] * $orderItemRow['quantity']; 
     
     
-    require('templates/admin_singleOrder_tpl.php'); 
+    require('templates/admin_tpl/single_order_tpl.php'); 
     
      $sql1 = "SELECT  * FROM
                     (SELECT created_at as datum, orders.order_id, title as status

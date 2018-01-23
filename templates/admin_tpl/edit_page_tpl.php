@@ -1,6 +1,6 @@
-<?php require_once('templates/header.php');?>
-<?php require_once('includes/admin_menu.php');?>
-<link type="text/css" href="css/add_product.css" rel="stylesheet"> 
+<?php require_once('templates/admin_tpl/admin_header.php');?>
+
+<link type="text/css" href="css/admin/page_editor.css" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
 <h1 id="edit-page-h1"><?php echo strtoupper($pagecontent->title); ?></h1>
@@ -38,10 +38,6 @@
       <!-- FORM TOKEN-->
     <?php echo getTokenField(); ?>
     
-    
     <button type="submit" id="save-page-button" name="save-page">Spara</button>
 
-    
 </form>
-
-<?php require_once('templates/footer.php');?>

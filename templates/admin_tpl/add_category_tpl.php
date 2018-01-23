@@ -1,6 +1,6 @@
-<?php require_once('templates/admin_header.php');?>
-<?php require_once('includes/admin_sidemenu_cat.php');?>
-<link type="text/css" href="css/add_category.css" rel="stylesheet">
+<?php require_once('templates/admin_tpl/admin_header.php');?>
+<?php require_once('templates/admin_tpl/sidemenu_category_tpl.php');?>
+<link type="text/css" href="css/admin/add_category.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--BAKGRUNDBILD-->
 <img class="background" src="img/products/big/marble-wallpaper-white.jpg">
