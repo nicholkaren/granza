@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  font-family: 'Playfair display', Serif; 
+}
+
+.white-canvas {
+  background-color: white;
+  max-width: 80%;
+  height: 600px;
+
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  color: white;
+}
+
+
+.thequiz > h2 {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  
+  padding-top: 6%;
+  margin-bottom: 3%;
+  color: black;
+
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  margin-top: 5%;
+}
+
+.container > div > img {
+  width: 440px;
+  height: 320px;
+  padding-right: 2.5%;
+}
+
+img:last-child {
+  padding-right: 0%;
+}
+
+
+p.one, p.two, p.three {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
