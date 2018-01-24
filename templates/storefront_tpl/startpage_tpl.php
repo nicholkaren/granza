@@ -20,7 +20,9 @@
 
         <!-- TOPPBILD -->
         <div class="startpage_bigimage">
-            <img class="topimage" src="img/slider/big_img.jpg">  
+            <img class="topimage" src="img/slider/big_img.jpg">            
+            <img class="topimage2" src="img/inspo/big_img_mobile.jpg">  
+ 
         </div>
         <!-- Knapp för quiz -->
         <a href="?action=fragrancequiz">
@@ -50,6 +52,8 @@
             <a href="?action=category&id=1">
             <div class="discover_women">
                 <img class="bigperfume" src="img/products/big/women_all.jpg">
+                <img class="bigperfume2" src="img/products/big/women_all_mobile.jpg">
+
                 <p class="all_women"> Se alla parfymer <br>för donna </p>
                 <div class="arrow-left"></div>
             </div> 
@@ -89,6 +93,8 @@
             <a href="?action=category&id=2">
             <div class="discover_men">
                 <img class="bigperfume" src="img/products/big/tabacco.jpg">
+                <img class="bigperfume2" src="img/products/big/tabacco_mobile.jpg">
+                
                 <p class="all_men"> Se alla dofter <br>för uomo </p>
                 <div class="arrow-right"></div>
             </div> 
