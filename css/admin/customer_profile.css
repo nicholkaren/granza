@@ -1,152 +1,172 @@
-aside{
-    float:left;
-    width:25%;
-    display:block;
-    margin-top: 75px;
+* {
+    font-family: 'Lato', sans-serif;
 }
-aside h3{
-   text-align: center;
-    font-size: 1.6em;
+
+/* Bakgrundsbild med blommor */
+
+img.background {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    z-index: -1;
 }
-main{
-    float:right;
-    width:70%;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-li {
+
+/*Titel*/
+
+#welcome-costumer {
+    position: absolute;
+    top: -15%;
+    right: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 10px;
     text-align: center;
-}
-li a {
-    display: block;
-    color: #000;
-    /*padding: 8px 16px;*/
-    text-decoration: none;
-}
-/*li a:hover {
-    background-color: #f0e8db;
-    color: gray;
-}*/
-button{
-    width:200px;
-    height: auto;
-    min-height: 60px;
-    margin: 10px 0;
-    background-color: #AE9266;
     color: white;
 }
-button:hover{
-    background-color: #f0e8db;
-    color: #AE9266;
-}
-h1 {
-	text-align: center;
-	font-size: 2.5em;
-	padding-top: 25px;
-	text-align: center;
-	text-transform: uppercase;
-	color: #5a4c36;
-}
-.myForm{
-    display:block;
-    margin-top: 10px;
-   /* background-color: bisque;
-     margin:0 auto;
-    border: 1px solid #AE9266;
-	padding: 5px;
-	/*font-size: 10px;
-	margin-bottom: 5px;	
-	width: 90%;*/
-}
-input{
-    display: block;
-    margin:0 auto;
-    border: 1px solid #AE9266;
-	padding: 5px;
-	margin-bottom: 5px;	
-	width: 75%;
-}
-.fix{
-    clear:both;
+
+/*vit div*/
+
+div.myprofile {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    background-color: white;
+    height: 600px;
 }
 
-.tack_bye{
-    font-size: 1.6em;
-    text-align: center;
-    
-}
-#tack_bild{
-     width:50%;
-     height:45%
+/*
+.myorders {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: auto;
+    margin-left: 1%;
+    width: 40%;
+    background-color: white;
+    height: 550px;
+
+}*/
+
+/*Alla inputfält*/
+
+form {
+    display: inline-block;
+    float: left;
+    width: 50%;
 }
 
-.orders_table {
-    border-collapse: collapse;
+input {
+    padding: 12px;
+    width: 410px;
+    margin-top: 15px;
+    outline: none;
+    border: 1px solid #000000;
+
+}
+
+h3 {
+    margin-bottom: 2%;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/*TEXTRUTA*/
+
+textarea {
+    margin-top: 15px;
+    border: solid 2px black;
+    padding: 10px;
     width: 100%;
 }
 
-.orders_table th, td {
-    text-align: left;
-    padding: 8px;
-}
-.orders_table th{
-    background-color: #AE9266;
-    color: white;
-}
-
-.orders_table tr:nth-child(even){
-    background-color: #f2f2f2;
-}
-#save_changes {
-    width:25%;
-    margin:auto;
+label {
+    margin-top: 2%;
+    margin-bottom: -3%;
+    font-size: 13px;
+    float: left;
 }
 
 
 
-/***** CSS FÖR RADERA KONTO TPL ****/
-
-.confirm_deleteForm {
-    margin: 0 auto;
-    max-width: 500px;
-    font-family: 'Work sans', sans-serif;
-    
+thead {
+    background-color: black;
+    overflow: hidden;
+    font-size: 14px;
 }
 
-.confirm_deleteForm > form {
+table {
+    width: 49%;
+    border-collapse: collapse;
+    font-size: 12px;
+    border: 1px black solid;
+}
+
+
+th,
+td {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+td {
+    color: black;
     text-align: center;
-    padding: 10px;
 }
 
-.Confirm-delete {
-    font-size: 16px;
+tr:hover {
+    background-color: lightgray;
 }
 
-.buttons {
+/*Spara knapp*/
+
+button.btn_save {
+    color: black;
+    font-size: 0.6em;
+
     display: block;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    width: 110px;
+    padding: 8px;
+    border: solid black 1px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    -moz-box-shadow: 0 0 35px #dcdcdc;
+    -webkit-box-shadow: 0 0 35px #dcdcdc;
+    box-shadow: 0 0 6px #dcdcdc;
+    transition: all 0.20s linear;
 }
 
-.confirm_deleteForm .btn-danger{
-    background-color: red;
-    max-width: 130px;
-    display: inline;
-    border: none;
-    font-size: 16px;
+button.btn_save:hover {
+    text-decoration: none;
+    background-color: white;
     color: white;
-    cursor: pointer;
-    
+    background-color: black;
+    border: black 1px solid;
 }
-.confirm_deleteForm .btn-succes{
-    background-color: green;
-    max-width: 130px;
-    display: inline;
-    border: none;
-    font-size: 16px;
-    color: white;
+
+a#info {
+    color: black;
     cursor: pointer;
+    text-decoration: underline;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 7%;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+#logut {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
 }
