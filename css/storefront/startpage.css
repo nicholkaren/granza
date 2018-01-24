@@ -210,8 +210,8 @@ button:hover {
 
 p.all_women {
     position: absolute;
-    top: 50%;
-    left: 65%;
+    top: 43%;
+    left: 15%;
 
     color: white;
     text-transform: uppercase;
@@ -229,8 +229,8 @@ p.all_women {
   
   border-left: 20px solid white;
   position: absolute;
-  top: 68%;
-  left: 65%;
+  top: 55%;
+  left: 15%;
 }
 
 img.lily {
@@ -264,8 +264,8 @@ img.mint {
 
 p.all_men {
     position: absolute;
-    top: 50%;
-    left: 15%;
+    top: 44.5%;
+    left: 59%;
 
     color: white;
     text-transform: uppercase;
@@ -283,8 +283,8 @@ p.all_men {
   
   border-left: 20px solid white;
   position: absolute;
-  top: 68%;
-  left: 15%;
+  top: 57%;
+  left: 59.2%;
 }
 
 .arrow-right:hover {
@@ -305,23 +305,23 @@ Uppdelad i två block, en med bildkollage och en med bara text */
 
 .placement-left {
     width: 40%;
-    padding-left: 10%;
+    padding-left: 3%;
     flex: 1;
 }
 
 .kollage1 {
-    width: 145%;
-    padding-top: 8%;
+    width: 200%;
+    margin-top: 20%;
 }
 
 .placement-right {
     width: 50%;
     color: white;
     text-align: center;
-    margin-top: 12%;
-    margin-right: 4%;
+    margin-top: 10%;
+    margin-right: 21%;
     flex: 0 0 60%; 
-    font-size: 19px;
+    font-size: 25px;
 }
 
 /* knapp för att ansöka */

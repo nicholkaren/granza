@@ -86,14 +86,14 @@
       
       <hr>
 
-      <!-- Block med doftfamiljs-hjul -->
+      <!-- Block med doftfamiljs-hjul
       <div id="block">
           <img class="scent-wheel" src="img/products/big/scent_wheel.png"> 
-      </div>
+      </div>-->
 
       <!--Liknande produkter 4 st -->
       <div class="product_upsale">
-          <h2 class="upsale_title"> Parfymer i samma doftfamilj </h2>
+          <h2 class="upsale_title"> Du kanske också gillar </h2>
       </div>
       
       <div class="product_upsale">
@@ -106,7 +106,7 @@
               echo '</div></a>';
           } ?>
       </div>   
-        <div class="before_footer">hej</div>
+        <div class="before_footer"></div>
                                  
  
 </div>          

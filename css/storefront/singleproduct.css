@@ -52,7 +52,9 @@ a.button_2:hover {
 .popup h2 {
   margin-top: 0;
   color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+  font-family: 'Lato';
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .popup .close {
@@ -86,6 +88,7 @@ table {
     width: 80%;
     margin: 0 auto;
     margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 td, th {
@@ -315,6 +318,7 @@ hr {
     width: 70%;
     margin-left:15%;
     margin-right: 15%;
+    padding-top: 5%;
 }
 
 h2, h3, h4, p {
@@ -325,7 +329,8 @@ h2, h3, h4, p {
 }
 
 .upsale_title {
-    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     text-transform: uppercase;
 }
 
@@ -410,8 +415,8 @@ button:hover {
 /* Block innan footern */
 .before_footer {
   width: 100%;
-  height: 400px;
-  background-color: #001E00;
+  height: 130px;
+  background-color: #ffffff;
   margin-top: 0.5%;
 
 }
