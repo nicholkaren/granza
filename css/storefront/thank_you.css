@@ -39,14 +39,26 @@ img.background_flowers {
 }
 
 
-@media all and (min-width:700px){
-    
+/* Mobilanpassning för iphone 6 plus */
+
+@media only screen and (max-width: 500px) { 
+
     #thanks-h1 {
+        margin: 0 auto;
+        text-align: center;
+        width: 90%;
+        text-transform: uppercase;
+        font-size: 21px;
+        margin-top: 59px;
+    }
 
-    font-size: 34px;
+    img.background_flowers {
+        max-width: 1000%;
+        height: 636px;
+    }
 
-}
-    
-    
-    
+    #thanks-p {
+        margin-top: 18px;
+        font-size: 19px;
+    }
 }
