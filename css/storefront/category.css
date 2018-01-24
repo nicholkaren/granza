@@ -20,7 +20,7 @@ h1.bigheadline_category {
 	padding-bottom: 20px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #5a5752;
+	color: #000000;
 	font-family: 'Lato';
 }
 
@@ -109,3 +109,30 @@ button {
     transform: scale(1.2);
     z-index: 1;
 }*/
+
+
+
+
+@media only screen and (max-width: 500px) { 
+
+
+    .main_wrapper_startpage {
+        flex-direction: column;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .product_wrapper {
+        width: 100%;
+    }
+
+    p.description {
+        font-size: 15px;
+        padding: 2% 9% 3% 9%;
+    }
+
+    .cat_img {
+        height: 557px;
+    }
+
+}

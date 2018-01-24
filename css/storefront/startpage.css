@@ -427,6 +427,7 @@ p.thephilosophy {
 
 
 
+/* Mobilanpassning för iphone 6 plus */
 
 @media only screen and (max-width: 500px) { 
 
@@ -546,43 +547,6 @@ p.thephilosophy {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/******* MEDIA QUERIES FÖR SKÄRM < 950px ************/
-
-
-@media all and (max-width:950px){
-    
-        
-    #banner-title {
-        font-size: 35px;
-    }
-    #offer-link > .banner-p {
-    font-size: 16px;
-}
-
-    
-}
-
-
 /******* MEDIA QUERIES FÖR SKÄRM < 800px ************/
 
 
@@ -593,11 +557,12 @@ p.thephilosophy {
     }
     
     .start_cat, .start_prod {
-    flex-wrap: wrap;
-}
-        #offer-link > .banner-p {
-    font-size: 14px;
-}
+        flex-wrap: wrap;
+    }
+    
+    #offer-link > .banner-p {
+        font-size: 14px;
+    }
 }
 
 /******* MEDIA QUERIES FÖR SKÄRM < 700px ************/
@@ -607,12 +572,11 @@ p.thephilosophy {
     #banner-title {
         font-size: 28px;
     }
-    #offer-link > .banner-p {
-    font-size: 13px;
-}
 
-    
-    
+    #offer-link > .banner-p {
+        font-size: 13px;
+    }
+   
     
 }
 
@@ -638,45 +602,7 @@ p.thephilosophy {
     }
 
     .sliderPic {
-    max-height: 250px;
-    
-    }
-    
-    #offer-link > .banner-p {
-    font-size: 12px;
-}
-    
-    
+    max-height: 250px; 
 
 }
-
-/******* MEDIA QUERIES FÖR SKÄRM < 580px ************/
-
-
-@media all and (max-width:580px){
-    
-    #banner-title {
-        font-size: 18px;
-    }
-    #offer-link > .banner-p {
-        margin-top: 5px;
-        font-size: 11px;
-}
-    .banner-p {
-font-size: 13px;
-}
-    
-    #offer-link {
-    width: 65%;
-}
-    #newsletter-input {
-    margin-top: 25px;
-    margin-bottom: 10px;
-}
-    #newsletter-h3 {
-        font-size: 23px;
-}
-    
-}
-
 
