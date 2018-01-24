@@ -47,19 +47,16 @@
             ?>
 
             <!-- UPPTÄCK ALLA DAMDOFTER -->
-            <a href="?action=category&id=2">
+            <a href="?action=category&id=1">
             <div class="discover_women">
-                <img class="bigperfume" src="img/products/big/005_big.jpg">
-                <img class="lily" src="img/doftnoter/geranium.png">
-                            <img class="mint" src="img/doftnoter/tobacco.png">
-
+                <img class="bigperfume" src="img/products/big/women_all.jpg">
                 <p class="all_women"> Discover all perfumes <br>for donna </p>
+                <div class="arrow-left"></div>
             </div> 
             </a>
             <!-- BLI MEDLEM -->
             <div id="register_member">
                 <div class="placement-left">
-                    <img class="kollage1" src="img/doftnoter/kollage1.png">
                 </div>
                 <div class="placement-right">
                         <p> Bli medlem i Granza och få tillgång till exklusiva erbjudanden! <br> 
@@ -91,7 +88,7 @@
             <!-- UPPTÄCK ALLA HERRDOFTER -->
             <a href="?action=category&id=2">
             <div class="discover_men">
-                <img class="bigperfume" src="img/products/big/005_big.jpg">
+                <img class="bigperfume" src="img/products/big/tabacco.jpg">
                 <p class="all_men"> Discover all perfumes <br>for uomo </p>
                 <div class="arrow-right"></div>
             </div> 
