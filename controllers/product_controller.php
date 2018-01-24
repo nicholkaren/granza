@@ -24,6 +24,7 @@ if (count($result) < 1){
     $pagecontent->description = $result['description'];
     $pagecontent->price = $result['price'];
     $pagecontent->img_url = $result['img_url'];
+    
 }
 
 

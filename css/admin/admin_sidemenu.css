@@ -10,22 +10,16 @@ nav.side_menu {
     top: 107px;
 }
 
-/*Omsluter ikon och titel*/
-
-header.big_icon {
-    margin-left: 6%;
-    font-size: 16px;
-    color: black;
-
-}
 
 /*PARFYM IKONEN*/
 
 img.side_menu_icon {
     display: table;
-    margin-top: 37%;
+    margin-top: 30%;
     width: 17%;
-    margin-bottom: 4%;
+    margin-bottom: 45%;
+    margin-left: 15px;
+
 }
 
 /*LISTAN*/
@@ -35,6 +29,7 @@ ul.second_menu {
     padding: 0.5em 0;
     margin: 0;
     font-size: 15px;
+
 }
 
 li.side_menu {
@@ -44,9 +39,7 @@ li.side_menu {
     color: black;
 }
 
-li#back {
-    margin-top: 100%;
-}
+li#back {}
 
 /*LÄNKARNA*/
 
@@ -61,13 +54,14 @@ a.txt1 {
 
 /*Hover effekten Höger pil*/
 
+li.side_menu:focus {
+    outline: none;
+}
+
 li.side_menu:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-li.side_menu:focus {
-    outline: none;
-}
 
 /*PIL IKON höger*/
 
@@ -86,6 +80,7 @@ li.side_menu_back:hover {
 li.side_menu_back:focus {
     outline: none;
 }
+
 
 /*PIL IKON vänster*/
 

@@ -14,7 +14,7 @@ h1.all_orders {
     font-size: 40px;
     padding: 10px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 /*Sökfältet*/
@@ -46,8 +46,8 @@ h1.all_orders {
 
 .container-4 button.icon {
     border: 2px solid black;
-    border-bottom: 2px solid black;
     border-top: 2px solid black;
+    border-bottom: 1px solid black;
     background: white;
     height: 48px;
     width: 49px;
@@ -124,5 +124,6 @@ button#updateStatus {
 }
 
 #info-a:visited {
-    color: limegreen;
+    font-weight: 700;
+    color: lightgray;
 }

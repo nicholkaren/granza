@@ -5,8 +5,8 @@ $pagecontent->h2 = "";
 require('templates/admin_tpl/admin_header.php');
 include('meny_controller.php');
 require_once('classes/Customer_class.php');
-include('includes/validations.php');
-echo " Errors ";
+//include('includes/validations.php');
+//echo " Errors ";
 $errors = array();
 
 //KOLLA OM KNAPPEN DELETE TRYCKTS. KÖR ISF DEN HÄR FÖR ATT TA BORT ANVÄNDARE

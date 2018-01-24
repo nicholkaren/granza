@@ -38,7 +38,7 @@ h1#add-product-h1 {
     font-size: 40px;
     padding: 10px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 /*SUCCESS Feedback på ifall produkten matats in*/
@@ -59,6 +59,8 @@ p#p-error {
 
 form {
     width: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /*Alla inputfält - fil, titel, pris*/

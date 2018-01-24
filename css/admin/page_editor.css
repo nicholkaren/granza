@@ -1,0 +1,175 @@
+/* Bakgrundsbild - marmor */
+
+img.background {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    z-index: -1;
+}
+
+/*Vit canvas*/
+
+div.edit_page {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+    background-color: white;
+    height: 660px;
+    -moz-box-shadow: 0 0 35px grey;
+    -webkit-box-shadow: 0 0 35px grey;
+    box-shadow: 0 0 35px grey;
+
+}
+
+/*Sid titel*/
+
+h1#edit-page-h1 {
+    position: absolute;
+    top: -15%;
+    right: 0;
+    left: 0;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/*SUCCESS Feedback på ifall produkten matats in*/
+
+p#p-success {
+    padding-top: 10px;
+    color: limegreen;
+    font-size: 20px;
+}
+
+/*ERROR Feedback på ifall produkten matats in*/
+
+p#p-error {
+    color: red;
+    font-size: 20px;
+}
+
+/*Formuläret - fil, titel, pris*/
+
+form {
+    margin-top: 2.5%;
+    width: 500px;
+
+}
+
+/*Produkt bild*/
+
+#prod-pic-div {
+    top: 0;
+    position: absolute;
+    width: 250px;
+    right: 0;
+    margin-right: -33%;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/*Alla inputfält - fil, titel, pris*/
+
+input {
+    padding: 12px;
+    border: solid 2px black;
+    width: 100%;
+    margin-top: 15px;
+    outline: none;
+
+}
+
+/*TEXTRUTA*/
+
+textarea {
+    margin-top: 15px;
+    border: solid 2px black;
+    padding: 10px;
+    width: 100%;
+}
+
+label {
+    margin-top: 2%;
+    margin-bottom: -3%;
+    font-size: 13px;
+    float: left;
+}
+
+/*Ange kategori & status SELECTS*/
+
+div.style_select select {
+    margin-top: 3%;
+    display: inline-block;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 0;
+    border: black solid 2px;
+    height: 34px;
+    -webkit-appearance: none;
+}
+
+
+#search-page > i {
+    margin-left: 93%;
+    margin-top: -5%;
+}
+
+/*Spara knapp*/
+
+button.btn_save {
+    float: right;
+    color: black;
+    font-size: 0.7em;
+    margin: 0 auto;
+    margin-top: 7%;
+    display: block;
+    width: 150px;
+    padding: 10px;
+    border: solid black 2px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    -moz-box-shadow: 0 0 35px #dcdcdc;
+    -webkit-box-shadow: 0 0 35px #dcdcdc;
+    box-shadow: 0 0 6px #dcdcdc;
+    transition: all 0.20s linear;
+}
+
+button.btn_save:hover {
+    text-decoration: none;
+    background-color: white;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}
+
+#save-page-button {
+    margin-top: 10px;
+}
+
+/*redigera knapp*/
+
+#search-page-button {
+    margin-top: 5px;
+}
+
+/*tillbaka knapp*/
+
+#goback {
+    position: absolute;
+    margin-top: -5%;
+    text-decoration: none;
+    color: black;
+}

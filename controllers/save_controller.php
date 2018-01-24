@@ -1,13 +1,5 @@
 <?php //HÄR SKRIVER DEN UT DET ENGELSKA FELMEDDELANDET NÄR DU KLICKAR PÅ UPPDATERA I ADMIN, REDIGERA ANVÄNDARE
 /*echo 'Logiken för att inserta i databasen profil ändringar.';
-echo "<pre>";
-var_dump($_POST);
-echo "<pre>";
-var_dump($_SESSION);
-
-echo "<pre>";
-var_dump($_SESSION['personId']);
-var_dump($id);
 */
 
 $id= $_SESSION['personId'];
@@ -71,6 +63,6 @@ var_dump($stmt->errorInfo());
 */
 
 // echo a message to say the UPDATE succeeded
-echo'<pre>';
+
     echo $stmt->rowCount() . " records UPDATED successfully";
 header("Location:?action=login");

@@ -1,5 +1,9 @@
 <!--Här ligger admin menyn-->
 <html>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+</style>
 
 <head>
     <link type="text/css" rel="stylesheet" href="css/admin/admin_header.css">
