@@ -88,6 +88,10 @@ img#footerimg {
         border-bottom: 1px solid white;
     }
 
+    .eq:nth-of-type(odd) {
+    border-right: 0px solid white; 
+}
+
     .square {
         width: 100%;
     }

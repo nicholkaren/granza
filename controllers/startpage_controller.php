@@ -60,33 +60,6 @@ while ($product = $stmt->fetch(PDO::FETCH_ASSOC) ) {
 		$pagecontent2->start['img_url_2'] = $theLastProduct2['img_url'];
 		$pagecontent2->start['price_2'] = $theLastProduct2['price'];
 		$pagecontent2->start['title_2'] = $theLastProduct2['title'];
-
-
-
-/**************** Hämtar 4 dofter
-$sql3 = "SELECT * FROM granza.product, granza.product_img WHERE 
-        product.product_id = product_img.product_id
-        AND product.category_id = 3
-        AND product.inactive = 0 ORDER BY rand() LIMIT 4";
-	$stmt = $pdo->prepare($sql3);
-	$stmt->execute();
-
-
-$theLastProduct3 = null;
-
-while ($product = $stmt->fetch(PDO::FETCH_ASSOC) ) {
-		$theLastProduct3 = $product;
-		$currprod3 = array();
-		$currprod3['title_3'] = $product['title'];
-		$currprod3['product_id_3'] = $product['product_id'];
-		$currprod3['price_3'] = $product['price'];
-		$currprod3['img_url_3'] = $product['img_url'];
-		$pagecontent3->products[] = $currprod3;
-	}
-       
-        $pagecontent3->start['product_id_3'] = $theLastProduct2['product_id'];
-		$pagecontent3->start['img_url_3'] = $theLastProduct2['img_url'];
-		$pagecontent3->start['price_3'] = $theLastProduct2['price'];
-		$pagecontent3->start['title_3'] = $theLastProduct2['title'];***************/
+		
 
 require('templates/storefront_tpl/startpage_tpl.php');
