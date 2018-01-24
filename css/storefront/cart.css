@@ -83,7 +83,7 @@ h1:before {
     height: 1px;
     content: '';
     background: #D3D3D3; 
-    width: 35%;
+    width: 32%;
     margin-right: 2.3em;
 }
 
@@ -92,7 +92,7 @@ h1:after {
     height: 1px;
     content: '';
     background: #D3D3D3; 
-    width: 35%;
+    width: 32.2%;
     margin-left: 2.3em;
 }
 

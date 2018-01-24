@@ -19,14 +19,14 @@
         <form action="?action=order" method="post" id="your-info" name="checkout">
             <!-- Steg 1 Leveransadress -->
             <h3 class= "form-header"> 1. Leveransadress </h3>
-                <input type="text" name="fname"     placeholder="Förnamn"  value="<?php echo $person->getUserInfo('fname');?>">
-                <input type="text" name="lname"     placeholder="Efternamn"  value="<?php echo $person->getUserInfo('lname');?>">
-                <input type="text" name="street1"   placeholder="Adress"    value="<?php echo $person->getUserInfo('street1');?>">
-                <input type="text" name="street2"   placeholder="Adress"    value="<?php echo $person->getUserInfo('street2');?>">
-                <input type="text" name="zip"       placeholder="Postnummer" value="<?php echo $person->getUserInfo('zip');?>">
-                <input type="text" name="city"      placeholder="Stad"       value="<?php echo $person->getUserInfo('city');?>">
-                <input type="text" name="email"     placeholder="E-post"     value="<?php echo $person->getUserInfo('email');?>">
-                <input type="text" name="phone"     placeholder="Telefon"    value="<?php echo $person->getUserInfo('phone');?>">
+                <input type="text" name="fname" required placeholder="Förnamn"  value="<?php echo $person->getUserInfo('fname');?>">
+                <input type="text" name="lname" required placeholder="Efternamn"  value="<?php echo $person->getUserInfo('lname');?>">
+                <input type="text" name="street1" required placeholder="Adress"    value="<?php echo $person->getUserInfo('street1');?>">
+                <input type="text" name="street2" placeholder="Adress"    value="<?php echo $person->getUserInfo('street2');?>">
+                <input type="text" name="zip" required placeholder="Postnummer" value="<?php echo $person->getUserInfo('zip');?>">
+                <input type="text" name="city" required placeholder="Stad"       value="<?php echo $person->getUserInfo('city');?>">
+                <input type="text" name="email" required placeholder="E-post"     value="<?php echo $person->getUserInfo('email');?>">
+                <input type="text" name="phone" required placeholder="Mobilnummer"    value="<?php echo $person->getUserInfo('phone');?>">
 
             <!-- Steg Välj annan leveransadress -->
             <p> Vill du leverera ditt paket till en annan adress än ovan? </p>
