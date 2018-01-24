@@ -151,6 +151,7 @@ span.desc{
 .item-qty{
     width: 17%;
     padding-top: 6%; 
+    font-weight: 300;
 }
 
 input[type="number"] {
@@ -261,6 +262,114 @@ div.goback > i {
 
 
 
+
+/* Mobilanpassning för iphone 6 plus */
+
+@media only screen and (max-width: 500px) { 
+
+    h1.shoppingbag {
+        font-size: 17px;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 25px;
+    }
+
+    h1:before {
+        display: block;
+        height: 1px;
+        content: '';
+        background: #D3D3D3;
+        width: 14%;
+        margin-right: 20px;
+    }
+
+    h1:after {
+        display: block;
+        height: 1px;
+        content: '';
+        background: #D3D3D3;
+        width: 14%;
+        margin-left: 20px;
+    }
+
+    .goback2 {
+        font-size: 13px;
+        margin-left: 28px;
+    }
+
+
+    .total {
+        margin-top: 15%;
+    }
+
+    .aside {
+        width: 100%;
+        margin: 0;
+        height: 60px;
+        padding: 7%;
+    }
+
+    #checkoutknapp {
+        width: 100%; 
+        margin-left: 0%;
+        margin-top: 5%;
+        background-color: #f0bb29;
+    }
+
+    input[type="number"] {
+        margin-top: 15px;
+    }
+
+    .item-title{
+        text-align: center;
+        padding-top: 12%;
+        width: 20%; 
+        padding-left: 10%;
+    }
+
+    .item-price {
+        padding-top: 12%;
+        margin-left: 15px;
+        font-size: 12px;
+        display: none;
+    }
+
+    .cart-sum{
+        width: 17%;
+        margin-left: 10px;
+        padding-top: 12%;
+        font-size: 12px;
+    }
+
+    #update-cart-form > div > div.item > div.cart-sum > a > i {
+        position: absolute;
+        left: 79%;
+        top: 34.3%;
+        color: red;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERY */
 
 @media all and (max-width:900px){
@@ -280,14 +389,7 @@ div.goback > i {
         text-align: center;
     }
 
-    #checkoutknapp{
-    	width: 95%;
-    }
-
-    button.update-cart-btn{
-    	width: 35%;
-    }
-
+   
     
 }
 
@@ -321,18 +423,6 @@ div.goback > i {
         width: 70%;
     }
 
-    .item-price {
-        margin-left: 15px;
-        font-size: 12px;
-        padding-top: 15%;
-    }
-
-    .cart-sum{
-        width: 17%;
-        margin-left: 10px;
-        padding-top: 15%;
-        font-size: 12px;
-    }
 
     button.update-cart-btn{
     	width: 100%;
