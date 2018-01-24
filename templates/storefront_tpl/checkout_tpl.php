@@ -7,7 +7,7 @@
 
 
   <div id="fullwidth">
-      <h1 class="shoppingbag"> Betalning och leverans ( steg 3 ) </h1>
+      <h1 class="shoppingbag"> Din Checkout ( steg 3 ) </h1>
 
     <div id="cart-wrapper">
         <!-- Tillbaka knapp -->
@@ -109,6 +109,7 @@
                       echo'<tr>';
                       echo '<td><img class="checkout-img" src="'.$currprod['img_url'].'" class="prod_img"></td>';
                       echo '<td>'.$currprod['title'].'</td>';
+                      echo '<td>'.$currprod['price'] .' KR'.'</td>';
                       echo'<td id="prod-sum">'.$currprod['sum'] .' SEK'.'</td>';
                       echo'</tr>';
                   };

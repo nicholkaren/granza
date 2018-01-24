@@ -245,21 +245,38 @@ hr#minicart {
         margin-left: 20px;
     }
 
+    input[type="text"] {
+        width: 90%; 
+    }
 
+    hr {
+        width: 95%;
+    }
 
+    ul.payment-method {
+        margin-left: -109px; 
+    }
 
+    h2.site_title {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
 
+    #your-info > h2:nth-child(18) {
+        margin-left: 0%;
+    }
 
-    
+    .shipping-lista {
+        margin-left: 2%;
+    }
 
-
-
-
-
-
-
-
-
+    .aside_checkout {
+        width: 100%;
+        padding: 0%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: 0% 0% 7% 0%;
+    }
 
     }
 
@@ -304,23 +321,9 @@ hr#minicart {
 
 #moms {
     margin-right:5%;
-}
-}
-
-@media all and (max-width:900px){
-    
-.payment-lista, .shipping-lista{
-    margin-left: 40%;
-
+    }
 }
 
-.shipping-lista {
-    margin-left: 40%;
-
-}
-    
-    
-}
 
 @media all and (max-width:800px){
     
@@ -329,10 +332,6 @@ hr#minicart {
 
 }
 
-.shipping-lista {
-    margin-left: 36%;
-
-}
     
     
 }
@@ -341,25 +340,12 @@ hr#minicart {
 
 @media all and (max-width:515px){
     
-h2.site_title {
-    font-size: 1.8em;
-  
-}
     .checkout-wrapper {
     max-width:500px;
 }
     .payment-lista{
     margin-left: 25%;
 
-}
-
-.shipping-lista {
-    margin-left: 25%;
-
-}
-     input[type="text"]{
-
-	width: 70%;
 }
     
     td {
@@ -377,16 +363,9 @@ h2.site_title {
 
 
 @media all and (max-width:450px){
-    ul.payment-method {
-margin-right: 40px; 
-}
+
     
     .payment-lista{
-    margin-left: 25%;
-
-}
-
-.shipping-lista {
     margin-left: 25%;
 
 }
