@@ -72,3 +72,52 @@ img#footerimg {
    margin-left: 20%;
    margin-top: -20%;
 }
+
+
+@media only screen and (max-width: 500px) { 
+
+    .wrap {
+        flex-direction: column;
+    }
+
+    p.granza-foooter-text {
+        font-size: 16px;
+    }
+
+    .eq:nth-of-type(odd) {
+        border-bottom: 1px solid white;
+    }
+
+    .square {
+        width: 100%;
+    }
+
+    .eq:nth-of-type(even) {
+        border-bottom: 1px solid white;
+    }
+
+    p.granza-foooter-links {
+        font-size: 22px;
+        padding-left: 0;
+    }
+
+    img#footerimg {
+        width: 55%;
+        margin-left: 44%;
+        margin-top: -21%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

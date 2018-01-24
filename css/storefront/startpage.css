@@ -271,7 +271,11 @@ img.mint {
 .discover_men > .bigperfume {
     width: 100%;
     margin-bottom: 0.3%;
+    display: block;
 }
+    .discover_men > .bigperfume2 {
+        display: none;
+    }
 
 p.all_men {
     position: absolute;
@@ -529,6 +533,7 @@ p.thephilosophy {
 
     #philosophy {
         margin-top: 2%;
+        margin-bottom: 2%;
     }
 
     p.thephilosophy {
