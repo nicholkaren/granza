@@ -22,12 +22,12 @@
         <div class="startpage_bigimage">
             <img class="topimage" src="img/slider/big_img.jpg">            
             <img class="topimage2" src="img/inspo/big_img_mobile.jpg">  
- 
         </div>
-        <!-- Knapp för quiz -->
+
+        <!-- Knapp för quiz
         <a href="?action=fragrancequiz">
             <button id="create"> Begin fragrance profiling </button>
-        </a>
+        </a>-->
 
         <!-- MAIN CONTENT -->
         <div class="startpage">
@@ -78,12 +78,12 @@
             
             <div class="main_wrapper_startpage">   
             <?php 
-                foreach ($pagecontent->products as $currprod) {
+                foreach ($pagecontent2->products as $currprod2) {
                     echo '<div class="product_wrapper">';
-                    echo '<a href="?action=product&pid='.$currprod['product_id'].'">';
-                    echo '<img src="'.$currprod['img_url'].'" class="prod_img">';
-                    echo '<h3 class="perfume_name">'.$currprod['title'].'</h3>';
-                    echo '<p class="price">'.$currprod['price'] .' KR'.'</p>';
+                    echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'">';
+                    echo '<img src="'.$currprod2['img_url_2'].'" class="prod_img">';
+                    echo '<h3 class="perfume_name">'.$currprod2['title_2'].'</h3>';
+                    echo '<p class="price">'.$currprod2['price_2'] .' KR'.'</p>';
                     echo '<button id="button" type="button"> Läs mer </button>';
                     echo '</a>';
                     echo '</div>';} 
