@@ -32,9 +32,9 @@
                 <button class="btn_save" type="submit">SPARA ÄNDRINGAR</button>
 
 
-                <a href="?action=password"><button type="button" class="btn_save">ÄNDRA LÖSENORD</button>
-            
-            
+                <a href="?action=password"><button type="button" class="btn_save">ÄNDRA LÖSENORD</button></a>
+
+
 
                 <a href="?action=delete_profile&uid=<?php $accountToDelete;?>"><button type="button" class="btn_save">RADERA KONTO</button></a>
             </div>
@@ -53,7 +53,7 @@
                     <th>OrderNr</th>
                     <th>Summa</th>
                     <th>Status</th>
-                    <th>Info</th>
+
                 </tr>
             </thead>
             <?php foreach ($pagecontent->orders as $currorder): ?>
@@ -67,7 +67,7 @@
                 </td>
                 <td>
                     <?php echo $currorder['status'];?> </td>
-                <td><a id="info" href="#">Visa</a></td>
+
             </tr>
             <?php endforeach ?>
             <?php endif ?>

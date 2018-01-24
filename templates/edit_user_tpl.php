@@ -50,7 +50,7 @@ require_once('templates/admin_tpl/admin_header.php');?>
                 <div class="button_wrapper">
                     <button type="submit" class="btn_save" id="edit_button" name="edit_button" action="">UPPDATERA</button>
                     <button type="submit" class="btn_save" id="delete_button" name="delete_button" value="delete_button" action="">RADERA</button>
-                    <a>
+
                 </div>
         </form>
         </div>

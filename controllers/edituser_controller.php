@@ -22,4 +22,4 @@ $result = $stmt->fetch();
 
 
 }
-require('templates/edit_user_tpl.php');
+require('templates/admin_tpl/edit_user_tpl.php');

@@ -7,17 +7,23 @@
 <!--Vit div-->
 <div align="center">
     <div class="canvas">
+
         <!--BYT PASSWORD BÖRJAR HÄR-->
         <div class="change_password">
             <h2 class="change_password">
                 <?php echo $pagecontent->title?>
             </h2>
+            <!-- om person är admin visas detta-->
             <?php if ($person->isAdmin()) { ?>
+
             <form method="post" action="?action=password" id="search_uid" name="change-pass-search">
-                <!--SÖKFUNKTION-->
-                <p class="change_password"></p>
-                <input class="search_user" type="search" id="search" placeholder="SÖK ID" name="search_user">
-                <button class="btn_save" type="submit" id="search_user_button">SÖK</button>
+
+                <!--SÖKFUNKTION
+                <p class="change_password"></p>-->
+                <div class="container-4">
+                    <input class="search_user" type="search" id="search" placeholder="SÖK ID" name="search_user">
+                    <button class="icon" type="submit" id="search_user_button"><i class="fa fa-search"></i></button>
+                </div>
                 <h2>
                     <?php echo $pagecontent->h2?>
                 </h2>

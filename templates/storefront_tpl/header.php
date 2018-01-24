@@ -17,7 +17,7 @@
 <!--HEADER-->
 <header>
 
-    <!--MENY SOM FÄLLS UT-->
+    <!--MENY SOM FÄLLS UT FÖR MOBIL -->
       <input type="checkbox" id="nav-trigger" class="nav-trigger">
         <label for="nav-trigger" class="toggle">☰</label>
         <nav class="menu">
@@ -39,7 +39,8 @@
     
     <!--IKONER TILL MIN PROFIL & SHOPPING BAG-->
     <div class="menu_icons">
-        <a href="?action=login">Logga in</a>
+        <a href="?action=login"><i class="fa fa-user" aria-hidden="true"></i>
+</a>
         <a href="?action=addtocart">
             <span id="shop_bag">
                 <i class="fa fa-shopping-bag" aria-hidden="true"></i>

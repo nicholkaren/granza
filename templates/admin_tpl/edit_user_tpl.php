@@ -52,7 +52,7 @@ require_once('templates/admin_tpl/admin_header.php');?>
 
                     <button type="submit" class="btn_save" id="delete_button" name="delete_button" value="delete_button" action="">RADERA</button>
 
-
+                    <a href="?action=password"><button type="button" class="btn_save">ÄNDRA LÖSENORD</button></a>
 
                 </div>
 
