@@ -50,7 +50,7 @@
             <a href="?action=category&id=1">
             <div class="discover_women">
                 <img class="bigperfume" src="img/products/big/women_all.jpg">
-                <p class="all_women"> Se alla dofter <br>för donna </p>
+                <p class="all_women"> Se alla parfymer <br>för donna </p>
                 <div class="arrow-left"></div>
             </div> 
             </a>
@@ -89,7 +89,7 @@
             <a href="?action=category&id=2">
             <div class="discover_men">
                 <img class="bigperfume" src="img/products/big/tabacco.jpg">
-                <p class="all_men"> Se alla parfymer <br>för uomo </p>
+                <p class="all_men"> Se alla dofter <br>för uomo </p>
                 <div class="arrow-right"></div>
             </div> 
             </a>
