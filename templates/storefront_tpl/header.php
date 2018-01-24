@@ -31,8 +31,6 @@
             </ul>
         </nav>
 
-        
-    
     <!--LOGOTYP-->
     <div class="div_logo">
         <a href="?action=default">
