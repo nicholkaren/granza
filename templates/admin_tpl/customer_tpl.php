@@ -5,7 +5,7 @@
 <!--INLOGGAD MEMBER-->
 <!--BAKGRUNDBILD-->
 
-<img class="background" src="img/products/big/thankyou.jpg">
+<img class="background" src="img/products/big/marble-wallpaper-white.jpg">
 <!--Vit div-->
 <div align="center">
     <!--VÄLKOMMEN-->

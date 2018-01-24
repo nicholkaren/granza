@@ -64,5 +64,5 @@ var_dump($stmt->errorInfo());
 
 // echo a message to say the UPDATE succeeded
 
-    echo $stmt->rowCount() . " records UPDATED successfully";
-header("Location:?action=login");
+    echo $stmt->rowCount() . " uppdaterat";
+header("Location: ?action=login");

@@ -49,9 +49,13 @@ require_once('templates/admin_tpl/admin_header.php');?>
                 <input id="edit_user_checkbox" type="checkbox" checked name="newletter" value="1" value="<?php echo $result[" fname "]; ?>">
                 <div class="button_wrapper">
                     <button type="submit" class="btn_save" id="edit_button" name="edit_button" action="">UPPDATERA</button>
+
                     <button type="submit" class="btn_save" id="delete_button" name="delete_button" value="delete_button" action="">RADERA</button>
 
+
+
                 </div>
+
         </form>
         </div>
     </div>
