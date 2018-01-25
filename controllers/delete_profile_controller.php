@@ -4,10 +4,9 @@ include('meny_controller.php');
 
 //$id = $_SESSION['personId'];
 $accountToDelete = $_SESSION['personId'];
-//echo"Session Id --- accountToDelete";
-//echo($accountToDelete);
 
-//Kontorlerar om avbryt-knappen har tryckts, då återgår till profilsida
+
+//Kontorlerar om avbrytknappen har tryckts, då återgår till profilsida
 if (isset($_POST['cancel'])){
     header("Location:?action=login");
 }
@@ -18,7 +17,6 @@ if (isset($_POST['delete'])){
     $user->setId($accountToDelete);
     $user->deleteAccount();
     $person->logOut();
-    //include('templates/parts/thanks_delete_tpl.php');
     header("Location:?action=delete_permanent_profile");
 
 }

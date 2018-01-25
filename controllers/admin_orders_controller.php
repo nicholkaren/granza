@@ -5,12 +5,12 @@ $pagecontent = new stdClass;
 $pagecontent->title = "Alla ordrar";
 
 
-//hämtar oh visar alla ordrar när man söker på order.
+//hämtar och visar alla ordrar när man söker på order.
 if (($_GET['action'] === 'orders') ||($_GET['action'] === 'searchOrder') ){
-    //Logiken om tryckt på sök knappen
+    //Logiken om man har tryckt på sök knappen
     if($_GET['action'] === 'searchOrder' && $_POST['order_search'] !== ""){ 
         if (isset($_POST['order_search'])){
-            //sök resultatet
+            //sökresultatet
               $sql1 = "SELECT * FROM orders WHERE order_id = :id;";         
                 $stmt1 = $pdo->prepare($sql1);
                 $stmt1->bindParam(':id', $_POST['order_search']);
@@ -47,7 +47,7 @@ if (($_GET['action'] === 'orders') ||($_GET['action'] === 'searchOrder') ){
  if (!empty($result1)){
         //Loppar vi över $result1 och varje element i resultat blir $order
         foreach ($result1 as $orderRow){
-            // Skappar vi en tom array där vi placerar element från $order som vi loopar över
+            // En tom array där vi placerar element från $order som vi loopar över
             $currorder = array();
             $currorder['Datum'] = $orderRow['created_at'];
             $currorder['OrderNr'] = $orderRow['order_id'];
@@ -67,8 +67,9 @@ if (($_GET['action'] === 'orders') ||($_GET['action'] === 'searchOrder') ){
             $pagecontent->Payement_id = $orderRow['payment_id'];
             $pagecontent->Shipper_id = $orderRow['shipper_id'];
             $pagecontent->Status = $orderRow['order_status_id'];
-        }  
+        } 
 
+    //admin order template
     require('templates/admin_tpl/admin_order_tpl.php');
 
 }
@@ -83,7 +84,7 @@ if ($_GET['action'] === 'singleOrder'){
    
         $totalsumma = 0;
         foreach ($result as $orderItemRow){
-            // Skappar vi en tom array där vi placerar element från $order som vi loopar över
+            // Här skapar vi en tom array där vi placerar element från $order som vi loopar över
             
             $currItem = array();
             $currItem['OrderNr'] = $orderItemRow['order_id'];
@@ -123,10 +124,8 @@ if ($_GET['action'] === 'singleOrder'){
         $stmt1->execute();
         
         $result1 = $stmt1->fetchAll(PDO::FETCH_ASSOC);
-    
-    
-    
 }
+
 //Uppdaterar orderstatus i databasen
 if ($_GET['action'] === 'updateOrderStatus'){
     
@@ -142,18 +141,14 @@ $oid = $_GET['oid'];
         $stmt->bindParam(':order_status', $status);
         $stmt->execute();
         
-    //skickar mejl till med uppdaterad orderstatus
-        
+    //skickar mejl till person med uppdaterad orderstatus
     $sql = "SELECT title FROM order_status WHERE order_status_id = :order_status";    
     $stmt = $pdo->prepare($sql);
     $stmt->bindParam(':order_status', $status);
     $stmt->execute();  
     $result = $stmt->fetch();
 
-    // meddelandet till kund
     $msg = "Hej!\n Din order är nu ".strtolower($result['title'])."! \n Vänligen, Lorenzo Granza";
-    
-    // use wordwrap() if lines are longer than 70 characters
     $msg = wordwrap($msg,70);
 
     // skicka mejl

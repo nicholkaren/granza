@@ -1,7 +1,6 @@
 <?php // här är logiken för att kunna redigera en medlem.
 $pagecontent= new stdClass;
 include('meny_controller.php');
-//include('includes/validations.php');
 
 $errors = array();
 	
@@ -9,12 +8,12 @@ $errors = array();
 	$pagecontent->h2 ="Medlems ID ".$_GET['uid'];
 
 
-//SÄTT GET TILL ANVÄNDARE VARS KONTO SKALL UPPDATERAS
+// Sätt get till användare vars konto skall uppdateras
 if(isset($_GET['uid'])) {
 
 $userToChange = $_GET['uid'];
 
-//HÄMTA ALL INFO OM DENNA FR DB OCH LÄS IN I FORMULÄRET
+// Hämta all info från databasen och läs in i formuläret
 $sql= "SELECT * FROM person WHERE person_id = {$userToChange}";
 $stmt=$pdo->prepare($sql);
 $stmt->execute();

@@ -7,8 +7,8 @@ include('meny_controller.php');
 include('includes/token.php');
 
 getToken();
-//hämtar kategori titel och cat_id till selects
 
+//hämtar kategorititel och cat_id till selects
 $sql = "SELECT title, category_id FROM category;";
 	$stmt = $pdo->prepare($sql);
 	$stmt->execute();

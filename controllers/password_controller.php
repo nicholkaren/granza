@@ -2,6 +2,7 @@
 include('meny_controller.php');
 include('includes/token.php');
 include('includes/validations.php');
+//password
 
 $pagecontent = new stdClass;
 $pagecontent->title = "ÄNDRA LÖSENORD";
@@ -11,9 +12,7 @@ $newPassword = "";
 getToken();
 
 
-/**** KOLLA OM MAN SÖKT EFTER ANVÄNDAR ID FÖR ATT ÄNDRA ANVÄNDARES PASSWORD ****/
-
-
+        /**** Check om man sökt efter användar-id för att ändra anv lösenord */
         if (isset($_POST['search_user']) && $_POST['search_user'] === "")  {
     
        $pagecontent->h2 = "ANGE ETT ID";
@@ -21,8 +20,7 @@ getToken();
         } else {
 
 
-/****************** HÄR HÄMTAS SÖKRESULTATET ******************/
-        
+        /* Här hämtas sökresultatet */
         $sql = "SELECT * FROM person
         WHERE person_id = :id";
             $stmt = $pdo->prepare($sql);
@@ -31,7 +29,8 @@ getToken();
             $result = $stmt->fetch();
 
 
-/****************** KOLLA OM DET FINNS ETT RESULTAT OCH SÄTT VARIABLER************/
+        /*Kolla om det finns ett resultat 
+        och isf sätt variabler */
 
         if (count($result) > 1){
 
@@ -73,7 +72,7 @@ getToken();
         }
 
 
-}//END IF som kör koden om allt stämmer
+} 
 
 
 

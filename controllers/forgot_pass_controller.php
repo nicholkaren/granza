@@ -13,7 +13,12 @@ if (in_array('forgot_password', $_GET) ) {
     include('templates/parts/forgot_password_tpl.php');
 
 $pagecontent->h2 = "ANGE DIN EMAIL FÖR NYTT LÖSENORD HÄR";
-/****************** SKAPA RANDOM PASSWORD ******************/
+
+
+
+
+
+/****************** Skapa random lösenord ******************/
     if (isset($_POST['email']) ) {
      $email = $_POST['email'];
 
@@ -34,7 +39,7 @@ $pagecontent->h2 = "ANGE DIN EMAIL FÖR NYTT LÖSENORD HÄR";
 $password = generateRandomString($length = 10);
 //echo $password;
 
-/****************** SKICKA EMAIL ******************/
+/****************** Skicka email ******************/
     // the message
     $msg = "Hej!\nDu har begärt ett nytt lösenord.\nLogga in med det nya här för att ändra det: http://localhost:8888/granza/?action=login . Här är ditt nya lösenord: ".$password;
     
@@ -47,7 +52,7 @@ $password = generateRandomString($length = 10);
 
     }
    
-/****************** HASHA OCH STOPPA IN I DB ******************/
+/****************** Hasha ******************/
     $sql = "UPDATE person SET password = :password WHERE person.email = :email";
 
     $stmt= $pdo->prepare($sql);

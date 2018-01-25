@@ -1,5 +1,5 @@
 <?php
-// här hämstas alla kategorier oavsett om dem är aktiva eller inaktiva.
+// här hämtas alla kategorier
 
 include('meny_controller.php');
 

@@ -1,5 +1,6 @@
 <?php
 include('meny_controller.php');
+//Kundvagnen 
 
 $pagecontent = new stdClass; 
 $pagecontent->title = "Din kundvagn";
@@ -24,7 +25,6 @@ if ($_GET['action'] === 'addtocart' && !empty($_POST['pid'])){
     }
        
 }
-
 
 // vi måste ha med en pid för att kunna ta bort den aktuella varan.
 // det som ska unsettas är pid inte hela $_SESSION.
@@ -57,6 +57,3 @@ $_SESSION['cart-total'] = $total;
 
 require_once('includes/cart.php');
 include('templates/parts/cart_tpl.php');
-// Skickas tillbaka till samma sida som vi kom ifrån.
-//$refererURL = $_SERVER['HTTP_REFERER'];
-//header("Location:$refererURL");

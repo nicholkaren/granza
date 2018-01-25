@@ -12,7 +12,8 @@ include('meny_controller.php');
 include('includes/token.php');
 
     getToken();
-/***** HÄMTAR KATEGORITITEL OCH ID TILL RULLISTAN *****/
+
+/* Hämtar kategorititel och id till select */
 
 $sql = "SELECT title, category_id FROM category;";
 	$stmt = $pdo->prepare($sql);
@@ -31,7 +32,7 @@ foreach ($result as $category) {
 if (isset($_POST['prod-search']) || isset($_GET['pid'])){
     
     
-/****************** HÄR HÄMTAS SÖKRESULTATET ******************/
+/*Sökresultatet */
 $sql = "SELECT * FROM product, product_img
         WHERE product.product_id = product_img.product_id
         AND product.product_id = :id";

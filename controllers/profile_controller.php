@@ -11,20 +11,19 @@ include('includes/token.php');
 if ($_GET['action'] === "logout"){
     $person->logOut();
     // Redirect to login page after logout.
-    //destroyToken();
     header("Location:?action=login");
 }
 
 $pagecontent->title = "LOGGA IN";
 $pagecontent->h2 = "VÄLKOMMEN ATT LOGGA IN";
 
-//KOLLA OM DU ÄR INLOGGAD OCH AVGÖR OM ADMIN 
+//Kolla om du är admin om du är inloggad
 getToken();
     if($person->isLoggedIn()) {
        
         if ($person->isAdmin() ){
 
-//HÄMTA INFO FRÅN DB OM ADMIN
+// Hämta isf info om admin
             $person->getUserInfoFromDB();
 
             $pagecontent->title = "Benvenuto ".$person->getUserInfo('fname')."!";
@@ -36,8 +35,7 @@ getToken();
             $admin->setId($id);
          
         
-        } else { //HÄMTA INFO OM INLOGGAD GÄST
-            // Ska skapas en costumer objekt 
+        } else { //Inloggad gäst info 
             $id = $person->getId();
             $user = new Customer();
             $user->setId($id);
@@ -51,9 +49,9 @@ getToken();
             $result = $stmt->fetch(PDO::FETCH_ASSOC);
         
             if (!empty($result1)){
-                //Loppar vi över $result1 och varje element i resultat blir $order
+                //Loopar vi över $result1 och varje element i resultat blir $order
                 foreach ($result1 as $orderRow){
-                    // Skappar vi en tom array där vi placerar element från $order som vi loopar över
+                    // Skapar vi en tom array där vi placerar element från $order som vi loopar över
                     $currorder = array();
                     $currorder['datum'] = $orderRow['datum'];
                     $currorder['order_id'] = $orderRow['order_id'];

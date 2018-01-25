@@ -15,7 +15,11 @@ getToken();
 
 if (isset($_POST['cat-search']) || isset($_GET['id'])){
     
-/****************** HÄR HÄMTAS SÖKRESULTATET ******************/
+
+
+
+    
+/* Sökresultatet hämtas här*/
 
 $sql = "SELECT * FROM category WHERE category_id = :cat_id";
 	$stmt = $pdo->prepare($sql);

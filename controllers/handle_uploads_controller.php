@@ -2,8 +2,12 @@
 $pagecontent = new stdClass;
 $pagecontent->error = "";
 $pagecontent->title = "Skapa produkt";
+
+
+
+
 /****************** HÄR HÄMTAS FILEN SOM LADDAS UPP ******************/
-// till denna mappen flyttas filerna
+// till denna mappen
 $upload_dir = 'uploads/product';
 
 include('uploads_controller.php');
@@ -42,7 +46,7 @@ $stmt->bindParam(':inactive', $prod_status);
         $stmt->execute();
         $last_id = $pdo->lastInsertId();
 
-        /******** LÄGG TILL BILDEN I TABELLEN MED AKTUELLT PID *****/
+        /* Lägg till bilden i tabellen med aktuellt pid */
 
         $sql2 = "INSERT INTO product_img (product_id, img_url) 
                 VALUES (:product_id, :img_url)";  

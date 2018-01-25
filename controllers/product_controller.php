@@ -27,7 +27,6 @@ if (count($result) < 1){
     
 }
 
-
 /* Hämtar 4 liknande produkter med parfymer 
 beroende på om det är dam eller herr */
 

@@ -1,33 +1,28 @@
 <?php 
 include('meny_controller.php');
 include('includes/validations.php');
-//include('includes/token.php');
 $pagecontent = new stdClass;
 
 $pagecontent->title = "SKAPA KONTO";
-//$pagecontent->p = "";
-
-//getToken();
 
 $errors = array();
-//**********SKAPA ANVÄNDARE**************
+
+// Skapa användare
 
 
-//KOLLA OM PASSWORD ÄR ANGIVET OCH ATT ERRORS ÄR EN TOM ARRAY //////////////////////
+// Kolla om psw är angivet och att errors är en tom array
 
 
 if(isset($_POST['create_user']) && $errors === array() ) {
-   
 $pagecontent->title = "SKAPA KONTO";  
 
-//LÄGG TILL ANVÄNDAREN
+// Lägg till användaren
 
 
     $newPassword= $_POST['input-password'];
     $confPassword = $_POST['confirm_password'];
 
-//KOLLA ATT PASSWORD ÄR SAMMA I BÅDA FÄLT//////////////    
-    
+//psw checkup om det är samma, annars visa error    
     if (!($newPassword === $confPassword) ) {
     global $errors;
     $errors[] = "Löserorden verkar inte stämma överens";
@@ -35,13 +30,7 @@ $pagecontent->title = "SKAPA KONTO";
  
 } else {
 
-//if(isset($_POST['edit_button']) ){
-////////////SPARA TILL DATABASEN/////////////////////
-    
-
     $validate = array();
-
-
     $validate['fname'] = array('stripString','notEmpty' , 'validChars');
     $validate['lname'] = array('stripString','notEmpty', 'validChars');
     $validate['adress1'] = array('stripString','notEmpty');
@@ -72,7 +61,6 @@ $pagecontent->title = "SKAPA KONTO";
         }
 
 }
-
 
     global $pdo;
 
@@ -113,11 +101,7 @@ $sql = "INSERT INTO person (fname, lname, street1, street2, zip, city, phone, em
             $email = stripString($_POST['email']);
             $level = stripString($_POST['level']);
 
-
-/*if (checkToken($_POST['token'])) {  */
- //       $stmt->execute();
- //       $lastId = $pdo->lastInsertId();
-//        var_dump($lastId);
+            //var_dump($lastId);
 
             $stmt ->bindParam(':fname', $fname);
             $stmt ->bindParam(':lname', $lname);
@@ -131,10 +115,9 @@ $sql = "INSERT INTO person (fname, lname, street1, street2, zip, city, phone, em
             $stmt ->bindParam(':password', $newPassword);
             $stmt ->bindParam(':newletter', $newletter);
 
-//
                 $stmt->execute();
                 $lastId = $pdo->lastInsertId();
-        //        var_dump($lastId);
+            //var_dump($lastId);
 
                 
             if($person->isLoggedIn()) {
@@ -145,23 +128,9 @@ $sql = "INSERT INTO person (fname, lname, street1, street2, zip, city, phone, em
          $pagecontent->p = "ANVÄNDARE UPPDATERAD";
         $_POST = array();
     }
-//} else {
-        
-        //header("Location:?action=login");
-   // }
              
       }
 
             
 }    
-
-/*            } else {
-                
-                header("Location:?action=login");
-            }*/
-                     
-              
-          
-                    
-
         require('templates/admin_tpl/create_new_user_tpl.php');
