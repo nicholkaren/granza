@@ -4,11 +4,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link type="text/css" rel="stylesheet" href="css/storefront/startpage.css">
 <link type="text/css" rel="stylesheet" href="css/storefront/category.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Work+Sans:300,400" rel="stylesheet">
 <script src='includes/js.js'></script>
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 
 
 <!-- Liten reklambanner under headern -->
@@ -24,18 +23,12 @@
     <img class="topimage2" src="img/inspo/big_img_mobile.jpg">
 
 </div>
-<!-- Knapp för quiz 
-<a href="?action=fragrancequiz">-->
-<!-- TOPPBILD
-    <div class="startpage_bigimage">
-        <img class="topimage" src="img/slider/big_img.jpg">
-        <img class="topimage2" src="img/inspo/big_img_mobile.jpg">
-    </div>
 
-    Knapp för quiz
-        <a href="?action=fragrancequiz">
-            <button id="create"> Begin fragrance profiling </button>
-        </a>-->
+    <!-- Säljande text -->
+            <div class="create"> 
+                <p>Kollektion pre spring 18 <br>
+                coming soon</p>
+            </div>
 
 <!-- MAIN CONTENT -->
 <div class="startpage">

@@ -75,32 +75,34 @@ body {
 }
 
 /* Upptäck din nischdoft-button */
-button#create {
-    margin: 0 auto;
-    padding: 30px;
-    background-color: transparent;
-    border: 2px solid white;
-    width: 30%;
+div.create {
+    width: 70%;
+    height: 200px;
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 0%;
     left: 0%;
 
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    cursor: pointer;
-    letter-spacing: 2px;
-    font-size: 25px;
+    margin: 0 auto;
+    padding: 56px;
     z-index: 4;
 }
 
-#create:hover {
+.create p {
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 45px;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+}
+
+/*.create:hover {
     background: white;
     color: black;
     z-index: 999999;
     cursor: pointer;
-}
+}*/
 
 /* Rubrik Damdofter | Profumi Donna */
 h2.headline_gender {
