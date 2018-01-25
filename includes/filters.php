@@ -59,7 +59,7 @@ if(!function_exists('validZip') ) {
     
     } else {
 
-            $errors[] = 'Något är vajsing med zippen';
+            $errors[] = 'Fel postkod';
     }
     }
 }
@@ -78,7 +78,7 @@ function isNumbers($value) {
     echo "isnumbers körs ";
   $field = $value;
   if(!is_numeric($field)) {
- $errors[] = 'AJABAJA! Fältet får endast innehålla siffror!'." ".$field;
+ $errors[] = 'Fältet får endast innehålla siffror'." ".$field;
 
 
         }
@@ -101,7 +101,7 @@ if(!function_exists('isPhone') ) {
 
     } else {
 
-            $errors[] = 'Något är lurt med telefonnumret'." ".$phone;
+            $errors[] = 'Skriv om ditt telefonnummer'." ".$phone;
     }
             
 }
@@ -125,7 +125,7 @@ function setLevel($value) {
 
            // echo'körs isEmail ';
             if (strpos($email, "@") === false){
-        $errors[]= $value.'Det där verkar inte vara en epost-adress';
+        $errors[]= $value.'Skriv om din e-post';
     }else{
                // echo'filtrerad '.$email;
             }
