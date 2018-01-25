@@ -5,7 +5,7 @@ $pagecontent->h2 = "";
 require('templates/admin_tpl/admin_header.php');
 include('meny_controller.php');
 require_once('classes/Customer_class.php');
-include('includes/validations.php');
+//include('includes/validations.php');
 echo " Errors ";
 $errors = array();
 
