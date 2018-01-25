@@ -6,31 +6,42 @@
 
  .main_wrapper{
  	width: 100%;
- 	height: 620px;
+ 	height: auto;
  }
 
 	div.login {
 	width: 100%;
 	margin: 0 auto;
-	min-height: 200px;
+	height: 500px;
 }
 
 h2.login_title  {
-	font-size: 26px;
+	font-size: 20px;
 	text-align: center;
 	color: #000000;
-	margin-top: 25%;
+	margin-top: 30%;
 	padding-bottom: 25px;
 }
 
+/* Skapa ett konto */
 h2.create_title {
 	font-size: 20px;
 	text-align: center;
-	color: white;
+	color: black;
 	padding-top: 50px;
-	padding-bottom: 25px;
 	width: 60%;
 	margin: auto;
+	background-color: white;
+	text-transform: uppercase; 
+}
+
+.on_top {
+	background-color: white;
+	position: absolute;
+	top: 30%;
+	left: 12%;
+	width: 650px;
+
 }
 
 form {
@@ -65,11 +76,10 @@ a#forgot-password{
  	color: white;
  	border: none;
  }
+
  .create_account {
  	width: 100%;
- 	height: auto;
- 	min-height: 300px;
- 	background-color: #AE9266;
+ 	background-color:
  }
 
  button#send {
@@ -88,18 +98,15 @@ input[type="checkbox"] {
 	position: relative;
 	display: inline;
 }
-@media (min-width: 760px) {
-	.main_wrapper {
-	width: 100%;
-	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	flex-flow: row;
-	}
 
+
+img.create_canvas {
+	width: 100%;
+	height: auto;
+	border: 2px white solid;
+	margin-top: 0.5%;
 }
 
-@media (min-width: 1025px) {
 	.main_wrapper {
 	width: 100%;
 	margin: 0 auto;
@@ -111,7 +118,7 @@ input[type="checkbox"] {
 	
 	div.create_account {
 	width: 100%;
-	background-color: #AE9266;
+	position: relative;
 }
 
 	div.login {
@@ -126,10 +133,6 @@ input[type="checkbox"] {
 
 	}
 
-	form.create_account {
-	margin-top: 20px;
-	}
-
 	input.login{
 	padding-top: 5px;
 	padding-left: 25px;
@@ -141,7 +144,7 @@ input[type="checkbox"] {
 	div.create_account {
 	width: 50%;
 	margin: 0 auto;
-	background-color: #AE9266;
+	background-color: #fffffff;
 }
  	
  	button#send {
@@ -160,6 +163,8 @@ input[type="checkbox"] {
 	background-color: white;
  	color: #AE9266;
  	}
+
+
  	.login_wrapper {
  	padding-top: 30px;
  }

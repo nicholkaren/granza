@@ -10,7 +10,7 @@ include('templates/storefront_tpl/header.php');
         
         <!-- Inputfält logga in -->
         <h2 class="login_title">
-            <?php echo $pagecontent->h2 ?>
+            HEJ, <?php echo $pagecontent->h2 ?>!
         </h2>
         <form action="" method="post" autocomplete="off" name="login">
             <input class="login" type="text" name="email" placeholder="E-postadress">
@@ -23,27 +23,22 @@ include('templates/storefront_tpl/header.php');
 
             <!-- LOGGA IN-KNAPP-->
             <button type="submit" id="login">LOGGA IN</button>
-
-
-            <div class="login_wrapper">
-
-            </div>
         </form>
     </div>
 
     <div class="create_account">
         <!--INPUTFÄLT LOGGA IN-->
-        <h2 class="create_title"> Bli medlem </h2>
-        <form class="create_account" action="?action=create_user" method="post" autocomplete="off">
+        <img class="create_canvas" src="img/inspo/tulipan_800x800.jpg">
+
+        <div class="on_top">
+            <h2 class="create_title"> Bli medlem </h2>
+            <form class="create_account" action="?action=create_user" method="post" autocomplete="off">
 
 
-            <!-- LOGGA IN-KNAPP-->
-            <button type="submit" id="send" name="submit_button">SKAPA KONTO</button>
-            <br>
-        </form>
+                <!-- LOGGA IN-KNAPP-->
+                <button type="submit" id="send" name="submit_button">SKAPA KONTO</button>
+                <br>
+            </form>
+        </div>
     </div>
 </div>
-
-<?php
-include('templates/storefront_tpl/footer.php');
-?>
