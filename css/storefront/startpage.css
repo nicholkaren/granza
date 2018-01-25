@@ -80,9 +80,14 @@ div.create {
     color: white;
     text-align: center;
     letter-spacing: 2px;
-    font-size: 45px;
+    font-size: 60px;
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
+}
+
+p.est {
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
 }
 
 /*.create:hover {
@@ -371,7 +376,7 @@ p.thephilosophy {
     font-family: 'Dr Sugiyama', cursive;
     font-weight: 400;
     letter-spacing: 1.5px;
-    padding-top: 13%;
+    padding-top: 10%;
     margin: 0;
 }
 
