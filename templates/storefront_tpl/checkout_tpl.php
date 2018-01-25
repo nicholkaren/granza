@@ -57,7 +57,7 @@
                 
                 <li class ="payment-lista">
                    <label> 
-                      <input type="radio" value="2" name="payment_option">Paypal
+                      <input type="radio" value="2" name="payment_option">Faktura
                     </label>
                 </li>
                 <li class ="payment-lista">
