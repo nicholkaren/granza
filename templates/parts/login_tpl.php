@@ -7,7 +7,8 @@ include('templates/storefront_tpl/header.php');
 
 <div class="main_wrapper">
     <div class="login">
-        <!--INPUTFÄLT LOGGA IN-->
+        
+        <!-- Inputfält logga in -->
         <h2 class="login_title">
             <?php echo $pagecontent->h2 ?>
         </h2>
@@ -32,7 +33,7 @@ include('templates/storefront_tpl/header.php');
 
     <div class="create_account">
         <!--INPUTFÄLT LOGGA IN-->
-        <h2 class="create_title">BLI MEDLEM HOS MILLHOUSE</h2>
+        <h2 class="create_title"> Bli medlem </h2>
         <form class="create_account" action="?action=create_user" method="post" autocomplete="off">
 
 
