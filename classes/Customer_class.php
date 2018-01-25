@@ -1,15 +1,10 @@
 <?php
 // Class customer ärver från class person
 
-// Det kan vara en bra idé att göra require_once på basklassens fil vid extends.
-// require_once('Person_class.php');
-
 class Customer extends Person{
-    // Function för radera kontot / avaktivera
+    // Function för att radera kontot / avaktivera
     
-    // Vet inte om du måste ha ett anrop till parent::__construct när du gör extend.
     public function __construct() {
-       // parent::__construct();
     }
     
     public function deleteAccount($id){
@@ -41,17 +36,18 @@ class Customer extends Person{
         //var_dump($stmt->errorInfo());
 
 
-//echo a message to say the UPDATE succeeded
+    //echo ett meddelande att ändringen har uppdaterats
     echo'<pre>';
     echo $stmt->rowCount() . " Uppdaterad användare";
     echo'</pre>';   
-    //require_once('templates/parts/thanks_delete_tpl.php');
      
     }
-    // En function som ska hämta ordrar och visa de på kundens sida
+
+    // Function hämtar rätt ordrar till kundens sida vid inloggning
     public function getOrders(){
         global $pdo;
-        // Här hämtas datum, status på order och total summa på ordern för en viss person.
+        
+        // Här hämtas datum, status på order samt total summa på ordern för en specifik person.
        $sql1 = "SELECT  * FROM
                     (SELECT created_at as datum, orders.order_id, title as status
                     FROM orders, order_status, order_items
@@ -67,7 +63,6 @@ class Customer extends Person{
         $stmt1 = $pdo->prepare($sql1);
         $stmt1->bindParam(':id', $this->personId);
         $stmt1->execute();
-        // var_dump($stmt1->errorInfo());
         
         $result1 = $stmt1->fetchAll(PDO::FETCH_ASSOC);
         return $result1;
