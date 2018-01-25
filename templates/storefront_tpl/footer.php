@@ -25,7 +25,7 @@
             <a href="?action=category&id=1">Damdofter</a><br>
             <a href="?action=category&id=2">Herrdofter</a><br>
             <a href="?action=about-us">Om oss</a><br>
-            <a href="?action=about-us">FAQ</a><br>
+            <a href="?action=default">Hem</a><br>
         </p>
     </div>
     
