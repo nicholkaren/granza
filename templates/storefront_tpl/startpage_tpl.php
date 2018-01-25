@@ -26,8 +26,8 @@
 
     <!-- Säljande text -->
             <div class="create"> 
-                <p>Kollektion pre spring 18 <br>
-                coming soon</p>
+                <p>Italian quality <br>
+                and excellence </p>
             </div>
 
 <!-- MAIN CONTENT -->
