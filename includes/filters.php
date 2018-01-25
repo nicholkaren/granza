@@ -1,25 +1,5 @@
 <?php
 
-
-///////xempel FRÅN HARALD!!!!!//////////////
-
-/*$email = $_POST['email'];
-
-var_dump(filter_var($email, FILTER_VALIDATE_EMAIL));
-var_dump(filter_var($email, FILTER_SANITIZE_EMAIL));
-var_dump(filter_var($email, FILTER_VALIDATE_EMAIL));
-
-echo '<br><br>';
-
-// Om någon försöker skriva in jskod så tar sanitize filteret bort taggarna = det som gör koden skadlig, men texten skrivs ändå ut.
-
-$stringToFilter = $_POST['email'];
-var_dump(filter_var($stringToFilter, FILTER_VALIDATE_EMAIL));
-var_dump(filter_var($stringToFilter, FILTER_SANITIZE_EMAIL));
-
-*/
-
-
 $pagecontent = new stdClass;
 $pagecontent ->title = "";
 
@@ -27,15 +7,10 @@ $errors = array();
 
 if (array_key_exists('checkout', $_POST)) {
 
-/*echo 'POST ARRAYEN:';
-echo '<pre>';
-var_dump($_POST);
-echo '</pre>';*/
-
-
+/
 
     
-/************** FUNKTIONER ****************/
+/* Functions */
     if (!function_exists('notEmpty')) {
         function notEmpty($value) {
         $value = trim($value);
@@ -71,8 +46,6 @@ if(!function_exists('validAdress') ) {
 if(!function_exists('validZip') ) {
     function validZip($value) {
         //KAN INNEHÅLLA MAX 5 SIFFROR
- //   echo "validZip körs ";
-
      global $errors;
     
 
@@ -80,11 +53,9 @@ if(!function_exists('validZip') ) {
     $zip = $value; 
     
     $zip = preg_replace('/\s+/', '', $zip);     
- //   echo "HÄJ".$zip; 
         
         if (preg_match($regexp, $zip)) {
         isNumbers($zip);
-//        echo "zip is valid";
     
     } else {
 
@@ -138,20 +109,6 @@ if(!function_exists('isPhone') ) {
 } 
 
 
-
-
-    /* $phone is valid
-
-$phone = '031-313131';
-
- $regexp = '/^[0-9]+(\s|$)[0-9]+$/';
-preg_match($regexp, $phone); 
-}*/
-
-
-
-
-
 if(!function_exists('setLevel')) {
 function setLevel($value) {
      //kolla att level endst innehåller 0 1 eller 2
@@ -160,9 +117,7 @@ function setLevel($value) {
 }
 
 
-
-        //*************KOLLAR ATT DET ÄR EN EMAIL***************//
- 
+/* Kollar att det är email */
  if (!function_exists('isEmail')) {
         function isEmail($value){
         $email = filter_var($value, FILTER_SANITIZE_EMAIL);
@@ -200,17 +155,7 @@ function toLowerCase($value) {
     
 $validate = array();
 
-    //$validate['fname'] = array('notEmpty' /*, 'validChars','maxChars',*/ );
-    //$validate['lname'] = array('notEmpty' /*, 'validChars','maxChars',*/);
-    //$validate['adress1'] = array('notEmpty' /*, 'validAdress'*/);
-    //$validate['adress2'] = array('notEmpty'/*, 'validAdress'*/);
-    //$validate['zipcode'] = array('validZip',/*'isNumbers'*/);
-    //$validate['city'] = array('notEmpty'/*, 'validChars'*/);
-    //$validate['telefon'] = array('notEmpty', /*'isNumbers',*/ 'isPhone');
     $validate['email'] = array('isEmail', 'notEmpty', 'toLowerCase');
-    //$validate['level'] = array('notEmpty'/*, 'isNumbers'*/);
-    //$validate['input-password'] = array('notEmpty'/*, 'isPassword'*/);
-    //$validate['confirm_password'] = array('notEmpty'/*, 'isPassword'*/ );
                 
 
     /*if($person->isLoggedIn()) {

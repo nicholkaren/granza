@@ -14,10 +14,12 @@
 </head>
 
 <body>
-<!--HEADER-->
+
+
+<!--Header -->
 <header>
 
-    <!--MENY SOM FÄLLS UT FÖR MOBIL -->
+    <!--Meny som fälls ut -->
       <input type="checkbox" id="nav-trigger" class="nav-trigger">
         <label for="nav-trigger" class="toggle">☰</label>
         <nav class="menu">
@@ -31,30 +33,25 @@
             </ul>
         </nav>
 
-    <!--LOGOTYP-->
+    <!-- Logotyp -->
     <div class="div_logo">
         <a href="?action=default">
         <img src="img/logo/granza.png" alt="logotype granza" id="id_logo"></a>
     </div>
     
-    <!--IKONER TILL MIN PROFIL & SHOPPING BAG-->
+    <!-- Ikoner till Logga in som admin/member och shoppingbag-->
     <div class="menu_icons">
-        <a href="?action=login"><i class="fa fa-user" aria-hidden="true"></i>
-</a>
+        <!-- Login icon -->
+        <a href="?action=login"><i class="fa fa-user" aria-hidden="true"></i></a>
+        <!-- Shopping bad icon-->
         <a href="?action=addtocart">
             <span id="shop_bag">
                 <i class="fa fa-shopping-bag" aria-hidden="true"></i>
-                <!-- SKRIVER UT ANTALET PRODUKTER I VARUKORGEN -->
-              <?php if(isset($_SESSION['cart-total']) && $_SESSION['cart-total'] > 0){
+                
+            <!-- Skriver ut antalet produkter i varukorgen -->
+            <?php if(isset($_SESSION['cart-total']) && $_SESSION['cart-total'] > 0){
                 printf ('<div id="qty-cart"><span id="qty">%s</span></div>', $_SESSION['cart-total']);
             }
-                //if(isset ($_POST['checkout'])){
-            
-             //$_SESSION['cart-total'];
-                    //$_SESSION['cart']= null;
-                    //echo'hejehje ABBE'
-                
-                
                 ?>
             </span></a>
     </div> 

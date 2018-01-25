@@ -7,10 +7,7 @@ session_start();
 
 if (!isset($_SESSION['cart']))
   $_SESSION['cart'] = array();
-/*
-$token = uniqid("", true);
-$_SESSION['token'] = $token;
-*/
+
 include('includes/validations.php');
 
 // include settings
@@ -23,16 +20,13 @@ require_once('includes/dbcon.php');
 require_once('classes/Person_class.php');
 
 
-
 $person = new Person();
 
 
 if (isset($_POST ['email']) && isset($_POST['input_password']) ) {
 
 	$person->logIn($_POST['email'], $_POST['input_password']);
-
 }
-
 
 $routes = array(
 'default' => 'startpage_controller.php',

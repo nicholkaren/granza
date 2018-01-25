@@ -18,21 +18,7 @@
     <td>
         <?php echo $pagecontent->email?>
     </td>
-    <!--<td>
-        <?php //echo $pagecontent->street1?>
-    </td>
-    <td>
-        <?php //echo $pagecontent->street2?>
-    </td>
-    <td>
-        <?php //echo $pagecontent->zip?>
-    </td>
-    <td>
-        <?php //echo $pagecontent->city?>
-    </td>
-    <td>
-        <?php //echo $pagecontent->phone?>
-    </td>-->
+    
     <td>
         <?php echo $pagecontent->newletter?>
     </td>

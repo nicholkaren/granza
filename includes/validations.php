@@ -183,8 +183,3 @@ function toLowerCase($value) {
     }
 }
  //} //end if post isset
-
-
-/* $stmt = $pdo->prepare("INSERT INTO test ... :fname");
-
- $stmt->bindParam(':fname', $fname);*/  

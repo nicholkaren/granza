@@ -18,7 +18,7 @@ $result = $stmt->fetchAll();
 $totalSum = 0;
 
 
-// VARJE RAD I LOOPEN ÄR EN PRODUKT IFRÅN $RESULT SOM VI LÄGGER IN I EN NYSKAPAD ARRAY $PROD.
+// Varje rad i loopen är en prod från $result som vi lägger i en nyskapad array $prod
 
 foreach ($result as $product){
     
@@ -34,8 +34,7 @@ foreach ($result as $product){
 }
 
 
-// Vi sparar totalsumman i $cart['total'].
-
+// Här sparar vi totalsumman i $cart['total'].
 $cart['total'] = $totalSum;
 }
 ?>

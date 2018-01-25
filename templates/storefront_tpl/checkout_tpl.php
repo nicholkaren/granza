@@ -90,9 +90,6 @@
                          </li>
                 </ul>
             <hr id ="last-hr">
-
-        <!-- FORM TOKEN
-        //php echo getTokenField(); -->
          
     </div> <!-- wrapper -->
     </div> <!-- content -->
