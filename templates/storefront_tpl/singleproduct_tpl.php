@@ -82,6 +82,9 @@
         <meta property="og:image" content="<?php echo $pagecontent->img_url;?> " />
         -->
 
+        <img class="scent" src="img/doftnoter/doftfamilj1.png">
+
+
 </div> <!-- End of product single div -->
       
       <hr>

@@ -94,7 +94,7 @@ header {
 }
 
 div.menu_icons a {
-    margin-right: 23px;
+    margin-right: 0px;
     font-size: 20px;
     margin: top: 2px;
 
@@ -102,6 +102,8 @@ div.menu_icons a {
 
 i.fa.fa-user {
     color: white !important;
+    margin-right: 10px;
+
 }
 
 div.menu_icons a:last-child {
@@ -134,10 +136,6 @@ a:visited {
     margin-right: 20px;
 }
 
-#shop_bag::before {
-
-    font-size: 1.2em;
-}
 
 #profile:hover::before, #shop_bag:hover::before {
     color: #ffffff;

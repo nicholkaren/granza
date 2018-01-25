@@ -252,6 +252,13 @@ hgroup> h2 {
 
 
 /* Stor bild med doftfamiljen */
+.scent {
+  width: 60%;
+  position: absolute;
+  top: 9%;
+  left: 130%;
+
+}
 
 
 #block {
