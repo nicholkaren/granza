@@ -119,11 +119,11 @@ h1#add-cat-h1 {
 /*Produkt bild*/
 
 #cat-pic-div {
-    top: 0;
+    top: -75px;
     position: absolute;
     width: 250px;
     right: 0;
-    margin-right: -33%;
+    margin-right: -95%;
 }
 
 img {

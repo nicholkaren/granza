@@ -119,12 +119,11 @@ div.align {
 /*Produkt bild*/
 
 #prod-pic-div {
-    top: 0;
+    top: -25px;
     position: absolute;
     width: 250px;
     right: 0;
-    margin-right: -33%;
-    background: red;
+    margin-right: -95%;
 }
 
 img {

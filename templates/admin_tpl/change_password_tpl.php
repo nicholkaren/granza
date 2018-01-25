@@ -10,7 +10,7 @@ if ($person->isAdmin()) {
     <link type="text/css" href="css/admin/change_password.css" rel="stylesheet">
     <!--BAKGRUNDBILD-->
     <img class="background" src="img/products/big/marble-wallpaper-white.jpg">
-    <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>" id="goback">
+    <a href="?action=users" id="goback">
                 <i class="fa fa-angle-left " style="font-size:14px; margin-right:4px; "></i>Tillbaka</a>
     <!--Vit div-->
     <div align="center">
