@@ -100,6 +100,10 @@ div.menu_icons a {
 
 }
 
+i.fa.fa-user {
+    color: white !important;
+}
+
 div.menu_icons a:last-child {
     margin-right: 0;
 }

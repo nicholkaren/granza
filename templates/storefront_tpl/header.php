@@ -42,6 +42,7 @@
     <!-- Ikoner till Logga in som admin/member och shoppingbag-->
     <div class="menu_icons">
         <!-- Login icon -->
+        
         <a href="?action=login"><i class="fa fa-user" aria-hidden="true"></i></a>
         <!-- Shopping bad icon-->
         <a href="?action=addtocart">
