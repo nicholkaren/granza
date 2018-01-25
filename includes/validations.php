@@ -29,7 +29,7 @@ $errors = array();
         if (!isset($value) || $value === "") {
         global $errors;
     
-        $errors[] = ($value).'Fältet får inte vara tomt!';
+        $errors[] = ($value).'Fyll i fältet';
  
         }
     
@@ -46,7 +46,7 @@ $errors = array();
           if (preg_match($regex_name, $value)){
 
           } else {
-            $errors[] = 'Något är knas med ditt namn';
+            $errors[] = 'Fyll i ditt namn korretkt';
           }
     }
 }
@@ -72,7 +72,7 @@ if(!function_exists('validZip') ) {
     
     } else {
 
-            $errors[] = 'Något är vajsing med zippen';
+            $errors[] = 'Fel på postnummer';
     }
     }
 }
@@ -93,7 +93,7 @@ if(!function_exists('isPassword') ) {
     
             } else {
 
-            $errors[] = 'Ditt lösenord måste innehålla minst 6 tecken med både bokstäver och siffor';
+            $errors[] = 'Lösenord måste innehålla minst 6 tecken med både bokstäver och siffor';
     }
     }
 }
@@ -106,7 +106,7 @@ function isNumbers($value) {
  //   echo "isnumbers körs ";
   $field = $value;
   if(!is_numeric($field)) {
- $errors[] = 'AJABAJA! Fältet får endast innehålla siffror!'." ".$field;
+ $errors[] = 'Endast siffror'." ".$field;
 
 
         }
@@ -127,7 +127,7 @@ if(!function_exists('isPhone') ) {
 
     } else {
 
-            $errors[] = 'Något är lurt med telefonnumret'." ".$phone;
+            $errors[] = 'Fyll i ditt telefonnummer korrekt'." ".$phone;
     }
             
 }
@@ -142,7 +142,7 @@ function setLevel($value) {
 
     if(strpos($level, "0") === false && (strpos($level, "1") === false && (strpos($level, "2")  === false) ) ){
 
-        $errors[] = 'Ogiltig level';
+        $errors[] = 'Ogiltig behörighet';
     }
     }
 
@@ -156,7 +156,7 @@ function setLevel($value) {
         global $errors;
 
             if (strpos($email, "@") === false){
-        $errors[]= $email.'Det där verkar inte vara en epost-adress';
+        $errors[]= $email.'Skriv om din e-post';
         //function toLowerCase($email);
     } 
     }
@@ -168,7 +168,7 @@ function setLevel($value) {
     $value = $_POST[$field];
  
     if(!isset($value[5])) {
-        $errors[]= $value.'Fältet innehåller för få tecken!';
+        $errors[]= $value.'Fältet innehåller för få tecken';
         global $errors;
     }
     }
