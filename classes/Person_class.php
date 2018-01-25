@@ -1,16 +1,12 @@
 <?php
-
+//Class person 
 include('includes/token.php');
-
 
 getToken();
   
 class Person {
-    protected $personId; //Haralds $personId heter $uid, vår person_id är Haralds id
+    protected $personId;
     private $userInfo;
-
-
-
 
     public function getUserInfoFromDB() {
         global $pdo;
@@ -35,7 +31,7 @@ class Person {
      
         $sql = "SELECT person_id FROM person WHERE email = :email AND password = :password AND active = 1 ";
         
-        //TRIMMA BORT WHITESPACES OCH HASHA PASSWORD
+        // Whitespace och hasha lösenord
         $password = trim($_POST['input_password']);
         $password = hash('sha256', $password);
 
@@ -58,13 +54,13 @@ class Person {
         }  
     } 
 }
-    
+    //Du är nu utloggad
     public function logOut(){
         $this->personId = null;
         unset($_SESSION['personId']);
-//        echo"<p>Du är utloggad</p>";
     }
     
+    //inloggad
     public function isLoggedIn(){
         if(isset($_SESSION['personId'])) {
             $this->setId($_SESSION['personId']);
@@ -75,6 +71,7 @@ class Person {
         return $this->personId !==null;
     }
     
+    //admin
     public function isAdmin(){
         if ($this->isLoggedIn()){
             global $pdo;
@@ -95,7 +92,7 @@ class Person {
         
     }
     
-    public function setId($setThisId){ //Haralds $personId heter $userID
+    public function setId($setThisId){
         global $pdo;
         $sql = 'SELECT level FROM person WHERE person_id = :person_Id;';
         $stmt = $pdo->prepare($sql);
