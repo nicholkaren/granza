@@ -39,7 +39,7 @@ getToken();
             $pagecontent->fname = $result['fname'];
             $pagecontent->lname = $result['lname'];
             
-            $pagecontent->h2 = "ANVÄNDAREN HAR ID NR ".$result['person_id']."<br>"." "."OCH HETER ".$result['fname']." ".$result['lname'];
+            $pagecontent->h2 = "Medlems nummer ".$result['person_id']."<br>"." "."Namn:  ".$result['fname']." ".$result['lname'];
             
              $pagecontent->title;
 
@@ -52,7 +52,7 @@ getToken();
 
             } else if (isset($_POST['search_user']) && $result !== TRUE) {
 
-                 $pagecontent->title = "DET ANVÄNDAR-ID DU ANGETT SAKNAS";
+                 $pagecontent->title = "Medlems nummer saknas";
             
 
             }

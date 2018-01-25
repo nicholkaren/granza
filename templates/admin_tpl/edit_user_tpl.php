@@ -33,6 +33,7 @@ require_once('templates/admin_tpl/admin_header.php');?>
                 <label for="zipcode">POSTNUMMER</label>
                 <input class="edit_input" type="text" name="zipcode" placeholder="Postnummer" value="<?php echo $result[" zip "]; ?>">
             </div>
+            <!--left div-->
             <div class="right">
                 <label for="city">STAD</label>
                 <input class="edit_input" type="text" name="city" placeholder="Stad" value="<?php echo $result[" city "]; ?>">
@@ -50,13 +51,15 @@ require_once('templates/admin_tpl/admin_header.php');?>
                 <div class="button_wrapper">
                     <button type="submit" class="btn_save" id="edit_button" name="edit_button" action="">UPPDATERA</button>
 
-                    <button type="submit" class="btn_save" id="delete_button" name="delete_button" value="delete_button" action="">RADERA</button>
+                    <button type="submit" class="btn_save" id="delete_button" name="delete_button" value="delete_button" action="">INAKTIVERA</button>
 
                     <a href="?action=password"><button type="button" class="btn_save">ÄNDRA LÖSENORD</button></a>
 
                 </div>
-
+                <!--button_wrapper-->
+            </div>
+            <!--right div-->
         </form>
-        </div>
+
     </div>
 </div>

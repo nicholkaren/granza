@@ -114,23 +114,4 @@ window.addEventListener("load", function () {
     }
 
 
-    /*
-        var elems = document.getElementsByClassName("foobar");
-        console.log(elems);
-        //Lägga en lysnare till varje knapp / knappen i varje rad.
-        for (var i = 0; i < elems.length; i++) {
-            elems[i].addEventListener("click", changeColor);
-        }
-
-        function changeColor(e) {
-            console.log(e);
-
-            e.target.style.backgroundColor = "#25BA2F";
-            e.target.innerHTML = "uppdaterad";
-        }
-    */
 });
-
-function update() {
-    document.getElementById("updateStatus").style.color = "limegreen";
-}

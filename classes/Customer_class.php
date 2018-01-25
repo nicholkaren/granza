@@ -43,7 +43,7 @@ class Customer extends Person{
 
 //echo a message to say the UPDATE succeeded
     echo'<pre>';
-    echo $stmt->rowCount() . " records UPDATED successfully";
+    echo $stmt->rowCount() . " Uppdaterad användare";
     echo'</pre>';   
     //require_once('templates/parts/thanks_delete_tpl.php');
      
@@ -73,5 +73,3 @@ class Customer extends Person{
         return $result1;
         }
 }
-        
-        

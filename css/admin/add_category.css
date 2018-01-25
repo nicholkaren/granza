@@ -59,6 +59,15 @@ form {
     width: 500px;
 }
 
+div.align {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
 #update-product {
     margin-top: 0;
 }
@@ -103,7 +112,7 @@ div.style_select select {
     line-height: 1;
     border-radius: 0;
     border: black solid 2px;
-    height: 34px;
+    height: 40px;
     -webkit-appearance: none;
 }
 

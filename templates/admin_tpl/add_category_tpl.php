@@ -17,26 +17,28 @@
         }else if (!empty($last_id)) {
                 echo '<p id="p-success">Kategori med ID '.$last_id.' är sparad <i class="fa fa-check" style="font-size:20px;color:	limegreen"></i> </p>';}
         ?>
+            <div class="align">
+                <form method="post" action="?action=create-category" enctype="multipart/form-data" id="create-cat" name="add-category">
 
-            <form method="post" action="?action=create-category" enctype="multipart/form-data" id="create-cat" name="add-category">
+                    <input type="file" name="file1" id="file-upload-cat">
+                    <input type="text" name="cat[title]" id="cat-title" placeholder="Kategorititel">
+                    <textarea form="create-cat" rows="4" cols="50" name="cat[desc]" id="cat-desc" placeholder="Kategoribeskrivning"></textarea>
 
-                <input type="file" name="file1" id="file-upload-cat">
-                <input type="text" name="cat[title]" id="cat-title" placeholder="Kategorititel">
-                <textarea form="create-cat" rows="4" cols="50" name="cat[desc]" id="cat-desc" placeholder="Kategoribeskrivning"></textarea>
-
-                <label for="sel_status">Ange status:</label>
-                <div class="style_select">
-                    <select name="cat[status]" id="sel_status">
+                    <label for="sel_status">Ange status:</label>
+                    <div class="style_select">
+                        <select name="cat[status]" id="sel_status">
                     <option value="active" name="cat[active]">Aktiv</option>
                     <option value="inactive" name="cat[inactive]">Inaktiv</option>
                 </select>
-                    <!--IKON PIL NEDÅT-->
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
-                </div>
-                <!-- FORM TOKEN-->
-                <?php echo getTokenField(); ?>
+                        <!--IKON PIL NEDÅT-->
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                    <!-- FORM TOKEN-->
+                    <?php echo getTokenField(); ?>
 
-                <button type="submit" id="save-cat-button" class="btn_save">Spara kategori</button>
-            </form>
+                    <button type="submit" id="save-cat-button" class="btn_save">Spara kategori</button>
+                </form>
+            </div>
+            <!--align-->
     </div>
 </div>

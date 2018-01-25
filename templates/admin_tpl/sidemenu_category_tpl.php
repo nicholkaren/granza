@@ -14,7 +14,7 @@
                 <i class="fa fa-angle-left"></i>Tillbaka
             </li>
         </a>
-        <img class="side_menu_icon" src="img/icons/category_black.png" />
+        <img id="cat-icon" class="side_menu_icon" src="img/icons/category_black.png" />
         <a href="?action=create-category" class="txt">
 
             <li class="side_menu">Skapa ny kategori

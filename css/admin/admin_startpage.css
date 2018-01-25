@@ -1,60 +1,64 @@
-body{
-    margin:0;
-    padding:0;
+body {
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
 /*DIV som omslutar allt*/
-#admin_content{
+
+#admin_content {
     font-family: 'lato', sans-serif;
     text-transform: uppercase;
-    background-color:#FDFDFD;
+    background-color: #FDFDFD;
 }
 
 /*Matar ut ett användarnamn*/
-h2.admin_welcome{
- text-align: center;
- padding-top: 1%;
- padding-bottom: 0.5%;
+
+h2.admin_welcome {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 /*container som innehåller 3 divar*/
-.flex-container{
+
+.flex-container {
     display: flex;
-    width:100%;
+    width: 100%;
     height: 350px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 /*divarna*/
-.flex-container>div{
+
+.flex-container > div {
     background-color: white;
     width: 300px;
     margin: 10px;
     line-height: 30px;
     font-size: 30px;
-    -moz-box-shadow:     0 0 35px #dcdcdc;
-    -webkit-box-shadow:  0 0 35px #dcdcdc;
+    -moz-box-shadow: 0 0 35px #dcdcdc;
+    -webkit-box-shadow: 0 0 35px #dcdcdc;
     box-shadow: 0 0 35px #dcdcdc;
     text-align: center;
 }
+
 /*INFO ? */
 
-
-
 /*Knapp ikoner bilder*/
-img.admin_icon{
+
+img.admin_icon {
     display: table;
     margin: 0 auto;
     margin-top: 37%;
     width: 17%;
-    
+
 }
 
 /*Texten i boxarna*/
 
-span.admin_start{
+span.admin_start {
     letter-spacing: 1px;
     display: inline-block;
     margin-top: 4%;
@@ -62,7 +66,8 @@ span.admin_start{
 }
 
 /*välj mig knappen*/
-a.choose_me{
+
+a.choose_me {
     color: black;
     font-size: 0.5em;
     margin: 0 auto;
@@ -79,9 +84,10 @@ a.choose_me{
     -moz-box-shadow: 0 0 35px #dcdcdc;
     -webkit-box-shadow: 0 0 35px #dcdcdc;
     box-shadow: 0 0 6px #dcdcdc;
-    transition:all 0.20s linear;
+    transition: all 0.20s linear;
 }
-.choose_me:hover{
+
+.choose_me:hover {
     text-decoration: none;
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -91,6 +97,7 @@ a.choose_me{
 }
 
 /* Enskild hover för varje kategori */
+
 .choose_me.green:hover {
     background-color: #8BC34A;
     color: white;
@@ -113,7 +120,7 @@ a.choose_me{
     background-color: #FF5821;
     color: white;
     border: none;
-}  
+}
 
 .choose_me.magenta:hover {
     background-color: #E91F63;
@@ -126,5 +133,3 @@ a.choose_me{
     color: white;
     border: none;
 }
-
-

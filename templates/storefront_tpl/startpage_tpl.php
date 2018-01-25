@@ -24,29 +24,29 @@
     <img class="topimage2" src="img/inspo/big_img_mobile.jpg">
 
 </div>
-<!-- Knapp för quiz -->
-<a href="?action=fragrancequiz">
-    <!-- TOPPBILD -->
+<!-- Knapp för quiz 
+<a href="?action=fragrancequiz">-->
+<!-- TOPPBILD
     <div class="startpage_bigimage">
         <img class="topimage" src="img/slider/big_img.jpg">
         <img class="topimage2" src="img/inspo/big_img_mobile.jpg">
     </div>
 
-    <!-- Knapp för quiz
+    Knapp för quiz
         <a href="?action=fragrancequiz">
             <button id="create"> Begin fragrance profiling </button>
         </a>-->
 
-    <!-- MAIN CONTENT -->
-    <div class="startpage">
-        <!-- Första produktraden med damdofter -->
-        <a href="?action=category&id=1">
-            <h2 class="headline_gender"> Damdofter | Profumi donna </h2>
-        </a>
+<!-- MAIN CONTENT -->
+<div class="startpage">
+    <!-- Första produktraden med damdofter -->
+    <a href="?action=category&id=1">
+        <h2 class="headline_gender"> Damdofter | Profumi donna </h2>
+    </a>
 
-        <!-- Produkter -->
-        <div class="main_wrapper_startpage">
-            <?php 
+    <!-- Produkter -->
+    <div class="main_wrapper_startpage">
+        <?php 
                 foreach ($pagecontent->products as $currprod) {
                     echo '<div class="product_wrapper">';
                     echo '<a href="?action=product&pid='.$currprod['product_id'].'">';
@@ -58,48 +58,40 @@
                     echo '</div>';} 
             ?>
 
-            <!-- UPPTÄCK ALLA DAMDOFTER -->
-            <a href="?action=category&id=1">
-                <div class="discover_women">
-                    <img class="bigperfume" src="img/products/big/women_all.jpg">
-                    <img class="bigperfume2" src="img/products/big/women_all_mobile.jpg">
+        <!-- UPPTÄCK ALLA DAMDOFTER -->
+        <a href="?action=category&id=1">
+            <div class="discover_women">
+                <img class="bigperfume" src="img/products/big/women_all.jpg">
+                <img class="bigperfume2" src="img/products/big/women_all_mobile.jpg">
 
-                    <p class="all_women"> Se alla parfymer <br>för donna </p>
-                    <div class="arrow-left"></div>
-                </div>
-            </a>
-            <!-- BLI MEDLEM -->
-            <div id="register_member">
-                <div class="placement-left">
-                </div>
-                <div class="placement-right">
-                    <p> Bli medlem i Granza och få tillgång till exklusiva erbjudanden! <br> Prenumerera på nyhetsbrevet och ta del av spännande resereportage <br> om när vi besöker våra parfymerier i Italien. </p>
-                    <a href="?action=login"><button id="ansok"> Ansök här! </button></a>
-                </div>
+                <p class="all_women"> Se alla parfymer <br>för donna </p>
+                <div class="arrow-left"></div>
             </div>
-
-        </div>
-        <!-- / Första main -->
-
-
-
-
-        <!-- PRODUKTRAD MED HERRDOFTER -->
-        <a href="?action=category&id=2">
-            <h2 class="headline_gender">Herrdofter | Profumo Oumo</h2>
         </a>
+        <!-- BLI MEDLEM -->
+        <div id="register_member">
+            <div class="placement-left">
+            </div>
+            <div class="placement-right">
+                <p> Bli medlem i Granza och få tillgång till exklusiva erbjudanden! <br> Prenumerera på nyhetsbrevet och ta del av spännande resereportage <br> om när vi besöker våra parfymerier i Italien. </p>
+                <a href="?action=login"><button id="ansok"> Ansök här! </button></a>
+            </div>
+        </div>
 
-        <div class="main_wrapper_startpage">
-            <?php 
-                foreach ($pagecontent->products as $currprod) {
+    </div>
+    <!-- / Första main -->
 
-        
-            
-            <!-- PRODUKTRAD MED HERRDOFTER -->
-            <a href="?action=category&id=2"><h2 class="headline_gender">Herrdofter | Profumo Oumo</h2></a>
-            
-            <div class="main_wrapper_startpage">   
-            <?php 
+
+
+
+    <!-- PRODUKTRAD MED HERRDOFTER -->
+    <a href="?action=category&id=2">
+        <h2 class="headline_gender">Herrdofter | Profumo Oumo</h2>
+    </a>
+
+    <div class="main_wrapper_startpage">
+
+        <?php 
                 foreach ($pagecontent2->products as $currprod2) {
                     echo '<div class="product_wrapper">';
                     echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'">';
@@ -111,26 +103,26 @@
                     echo '</div>';} 
             ?>
 
-            <!-- UPPTÄCK ALLA HERRDOFTER -->
-            <a href="?action=category&id=2">
-                <div class="discover_men">
-                    <img class="bigperfume" src="img/products/big/tabacco.jpg">
-                    <img class="bigperfume2" src="img/products/big/tabacco_mobile.jpg">
+        <!-- UPPTÄCK ALLA HERRDOFTER -->
+        <a href="?action=category&id=2">
+            <div class="discover_men">
+                <img class="bigperfume" src="img/products/big/tabacco.jpg">
+                <img class="bigperfume2" src="img/products/big/tabacco_mobile.jpg">
 
-                    <p class="all_men"> Se alla dofter <br>för uomo </p>
-                    <div class="arrow-right"></div>
-                </div>
-            </a>
-
-            <!--En kreativ yta -->
-            <div id="philosophy">
-                <p class="thephilosophy"> "In the victorian times, everyone was well versed in the language of perfume. <br> When you gifted a bouquet or a perfume, you were telling a story, or sending a message"
-                    <br> - Fransesco Granza</p>
+                <p class="all_men"> Se alla dofter <br>för uomo </p>
+                <div class="arrow-right"></div>
             </div>
-        </div>
-        <!-- main wrapper -->
-    </div>
-    <!-- End of startpage div -->
+        </a>
 
-    <?php require_once('templates/storefront_tpl/footer.php');
+        <!--En kreativ yta -->
+        <div id="philosophy">
+            <p class="thephilosophy"> "In the victorian times, everyone was well versed in the language of perfume. <br> When you gifted a bouquet or a perfume, you were telling a story, or sending a message"
+                <br> - Fransesco Granza</p>
+        </div>
+    </div>
+    <!-- main wrapper -->
+</div>
+<!-- End of startpage div -->
+
+<?php require_once('templates/storefront_tpl/footer.php');
     ?>

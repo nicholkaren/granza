@@ -35,8 +35,8 @@
                 <a href="?action=password"><button type="button" class="btn_save">ÄNDRA LÖSENORD</button></a>
 
 
-
-                <a href="?action=delete_profile&uid=<?php $accountToDelete;?>"><button type="button" class="btn_save">RADERA KONTO</button></a>
+                <a href="?action=logout"><button id="logut" type="button" class="btn_save">LOGGA UT</button></a>
+                <!-- AV AKTIVERA KONTO <a href="?action=delete_profile&uid=<?php //$accountToDelete;?>"><button type="button" class="btn_save">RADERA KONTO</button></a>-->
             </div>
         </form>
 
@@ -72,7 +72,7 @@
             <?php endforeach ?>
             <?php endif ?>
         </table>
-        <a href="?action=logout"><button id="logut" type="button" class="btn_save">LOGGA UT</button></a>
+
     </div>
     <?php require_once('templates/storefront_tpl/footer.php');
 ?>

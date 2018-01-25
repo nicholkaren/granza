@@ -17,9 +17,14 @@ img.side_menu_icon {
     display: table;
     margin-top: 30%;
     width: 17%;
-    margin-bottom: 45%;
     margin-left: 15px;
 
+}
+
+/*Kategori icon*/
+
+#cat-icon {
+    margin-left: 23px;
 }
 
 /*LISTAN*/
@@ -39,7 +44,9 @@ li.side_menu {
     color: black;
 }
 
-li#back {}
+li#back {
+    margin-top: 125px;
+}
 
 /*LÄNKARNA*/
 

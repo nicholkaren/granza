@@ -83,10 +83,3 @@ getToken();
         
         require('templates/parts/login_tpl.php');
    }
-
-     
-
-
-
-
- 

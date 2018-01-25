@@ -5,8 +5,8 @@ $pagecontent->h2 = "";
 require('templates/admin_tpl/admin_header.php');
 include('meny_controller.php');
 require_once('classes/Customer_class.php');
-//include('includes/validations.php');
-//echo " Errors ";
+include('includes/validations.php');
+echo " Errors ";
 $errors = array();
 
 //KOLLA OM KNAPPEN DELETE TRYCKTS. KÖR ISF DEN HÄR FÖR ATT TA BORT ANVÄNDARE
@@ -30,7 +30,7 @@ if (isset($_POST['delete_button']) && $errors === array() ) {
 
     $pagecontent->h2 = "DU HAR INAKTIVERAT ANVÄNDARE MED ID NR $accountToDelete";
 
-    require('templates/edit_user_tpl.php');
+    require('templates/admin_tpl/edit_user_tpl.php');
 
 
 
@@ -126,7 +126,7 @@ $validate = array();
 			$result['level'] = $_POST['level'];
 			$result['newletter'] = $_POST['newletter'];
                     
-            require('templates/edit_user_tpl.php');
+            require('templates/admin_tpl/edit_user_tpl.php');
 
             $pagecontent->button ="LISTA PÅ ANVÄNDARE";
             

@@ -22,40 +22,42 @@ if ($pagecontent->error !== ""){
 } else if (isset($_POST['save-cat']) && $pagecontent->error === "") {
     echo '<p id="p-success">Ändringar sparade <i class="fa fa-check" style="font-size:20px;color:	limegreen"></i> </p>';
 }?>
+        <div class="align">
+            <form method="post" action="?action=edit-category" id="search-cat" name="search-category">
+                <div class="container-4">
+                    <input type="search" name="cat-search" id="search" placeholder="Sök Kategori">
+                    <button type="submit" id="search-cat-button" class="icon"><i class="fa fa-search" style="margin-left:0; margin-right:0;"></i></button>
+                </div>
+            </form>
 
-        <form method="post" action="?action=edit-category" id="search-cat" name="search-category">
-            <div class="container-4">
-                <input type="search" name="cat-search" id="search" placeholder="Sök Kategori">
-                <button type="submit" id="search-cat-button" class="icon"><i class="fa fa-search" style="margin-left:0; margin-right:0;"></i></button>
-            </div>
-        </form>
+            <form method="post" action="?action=update-category&id=<?php echo $pagecontent->category_id;?>" enctype="multipart/form-data" id="create-cat" name="edit-category">
+                <div id="cat-pic-div">
+                    <img src="<?php echo $pagecontent->img_url;?>" id="cat-pic">
+                </div>
+                <input type="file" name="file1" id="file-upload-cat">
+                <input type="hidden" name="saved-img" value="<?php echo $pagecontent->img_url;?>">
+                <input type="text" name="cat[title]" id="cat-title" placeholder="Kategorititel" value="<?php echo $pagecontent->cat_title;?>">
+                <textarea form="create-cat" rows="6" cols="50" name="cat[desc]" id="cat-desc" placeholder="Kategoribeskrivning"><?php echo $pagecontent->description;?></textarea>
 
-        <form method="post" action="?action=update-category&id=<?php echo $pagecontent->category_id;?>" enctype="multipart/form-data" id="create-cat" name="edit-category">
-            <div id="cat-pic-div">
-                <img src="<?php echo $pagecontent->img_url;?>" id="cat-pic">
-            </div>
-            <input type="file" name="file1" id="file-upload-cat">
-            <input type="hidden" name="saved-img" value="<?php echo $pagecontent->img_url;?>">
-            <input type="text" name="cat[title]" id="cat-title" placeholder="Kategorititel" value="<?php echo $pagecontent->cat_title;?>">
-            <textarea form="create-cat" rows="6" cols="50" name="cat[desc]" id="cat-desc" placeholder="Kategoribeskrivning"><?php echo $pagecontent->description;?></textarea>
-
-            <label for="sel_status">Ange status 
+                <label for="sel_status">Ange status 
             </label>
-            <div class="style_select">
-                <select id="sel_status" name="cat[status]">
+                <div class="style_select">
+                    <select id="sel_status" name="cat[status]">
                     <option value="active" name="cat[active]">Aktiv</option>
                     <option value="inactive" name="cat[inactive]">Inaktiv</option>
                 </select>
-                <!--IKON PIL NEDÅT-->
-                <i class="fa fa-caret-down" aria-hidden="true"></i>
-            </div>
+                    <!--IKON PIL NEDÅT-->
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
 
-            <!-- FORM TOKEN-->
-            <?php echo getTokenField(); ?>
+                <!-- FORM TOKEN-->
+                <?php echo getTokenField(); ?>
 
 
-            <button type="submit" class="btn_save" id="save-cat-button" name="save-cat">Spara kategori</button>
+                <button type="submit" class="btn_save" id="save-cat-button" name="save-cat">Spara kategori</button>
 
-        </form>
+            </form>
+        </div>
+        <!--div alig-->
     </div>
 </div>
