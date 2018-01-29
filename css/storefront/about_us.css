@@ -55,9 +55,12 @@ p.about_us_describing_text {
 
 #collage {
     position: relative;
+    width: 40%;
+    margin-left: 15%;
+    margin-top: 10%;
 }
 
-/* Bild 1*/
+/* Bild 
 
 img.about_content_img {
     width: 40%;
@@ -78,4 +81,4 @@ img.about_content_img3 {
     top: 69%;
     left: 50%;
 
-}
+}1*/
