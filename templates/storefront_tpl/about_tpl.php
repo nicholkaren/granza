@@ -16,15 +16,19 @@ require_once('templates/storefront_tpl/header.php');
 	    
 	    <!-- Brödtext -->
 	    <p class="about_us_describing_text"><?php echo $pagecontent->content1; ?></p>
+	    	    <p class="about_us_describing_text"><?php echo $pagecontent->content2; ?></p>
+
 
 	    <!-- Bilder -->
 	    <div id="collage">
+	    	        <img src="<?php echo $pagecontent->img_url; ?>"> 
+
 	    	<img class="about_content_img" src="img/inspo/more-flowers.jpg">  
 	    	<img class="about_content_img2" src="img/inspo/X-craftsmanship.jpg">  
 	    	<img class="about_content_img3" src="img/inspo/architecture.jpg">  
 		</div>
 		<br>
 
-					    <p id="signature"> / Fransesco Granza </p>
+		<p id="signature"> / Fransesco Granza </p>
 
 	</div>
