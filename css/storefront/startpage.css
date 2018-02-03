@@ -67,7 +67,7 @@ div.create {
     width: 70%;
     height: 200px;
     position: absolute;
-    top: 40%;
+    top: 32%;
     right: 0%;
     left: 0%;
 
@@ -104,6 +104,8 @@ h2.headline_gender {
     padding: 2%;
     margin: 0px;
     width: 100%;
+    font-size: 20px;
+    text-decoration: none !important;
 }
 
 /* Namnet på parfymerna */
