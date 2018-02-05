@@ -3,23 +3,9 @@ body{
     z-index: -1;
 }
 
-header {
-    width: 100%;
-    max-width: 1680px;
-    height: 100px;
-    background-color: red;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-family: 'open sans';
-    margin: 0;
-    padding: 0;
-}
-
-
-/* Bootstrap menu */
+/* Bootstrap menu overriding settings */
 .navbar-inverse {
-background-color: black !important;
+    background-color: black !important;
 }
 
 .navbar-nav>li>a {
@@ -27,6 +13,7 @@ background-color: black !important;
     padding-bottom: 20px !important; 
 }
 
+/* gör så menyn ej är kant i kant med sidan */
 .navbar-right {
     margin-right: 70px !important;
 }
@@ -35,25 +22,44 @@ background-color: black !important;
     margin-left: 70px !important;
 }
 
+/* Avståndet mellan knapparna*/
 .nav>li>a {
 
     padding-left: 27px !important;
 }
 
+/* Gör ikonen vit och ej default grå */
 .navbar-inverse .navbar-nav>li>a {
     color: white !important;
 }
 
+/* Ger gul färg på länkarna */
 .navbar-inverse .navbar-nav>li>a:hover {
     color: #f0bb29 !important;
 }
+
+/* Hamburgarikonen */
+.navbar-toggle {
+    margin-right: -5px !important;
+}
+
 
 a {
     color: #000000 !important; 
 }
 
+/* Tar bort default underline*/
 a:hover {
     text-decoration: none !important;
+}
+
+/* Toggle */
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #000000 !important;  
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #000000 !important;
 }
 
 /* Logotypen */
@@ -103,19 +109,11 @@ a:hover {
 }
 
 
-.menu {
-    width: 20%;
-    height: 100%;
-    background-color: #ffffff;
-    opacity: 0.8;
-    position: fixed;
-    margin: 0;
-    padding: 0;
-    left: -400px;
-    transition: left 0.5s;
-    z-index: 3;
-}
+/* */
 
+
+
+/*
     h1#menu-button {
         text-align: center;
         font-weight: normal;
@@ -220,14 +218,41 @@ a:visited {
 
 #profile:hover::before, #shop_bag:hover::before {
     color: #ffffff;
+}*/
+
+
+@media only screen and (max-width: 500px) {
+    
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;
+    }
+    
+    .navbar-collapse {
+        max-height: none;
+    }
+    
+    body {
+        margin: 0;
+    }
+
+    .navbar-nav {
+        margin: 70px -15px !important;
+    }
+
+    /* Storleken på själva diven som omsluter allt
+    minskar vi denna så blir det scroll i den */
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 700px !important;
+    }
+
+    .nav>li { 
+        text-align: center !important; 
+    }
+
 }
 
-
-
-
-
-
-
+/*
 @media only screen and (max-width: 500px) { 
 
     .menu {
@@ -381,4 +406,4 @@ a:visited {
 #div-qty-cart {
 display: none;
 }
-}
+}*/
