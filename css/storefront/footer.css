@@ -29,6 +29,10 @@ jämnt mellan dessa och ger perfekt margin. */
     border-right: 1px white solid; /* Enbart för ramens skull */
 }
 
+body > footer > div > div:nth-child(3) {
+    border-right: none !important;
+}
+
 p.granza-foooter-text {
     font-size: 13px;
     color: white;
