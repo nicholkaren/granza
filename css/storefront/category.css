@@ -49,6 +49,8 @@ h1.bigheadline_category {
 	margin-left: 6%;
 }
 
+
+
 .prod_img {
 	width: 100%;
 	display: inline-block;
@@ -57,6 +59,7 @@ h1.bigheadline_category {
 /* Storlek på varje parfymbild i helskärm */
 .product_wrapper {
 	width: 24.5%;
+    overflow: hidden;
 }
 
 /* Namnet på parfymerna */
@@ -101,14 +104,22 @@ button {
     border: none;
 }
 
-/* Hover effekt med zoom 
+/* Hover effekt med zoom */
 .product_wrapper img:hover {
     transition: all 200ms ease-in-out;
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
     z-index: 1;
-}*/
+}
+
+/* Bilder på parfymer */
+.product_wrapper img {
+    max-width: 100%;
+    -moz-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+}
 
 
 
