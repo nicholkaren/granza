@@ -150,4 +150,9 @@ button {
         height: 557px;
     }
 
+    .main_wrapper {
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+
 }

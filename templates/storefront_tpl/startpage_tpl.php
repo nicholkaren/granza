@@ -10,9 +10,6 @@
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
 
-
-
-
 <!-- Liten reklambanner under headern -->
 <div class="small_banner">
     | <i class="fa fa-bolt" aria-hidden="true"></i> Snabb leverans |

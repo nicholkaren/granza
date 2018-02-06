@@ -53,14 +53,15 @@ span#order {
 
 .aside {
     float: left;
-    width: 24%;
-    height: 60px;
+    width: 30%;
+    height: 70px;
     background-color: #ffffff;
     display: inline-block;
     margin-right: 7%;
     margin-left: 2%;
-    margin-top: 2%;
+    margin-top: 2.25%;
     padding: 3%;
+    padding-bottom: 3%;
 }
 
 /* h1 Din varukorg */
@@ -83,7 +84,7 @@ h1:before {
     height: 1px;
     content: '';
     background: #D3D3D3; 
-    width: 34.9%;
+    width: 41.7%;
     margin-right: 2.3em;
 }
 
@@ -92,7 +93,7 @@ h1:after {
     height: 1px;
     content: '';
     background: #D3D3D3; 
-    width: 34.9%;
+    width: 41.7%;
     margin-left: 2.3em;
 }
 
@@ -350,26 +351,6 @@ div.goback > i {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MEDIA QUERY */
 
 @media all and (max-width:900px){
@@ -387,9 +368,7 @@ div.goback > i {
         
     .btn-box > form{
         text-align: center;
-    }
-
-   
+    } 
     
 }
 

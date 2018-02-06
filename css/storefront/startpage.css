@@ -71,7 +71,6 @@ div.create {
     top: 36%;
     right: 0%;
     left: 0%;
-
     margin: 0 auto;
     padding: 56px;
     z-index: 4;
@@ -182,8 +181,6 @@ button {
     width: 100%;
     position: relative;
     background: #f0bb29;
-
-
     color: white;
     text-transform: uppercase;
     text-decoration: none;
@@ -215,7 +212,6 @@ button:hover {
 .discover_women > .bigperfume2 {
     display: none;
 }
-
 
 p.all_women {
     position: absolute;
@@ -313,7 +309,6 @@ Uppdelad i två block, en med bildkollage och en med bara text */
     padding-top: 2%;
     padding-bottom: 2%;
     margin-top: 0.3%;
-
 }
 
 .placement-left {
@@ -367,7 +362,6 @@ button#ansok {
     background-color: #000000; 
     text-align: center;
     margin-bottom: 10%;
-
 }
 
 #leafs {
@@ -424,9 +418,6 @@ p.thephilosophy {
      -webkit-filter: blur(2 px); /* Safari 6.0 - 9.0 */
     filter: blur(2px);
 }
-
-
-
 
 
 /* Mobilanpassning för iphone 6 plus */
