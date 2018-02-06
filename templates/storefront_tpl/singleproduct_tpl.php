@@ -87,8 +87,6 @@
 
 </div> <!-- End of product single div -->
       
-      <hr>
-
       <!-- Block med doftfamiljs-hjul
       <div id="block">
           <img class="scent-wheel" src="img/products/big/scent_wheel.png"> 

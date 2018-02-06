@@ -8,6 +8,9 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+
+
 
 
 <!-- Liten reklambanner under headern -->
@@ -27,7 +30,7 @@
     <!-- Säljande text -->
             <div class="create"> 
                 <p>Italian quality <br>
-                and excellence </p>
+                & excellence </p>
                 <p class="est">since 1990</p>
             </div>
 
@@ -59,6 +62,7 @@
                 <img class="bigperfume2" src="img/products/big/women_all_mobile.jpg">
 
                 <p class="all_women"> Se alla parfymer <br>för donna </p>
+
                 <div class="arrow-left"></div>
             </div>
         </a>

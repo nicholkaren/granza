@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -10,11 +15,16 @@
   opacity: 0;
 }
 
+div.prod_info_wrapper > .button2 {
+  color: white;
+}
+
 /* Underline för Delivery Options popup */
 .button_2 {
     border-bottom: 1px solid #ffffff;
     padding-bottom: 3px
     padding-top: 5%;
+    color: white !important;
 }
 
 a.button_2:hover {
@@ -90,16 +100,6 @@ img.delivery_image {
     margin-top: 3%;
 }
 
-
-
-
-
-
-* {
-	margin: 0;
-	box-sizing: border-box;
-}
-
 /* Tillbaka knapp */
 .goback {
     color: white;
@@ -132,7 +132,7 @@ figure {
 div.prod_info_wrapper {
     width: 45%;
     position: absolute;
-    top: 25%;
+    top: 17%;
     left: 8%;
 
     font-family: 'Lato';
@@ -227,12 +227,6 @@ input {
     width: 75%;
 }
 
-.share-prod #fb-font, #inst-font, #pint-font, #mail-font{
-    color: #807b74;
-    font-size: 1.5em;
-    font-family: 'millhouse-prod-share';
-    margin: 5px;
-}
 
 #fb-font::before {
     content:'\66';
@@ -424,6 +418,8 @@ button:hover {
     
     .product_upsale {
     flex-wrap: nowrap;
+    padding-left: 7%;
+    padding-right: 7%;
     }
     
     .product_wrapper_upsale:nth-child(4) {
