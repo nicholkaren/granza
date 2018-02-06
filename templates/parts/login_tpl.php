@@ -3,6 +3,9 @@ include('templates/storefront_tpl/header.php');
 ?>
 
 <link type="text/css" rel="stylesheet" href="css/storefront/login.css">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+
 
 
 <div class="main_wrapper">
@@ -11,7 +14,7 @@ include('templates/storefront_tpl/header.php');
 
         <!-- Inputfält logga in -->
         <h2 class="login_title">
-            HEJ, <?php echo $pagecontent->h2 ?>!
+            HEJ, <?php echo $pagecontent->h2 ?>! <i class="fas fa-angle-down"></i>
         </h2>
             <form action="" method="post" autocomplete="off" name="login">
                 <input class="login" type="text" name="email" placeholder="E-postadress">
@@ -29,7 +32,7 @@ include('templates/storefront_tpl/header.php');
     <div class="on_top">
                 <hr>
 
-        <h2 class="create_title"> Inte medlem?</h2>
+        <h2 class="create_title"> Inte medlem? <i class="fas fa-angle-down"></i></h2>
             <form class="create_account" action="?action=create_user" method="post" autocomplete="off">
 
                 <!-- Logga-in knapp -->

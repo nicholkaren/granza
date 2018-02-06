@@ -7,9 +7,9 @@
  .main_wrapper{
  	width: 100%;
  	height: auto;
- }
+}
 
-	div.login {
+div.login {
 	width: 100%;
 	margin: 0 auto;
 	height: 500px;
@@ -19,7 +19,7 @@ h2.login_title  {
 	font-size: 20px;
 	text-align: center;
 	color: #000000;
-	margin-top: 20%;
+	margin-top: 30%;
 	padding-bottom: 25px;
 }
 
@@ -83,11 +83,11 @@ a#forgot-password{
  	margin: 0 auto;
  }
 
- .login_wrapper {
+.login_wrapper {
  	width: 80%;
  	margin: 0 auto;
  	text-align: center;
- }
+}
 
 input[type="checkbox"] {
 	position: relative;
@@ -98,36 +98,35 @@ input[type="checkbox"] {
 img.create_canvas {
 	width: 100%;
 	height: auto;
-	margin-top: 0.5%;
+	margin-top: 8.7%;
 }
 
-	.main_wrapper {
+.main_wrapper {
 	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	flex-flow: row;
 
-	}
+}
 	
-	div.create_account {
+div.create_account {
 	width: 100%;
 	position: relative;
 }
 
-	div.login {
+div.login {
 	width: 50%;
 	margin: 0 auto;
-
 }
-	form {
+
+form {
 	width: 50%;
 	margin: 0 auto;
 	margin-top: 10px;
+}
 
-	}
-
-	input.login{
+input.login{
 	padding-top: 5px;
 	padding-left: 25px;
 	padding-right: 25px;
@@ -135,35 +134,42 @@ img.create_canvas {
 	width: 100%;
 	margin-bottom: 20px;
 }
-	div.create_account {
+
+div.create_account {
 	width: 50%;
 	margin: 0 auto;
 	background-color: #fffffff;
 }
  	
- 	/* Knapp ansök här */
- 	button#send {
+/* Knapp ansök här */
+button#send {
  	width: 50%;
  	font-size: 14px;
  	border: 3px solid white;
  	margin-top: 30px;
- 	}
+}
 
- 	#login {
- 	width: 100%;
- 	font-size: 14px;
- 	}
- 	
+#login {
+	width: 100%;
+	font-size: 14px;
+}
 
+/* Hover state på button */
+#login:hover {
+ 	opacity: 0.80;
+}
 
- 	.login_wrapper {
+button#send:hover {
+	opacity: 0.80;
+}
+ 
+.login_wrapper {
  	padding-top: 30px;
- }
+}
 
 hr {
 	width: 50%;
 	margin: 0 auto;
-
 }
 
 
