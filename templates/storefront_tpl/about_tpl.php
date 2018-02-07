@@ -10,28 +10,6 @@ require_once('templates/storefront_tpl/header.php');
 <!--OM OSS-->
 <img class="background_flowers" src="img/inspo/flowers_about.jpg">
 
-<<<<<<< HEAD
-    <div id="about_us_wrapper">
-    	<!-- Rubrik -->
-	    <h1 class="about_us_headline"><?php echo $pagecontent->title; ?></h1>
-	    
-	    <!-- Brödtext -->
-	    <p class="about_us_describing_text"><?php echo $pagecontent->content1; ?></p>
-	    	    <p class="about_us_describing_text"><?php echo $pagecontent->content2; ?></p>
-
-
-	    <!-- Bilder -->
-	    <div id="collage">
-	    	        <img src="<?php echo $pagecontent->img_url; ?>"> 
-
-	    	<img class="about_content_img" src="img/inspo/more-flowers.jpg">  
-	    	<img class="about_content_img2" src="img/inspo/X-craftsmanship.jpg">  
-	    	<img class="about_content_img3" src="img/inspo/architecture.jpg">  
-		</div>
-		<br>
-
-		<p id="signature"> / Fransesco Granza </p>
-=======
 <div id="about_us_wrapper">
     <!-- Rubrik -->
     <h1 class="about_us_headline">
@@ -42,18 +20,15 @@ require_once('templates/storefront_tpl/header.php');
     <p class="about_us_describing_text">
         <?php echo $pagecontent->content1; ?>
     </p>
-    <p class="about_us_describing_text">
+    <p class="about_us_describing_text2">
         <?php echo $pagecontent->content2; ?>
     </p>
     <!-- Bilder -->
     <div id="collage">
         <img class="about_content_img" src="<?php echo $pagecontent->img_url; ?>">
-        <!--<img class="about_content_img2" src="img/inspo/X-craftsmanship.jpg">
-        <img class="about_content_img3" src="img/inspo/architecture.jpg">-->
     </div>
     <br>
 
     <p id="signature"> / Fransesco Granza </p>
->>>>>>> b70a97ee67627f4b5061a4fac58c684f2c2c03c3
 
 </div>
