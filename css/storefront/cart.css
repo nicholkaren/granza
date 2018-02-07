@@ -10,8 +10,11 @@ body {
 /* papperskorg ikon */
 i {
     color: black;
-    margin-left: 25px; /* Avstånd till summa */
 }
+
+svg.svg-inline--fa.fa-trash.fa-w-14 {
+    margin-left: 25px;
+} 
 
 i:hover {
     color: grey;
@@ -61,7 +64,7 @@ span#order {
     margin-left: 2%;
     margin-top: 2.25%;
     padding: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 }
 
 /* h1 Din varukorg */
@@ -142,7 +145,7 @@ h1:after {
 
 span.desc{
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     color: #43484D;
     font-weight: 400;
 }
@@ -157,9 +160,9 @@ span.desc{
 
 input[type="number"] {
     color: #000000;
-	padding: 5px 10px;
+	padding: 6px 9px;
 	margin-top: 10px;
-    width: 50%;
+    width: 34%;
 }
 
 .item-price {
@@ -167,7 +170,6 @@ input[type="number"] {
     width: 17%;
     padding-top: 8%;
     text-align: center;
-    font-size: 16px;
     color: #43484D;
     font-weight: 300;
 }
@@ -199,24 +201,10 @@ input[type="number"] {
 }
 
 /* Uppdatera cart */
-button.update-cart-btn{
-    margin-top: 4%;
-    padding: 15px;
-	background-color: #000000;
-	border: none;
-	width: 25%;
-	position: relative;
-	color: white;
-	font-size: 10px;
-	text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-}
 
-.btn-box{
-    width: 100%;
-    text-align: left;
+.btn-update {
+    background-color: transparent;
+    border: none;
 }
 
 #checkoutknapp {

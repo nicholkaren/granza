@@ -14,7 +14,7 @@
 <div class="small_banner">
     | <i class="fa fa-bolt" aria-hidden="true"></i> Snabb leverans |
     <i class="fa fa-gift" aria-hidden="true"></i> Parfymprov vid varje beställning |
-    <i class="fa fa-clock-o" aria-hidden="true"></i> 60 dagars öppet köp |
+    <i class="far fa-clock"></i> 60 dagars öppet köp |
 </div>
 
 <!-- TOPPBILD -->

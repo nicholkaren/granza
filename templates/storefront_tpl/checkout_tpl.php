@@ -7,7 +7,7 @@
 
 
   <div id="fullwidth">
-      <h1 class="shoppingbag"> Din Checkout ( steg 3 ) </h1>
+      <h1 class="shoppingbag2"> Din Checkout ( steg 3 ) </h1>
 
     <div id="cart-wrapper">
         <!-- Tillbaka knapp -->

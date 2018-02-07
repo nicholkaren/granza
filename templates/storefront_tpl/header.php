@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 
 </head>
 
@@ -38,7 +40,9 @@
               <li><a href="?action=about-us">Om Granza</a></li>
 
       <li><a href="?action=login"><span class="glyphicon glyphicon-user"></span></a></li>
-      <li><a href="?action=addtocart"><span id="shop_bag"> <i class="fa fa-shopping-bag" aria-hidden="true"></i> 
+      <li><a href="?action=addtocart"><span id="shop_bag"> <i class="fas fa-shopping-basket"></i>
+
+ 
 
             <!-- Skriver ut antalet produkter i varukorgen -->
             <?php if(isset($_SESSION['cart-total']) && $_SESSION['cart-total'] > 0){

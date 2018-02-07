@@ -6,11 +6,13 @@ require('templates/storefront_tpl/header.php');
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+
+
     <div id="fullwidth">
         <h1 class="shoppingbag"> Din varukorg ( steg 2 ) </h1>
     <!--Här är varukorgen -->
     <div id="cart-wrapper">
-        <a href="<?php echo $_SERVER['HTTP_REFERER'] ?>">
+        <a href="?action=default">
             <div class="goback2"><i class="fa fa-angle-left"></i> Tillbaka </div>
         </a>
         <br>
@@ -41,7 +43,11 @@ require('templates/storefront_tpl/header.php');
                 <!-- Antal valda  produkter -->     
                 <div class="item-qty">
                     <input type="number" name="cartitems[<?php echo $cartItemPid;?>]" value="<?php echo $cartItemData['qty'];?>">
+                <!-- Update button-->
+                <button class="btn-update" type="submit"> <i class="fas fa-sync-alt"></i> </button> 
+
                 </div>
+
                 
                 <!-- Total summa för en vara -->
                 <div class="item-price">
@@ -54,8 +60,11 @@ require('templates/storefront_tpl/header.php');
 
                 <!-- Remove cart item -->
                 <a href="?action=removecartitem&pid=<?php echo $cartItemPid;?>">
-                    <i class="fa fa-trash" aria-hidden="true"></i>
+                    <i class="fas fa-trash"></i>
                 </a>
+                
+
+
             </div> <!-- /content -->
     </div>  
         
@@ -70,7 +79,6 @@ require('templates/storefront_tpl/header.php');
             <div class="cart-total">
                 <?php echo $cart['total'].' SEK';?>
                 <br>
-                <button class="update-cart-btn" type="submit"> Uppdatera varukorgen </button> 
             </div>
         </div>                                
         </div>       

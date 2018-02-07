@@ -440,7 +440,7 @@ p.thephilosophy {
 
     .small_banner {
         margin-top: 7%;
-        width: 100%;
+        width: 98%;
         font-size: 16.2px;
         padding: 2.5%;
     }
@@ -511,11 +511,16 @@ p.thephilosophy {
 
     .placement-right {
         width: 100%;
+        margin-top: 5%;
+        margin-right: 0px;
+    }
+
+    .placement-right p {
+        width: 100%;
         color: white;
         text-align: center;
         padding: 7%;
-        margin-top: 10%;
-        font-size: 19px;
+        font-size: 16px;
         margin-right: 0px;
         flex: 0 0 100%;
     }

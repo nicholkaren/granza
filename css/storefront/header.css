@@ -85,6 +85,11 @@ a:hover {
     font-size: 20px;
 }
 
+svg.svg-inline--fa.fa-shopping-basket.fa-w-18 {
+    font-size: 20px;
+}
+
+
 /* Antal i varukorg */
 #qty-cart {
     height: 15px;
