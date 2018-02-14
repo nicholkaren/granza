@@ -25,11 +25,13 @@
 </div>
 
     <!-- Säljande text -->
-            <div class="create"> 
-                <p>Italian quality <br>
-                & excellence </p>
-                <p class="est">since 1990</p>
-            </div>
+    <div class="create"> 
+        <p>Italian quality <br> & excellence </p>
+        <p class="est">since 1990</p>
+    </div>
+
+        <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+
 
 <!-- MAIN CONTENT -->
 <div class="startpage">
