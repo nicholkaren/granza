@@ -50,14 +50,9 @@ if ($pagecontent->error !== ""){
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </div>
 
-                <!-- FORM TOKEN-->
-                <?php echo getTokenField(); ?>
-
-
                 <button type="submit" class="btn_save" id="save-cat-button" name="save-cat">Spara kategori</button>
 
             </form>
-        </div>
-        <!--div alig-->
+        </div><!--div alig-->
     </div>
 </div>

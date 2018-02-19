@@ -1,4 +1,4 @@
-<?php //Edit medlem från admins sida.
+<?php //Redigera medlem från admins sida.
 require_once('templates/admin_tpl/admin_header.php');?>
 <link type="text/css" rel="stylesheet" href="css/admin/admin_edit_user.css">
 
@@ -55,10 +55,8 @@ require_once('templates/admin_tpl/admin_header.php');?>
 
                     <a href="?action=password"><button type="button" class="btn_save">ÄNDRA LÖSENORD</button></a>
 
-                </div>
-                <!--button_wrapper-->
-            </div>
-            <!--right div-->
+                </div><!--button_wrapper-->
+            </div><!--right div-->
         </form>
 
     </div>

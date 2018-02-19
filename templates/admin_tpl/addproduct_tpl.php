@@ -24,10 +24,10 @@
 
         <!-- Här matas det sparade PID för produkten eller ERROR om det ej matas in i DB -->
         <?php if ($pagecontent->error !== ""){
-        echo '<p id="p-error">'.$pagecontent->error.'</p>';
-        } 
-        else if (!empty($last_id)) {
-        echo '<p id="p-success">Produkt med ID '.$last_id.' har lagts till <i class="fa fa-check" style="font-size:20px;color:	limegreen"></i></p>';
+                echo '<p id="p-error">'.$pagecontent->error.'</p>';
+    
+        } else if (!empty($last_id)) {
+                echo '<p id="p-success">Produkt med ID '.$last_id.' har lagts till <i class="fa fa-check" style="font-size:20px;color:	limegreen"></i></p>';
         }
     ?>
         <!--Form för att mata in nya produkter i DB-->
@@ -68,10 +68,6 @@
                 <!--IKON PIL NEDÅT-->
                 <i class="fa fa-caret-down" aria-hidden="true"></i>
             </div>
-
-
-            <!-- FORM TOKEN-->
-            <?php echo getTokenField(); ?>
 
             <button type="submit" id="save-product-button" name="save-product" class="btn_save">Spara produkt</button>
 

@@ -1,3 +1,4 @@
+<!--Redigera produkt-->
 <?php require_once('templates/admin_tpl/admin_header.php');?>
 <?php require_once('templates/admin_tpl/sidemenu_product_tpl.php');?>
 
@@ -77,8 +78,6 @@
                     <!--IKON PIL NEDÅT-->
                     <i class="fa fa-caret-down" aria-hidden="true"></i>
                 </div>
-                <!-- FORM TOKEN-->
-                <?php echo getTokenField(); ?>
 
                 <button type="submit" class="btn_save" id="save-product-button" name="save-product">Spara produkt
             </button>
@@ -87,8 +86,6 @@
                     <img src="<?php echo $pagecontent->img_url;?>" id="prod-pic">
                 </div>
             </form>
-        </div>
-        <!--align-->
+        </div><!--align-->
     </div>
-
 </div>

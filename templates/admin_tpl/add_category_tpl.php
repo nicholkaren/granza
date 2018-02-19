@@ -1,7 +1,10 @@
+<!--Admin, skapa ny kategori-->
 <?php require_once('templates/admin_tpl/admin_header.php');?>
 <?php require_once('templates/admin_tpl/sidemenu_category_tpl.php');?>
+
 <link type="text/css" href="css/admin/add_category.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!--BAKGRUNDBILD-->
 <img class="background" src="img/products/big/marble-wallpaper-white.jpg">
 <!--Vit div-->
@@ -11,13 +14,16 @@
         <h1 id="add-cat-h1">
             <?php echo strtoupper($pagecontent->title); ?>
         </h1>
-        <?php
-        if ($pagecontent->error !== ""){
-            echo '<p id="p-error">'.$pagecontent->error.'</p>';
+
+        <?php if ($pagecontent->error !== ""){
+                echo '<p id="p-error">'.$pagecontent->error.'</p>';
+            
         }else if (!empty($last_id)) {
-                echo '<p id="p-success">Kategori med ID '.$last_id.' är sparad <i class="fa fa-check" style="font-size:20px;color:	limegreen"></i> </p>';}
+                    echo '<p id="p-success">Kategori med ID '.$last_id.' är sparad <i class="fa fa-check" style="font-size:20px;color:	limegreen"></i> </p>';
+        }
         ?>
             <div class="align">
+
                 <form method="post" action="?action=create-category" enctype="multipart/form-data" id="create-cat" name="add-category">
 
                     <input type="file" name="file1" id="file-upload-cat">
@@ -33,12 +39,8 @@
                         <!--IKON PIL NEDÅT-->
                         <i class="fa fa-caret-down" aria-hidden="true"></i>
                     </div>
-                    <!-- FORM TOKEN-->
-                    <?php echo getTokenField(); ?>
-
                     <button type="submit" id="save-cat-button" class="btn_save">Spara kategori</button>
                 </form>
-            </div>
-            <!--align-->
+            </div><!--align-->
     </div>
 </div>

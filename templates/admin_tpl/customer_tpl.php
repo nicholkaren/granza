@@ -1,8 +1,9 @@
-<?php require_once('templates/storefront_tpl/header.php');
+<!--Inloggad användare-->
+ <?php require_once('templates/storefront_tpl/header.php');
   //require('classes/Customer_class.php');
 ?>
 <link type="text/css" rel="stylesheet" href="css/admin/customer_profile.css">
-<!--INLOGGAD MEMBER-->
+
 <!--BAKGRUNDBILD-->
 
 <img class="background" src="img/products/big/marble-wallpaper-white.jpg">

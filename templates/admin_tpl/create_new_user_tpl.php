@@ -1,8 +1,8 @@
+<!--Skapa en ny användare-->
 <?php require_once('templates/storefront_tpl/header.php');
 ?>
-
 <link type="text/css" rel="stylesheet" href="css/admin/create_new_user.css">
-<!-- SKAPA KONTO BÖRJAR HÄR -->
+
 <!-- Bakgrundsbild - marmor-->
 <img class="background" src="img/products/big/marble-black.jpg">
 
