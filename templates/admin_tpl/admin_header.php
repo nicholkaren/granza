@@ -13,8 +13,8 @@
     <header class="admin" align="center">
         <ul class="admin_menu">
 
-            <li class="a_list"><a id="1" href="?action=login"> Admin panel <i class="fa fa-home" aria-hidden="true" style="color:white font-size:32px;"></i></a></li>
-            <li class="a_list"><img src="img/logo/granza.png" alt="logotype granza" id="id_logo"></li>
+            <li class="a_list"><a id="1" href="?action=default"> Till butik <i class="fa fa-home" aria-hidden="true" style="color:white font-size:32px;"></i></a></li>
+            <li class="a_list"><a id="3" href="?action=login"><img src="img/logo/granza.png" alt="logotype granza" id="id_logo"></a></li>
             <li class="a_list"><a id="2" href="?action=logout">LOGGA UT<i class="fa fa-sign-out" aria-hidden="true" style="margin-left:4px;"></i></a></li>
 
         </ul>
