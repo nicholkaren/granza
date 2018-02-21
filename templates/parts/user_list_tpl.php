@@ -1,10 +1,5 @@
 <link type="text/css" rel="stylesheet" href="css/admin/admin_list.css">
 
-
-
-<h1 id="h1-cat">Medlemmar hos Granza</h1>
-<a href="?action=login" id="goback-order">
-                <i class="fa fa-angle-left " style="font-size:20px; margin-right:4px; "></i>Tillbaka</a>
 <tbody>
     <td>
         <?php echo $pagecontent->uid?>

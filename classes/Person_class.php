@@ -29,7 +29,7 @@ class Person {
         global $pdo;
         
      
-        $sql = "SELECT person_id FROM person WHERE email = :email AND password = :password AND active = 1 ";
+        $sql = "SELECT person_id, level FROM person WHERE email = :email AND password = :password AND active = 1 ";
         
         // Whitespace och hasha lösenord
         $password = trim($_POST['input_password']);
@@ -50,6 +50,7 @@ class Person {
             $this->personId = $result['person_id'];
             $this->getUserInfoFromDB();
             $_SESSION['personId'] = $this->personId;
+            $_SESSION['level'] = $result['level'];
 
         }  
     } 
@@ -60,15 +61,23 @@ class Person {
         unset($_SESSION['personId']);
     }
     
+    public function getLevel() {
+        return $_SESSION['level'] ?? null;
+    }
+    
     //inloggad
     public function isLoggedIn(){
         if(isset($_SESSION['personId'])) {
-            $this->setId($_SESSION['personId']);
+            $this->setId( (int) $_SESSION['personId']);
              //echo $this->personId." är inloggad";
             
         }
 
         return $this->personId !==null;
+        
+        
+        // return isset($_SESSION['personId]);
+        
     }
     
     //admin
@@ -85,6 +94,8 @@ class Person {
 
          }
         
+        // return ($_SESSION['level] == 2)
+        
     }
     
     public function getId(){
@@ -100,7 +111,9 @@ class Person {
         $stmt->execute();
 
         $result = $stmt->fetchColumn();
-        if($result) {
+        
+        
+        if($result !== false ) {
             $this->personId = $setThisId; 
         }
 

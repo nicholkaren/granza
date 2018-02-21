@@ -42,6 +42,16 @@ div.all_product {
     position: absolute;
 }
 
+.overflow-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 8px);
+    overflow: scroll;
+    padding: .5em 0 0 0;
+}
+
 thead {
     background-color: black;
     overflow: hidden;

@@ -13,7 +13,11 @@ $sql = "SELECT * FROM person";
         //BAKGRUNDBILD
         echo '<img class="background" src="img/products/big/marble-wallpaper-white.jpg">';
 //VITA DIVEN
-       echo '<div id ="memberlist" class="all_product">';
+        echo '<div id ="memberlist" class="all_product">';
+        echo '<h1 id="h1-cat">Medlemmar hos Granza</h1>';
+        echo '<a href="?action=login" id="goback-order">';
+        echo '<i class="fa fa-angle-left " style="font-size:20px; margin-right:4px; "></i>Tillbaka</a>';
+        echo '<div class="overflow-wrapper">';
         echo "<table class='list-wrapper'>";
         echo "<thead>";
         echo "<tr>";
@@ -63,6 +67,7 @@ require('templates/parts/user_list_tpl.php');
     } 
     
     echo "</table>";
+    echo '</div>';
        
 
 }

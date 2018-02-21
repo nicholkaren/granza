@@ -1,6 +1,9 @@
 <?php 
 include('meny_controller.php');
 include('includes/validations.php');
+
+global $errors, $pdo;
+
 $pagecontent = new stdClass;
 
 $pagecontent->title = "SKAPA KONTO";
@@ -14,17 +17,16 @@ $errors = array();
 
 
 if(isset($_POST['create_user']) && $errors === array() ) {
-$pagecontent->title = "SKAPA KONTO";  
-
-// Lägg till användaren
+    $pagecontent->title = "SKAPA KONTO";  
 
 
+    // Lägg till användaren
     $newPassword= $_POST['input-password'];
     $confPassword = $_POST['confirm_password'];
 
-//psw checkup om det är samma, annars visa error    
+    //psw checkup om det är samma, annars visa error    
     if (!($newPassword === $confPassword) ) {
-    global $errors;
+    
     $errors[] = "Löserorden verkar inte stämma överens";
 
  
@@ -46,25 +48,24 @@ $pagecontent->title = "SKAPA KONTO";
 
     if($person->isLoggedIn()) {
         $validate['level'] = array('notEmpty', 'isNumbers', 'setLevel');
-            } else {
-
-                $validate['level'] = array();
+    } else {
+        $validate['level'] = array();
     }
 
     foreach ($validate as $field => $rules) {
 
-            
         foreach($rules as $rule) {
 
             $rule($_POST[$field]);
 
         }
 
-}
+    }
 
-    global $pdo;
-
-$sql = "INSERT INTO person (fname, lname, street1, street2, zip, city, phone, email, created_at, level, password, newletter) VALUES (:fname, :lname, :street1, :street2, :zip, :city, :phone, :email, NOW(), :level, :password, :newletter)";
+    
+        $sql = "INSERT INTO person (fname, lname, street1, street2, zip, city, phone, email, created_at, level, password, newletter) 
+                VALUES
+                (:fname, :lname, :street1, :street2, :zip, :city, :phone, :email, NOW(), :level, :password, :newletter)";
 
         $stmt = $pdo->prepare($sql);
 
@@ -76,20 +77,20 @@ $sql = "INSERT INTO person (fname, lname, street1, street2, zip, city, phone, em
 			$city = $_POST['city'];
 			$phone = $_POST['telefon'];
 			$email = $_POST['email'];
-			
-            if (isset($_POST['level']) ) {
-              $level = $_POST['level'];  
-            
-            } else {
-                    $level = "";
-            }
+
+// Det här är troligtvis onödigt, eftersom $level ändå sätts på rad 103.
+//            if (isset($_POST['level']) ) {
+//              $level = $_POST['level'];  
+//            
+//            } else {
+//                    $level = "";
+//            }
 		  
           $newletter = $_POST['newletter'];
 
 
             $newPassword = trim($_POST['input-password']);
             $newPassword = hash('sha256', $newPassword);
-
 
             $fname = /*removeNationalChars(removeCaps(*/stripString($_POST['fname']);
             $lname = stripString($_POST['lname']);
@@ -99,7 +100,10 @@ $sql = "INSERT INTO person (fname, lname, street1, street2, zip, city, phone, em
             $city = stripString($_POST['city']);
             $phone = stripString($_POST['telefon']);
             $email = stripString($_POST['email']);
-            $level = stripString($_POST['level']);
+            
+            //$level = stripString($_POST['level']);
+            // Att plocka in level från $_POST är farligt, eftersom man kan ändra detta från front-end, och t.ex skicka en en 2:a själv, och direkt bli admin.
+            $level = 1;
 
             //var_dump($lastId);
 

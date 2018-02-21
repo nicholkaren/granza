@@ -14,35 +14,37 @@
 
     <!-- PRINTA ALLA KATEGORIER SOM FINNS I DATABASEN-->
 
-    <table class="list-wrapper">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Bild</th>
-                <th>Titel</th>
-                <th>Beskrivning</th>
-                <th>Status</th>
-                <th>Redigera</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php foreach ($pagecontent->categories as $currcat) {
-              echo '<tr>';
-                printf ('<td>%s</td>',$currcat['category_id']);
-                printf ('<td><img src="%s" class="cat-list-img"</td>',$currcat['img_url']);
-                printf ('<td>%s</td>',$currcat['title']);
-                printf ('<td class="cat-desc-list">%s</td>',$currcat['description']);
-                echo '<td>'; 
-            if ($currcat['status'] === '1'){
-                    echo 'Inaktiv';
-                } else {
-                    echo 'Aktiv';
-                }; 
-                echo '</td>';
-                echo '<td><a href="?action=edit-category&id='.$currcat['category_id'].'">Redigera</a></td>';
-              echo '</tr>';
-            }?>
-        </tbody>
-    </table>
+    <div class="overflow-wrapper">
+        <table class="list-wrapper">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Bild</th>
+                    <th>Titel</th>
+                    <th>Beskrivning</th>
+                    <th>Status</th>
+                    <th>Redigera</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($pagecontent->categories as $currcat) {
+                  echo '<tr>';
+                    printf ('<td>%s</td>',$currcat['category_id']);
+                    printf ('<td><img src="%s" class="cat-list-img"</td>',$currcat['img_url']);
+                    printf ('<td>%s</td>',$currcat['title']);
+                    printf ('<td class="cat-desc-list">%s</td>',$currcat['description']);
+                    echo '<td>'; 
+                if ($currcat['status'] === '1'){
+                        echo 'Inaktiv';
+                    } else {
+                        echo 'Aktiv';
+                    }; 
+                    echo '</td>';
+                    echo '<td><a href="?action=edit-category&id='.$currcat['category_id'].'">Redigera</a></td>';
+                  echo '</tr>';
+                }?>
+            </tbody>
+        </table>
+    </div>
 
 </div>
