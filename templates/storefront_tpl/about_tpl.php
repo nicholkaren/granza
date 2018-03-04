@@ -6,9 +6,8 @@ require_once('templates/storefront_tpl/header.php');
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
 
-
 <!--OM OSS-->
-<img class="background_flowers" src="img/inspo/flowers_about.jpg">
+<img class="background_flowers" src="img/inspo/flowers_about.jpg" alt="about page content">
 
 <div id="about_us_wrapper">
     <!-- Rubrik -->

@@ -78,6 +78,8 @@ require('templates/storefront_tpl/header.php');
                         
             <div class="cart-total">
                 <?php echo $cart['total'].' SEK';?>
+                <?php echo'<div id="moms">'.'varav moms '.ceil($momsSats).' SEK'.'</div>';?>
+
                 <br>
             </div>
         </div>                                

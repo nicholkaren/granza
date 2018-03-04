@@ -103,7 +103,7 @@
               echo '<img src="'.$currprod2['img_url_2'].'" class="prod_img">';
               echo '<h3 class="perfume_name">'.$currprod2['title_2'].'</h3>';
               echo "<br>";         
-              echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'" class="upsale-button-a"><button class="button" type="button"> Lägg i varukorg </button></a>';
+              echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'" class="upsale-button-a"><button class="button" type="button"> Läs mer </button></a>';
               echo '</div></a>';
           } ?>
       </div>   

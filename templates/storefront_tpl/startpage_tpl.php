@@ -1,6 +1,5 @@
 <?php require_once('templates/storefront_tpl/header.php'); ?>
 
-<!--STARTSIDA-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link type="text/css" rel="stylesheet" href="css/storefront/startpage.css">
 <link type="text/css" rel="stylesheet" href="css/storefront/category.css">
@@ -21,18 +20,13 @@
 <div class="startpage_bigimage">
     <img class="topimage" src="img/slider/big_img.jpg">
     <img class="topimage2" src="img/inspo/big_img_mobile.jpg">
-
 </div>
-
-    <!-- Säljande text -->
     <div class="create"> 
         <p>Italian quality <br> & excellence </p>
         <p class="est">since 1990</p>
     </div>
-
-        <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
-
-
+    <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+    
 <!-- MAIN CONTENT -->
 <div class="startpage">
     <!-- Första produktraden med damdofter -->
