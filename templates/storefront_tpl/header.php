@@ -19,11 +19,10 @@
     <div class="container-fluid">
         <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <!--<a class="navbar-brand" href="#">WebSiteName</a>-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
@@ -31,65 +30,18 @@
       <li><a href="?action=category&id=1">Damdofter</a></li>
       <li><a href="?action=category&id=2">Herrdofter</a></li>
     </ul>
-
     <ul class="nav navbar-nav navbar-right">
-              <li><a href="?action=about-us">Om Granza</a></li>
-
-      <li><a href="?action=login"><span class="glyphicon glyphicon-user"></span></a></li>
-      <li><a href="?action=addtocart"><span id="shop_bag"> <i class="fas fa-shopping-basket"></i>
-
- 
-
-            <!-- Skriver ut antalet produkter i varukorgen -->
-            <?php if(isset($_SESSION['cart-total']) && $_SESSION['cart-total'] > 0){
-                printf ('<div id="qty-cart"><span id="qty">%s</span></div>', $_SESSION['cart-total']);
-            }
-            ?>
-            </span></a></li>
+        <li><a href="?action=about-us">Om Granza</a></li>
+        <li><a href="?action=login"><span class="glyphicon glyphicon-user"></span></a></li>
+        <li><a href="?action=addtocart"><span id="shop_bag"> <i class="fas fa-shopping-basket"></i>
+        <!-- Skriver ut antalet produkter i varukorgen -->
+        <?php if(isset($_SESSION['cart-total']) && $_SESSION['cart-total'] > 0){
+            printf ('<div id="qty-cart"><span id="qty">%s</span></div>', $_SESSION['cart-total']);
+        }
+        ?>
+        </span></a></li>
     </ul>
-</div>
     </div>
-</nav>
-
-<!--Header -->
-
-
-
-
-    <!--Meny som fälls ut 
-      <input type="checkbox" id="nav-trigger" class="nav-trigger">
-        <label for="nav-trigger" class="toggle">☰</label>
-        <nav class="menu">
-            <h1 id="menu-button">Meny</h1>
-            
-            <ul class="ulmenu">    
-                <li><a href="?action=category&id=1">Damdofter</a></li>
-                <li><a href="?action=category&id=2">Herrdofter</a></li>
-                <li><a href="?action=about-us">Om oss</a></li>
-                <li><a href="?action=default">Hem</a></li>
-            </ul>
-        </nav>-->
-
-    <!-- Logotyp 
-    <div class="div_logo">
-        <a href="?action=default">
-        <img src="img/logo/granza.png" alt="logotype granza" id="id_logo"></a>
-    </div>-->
+    </div>
+</nav>  
     
-    <!-- Ikoner till Logga in som admin/member och shoppingbag
-    <div class="menu_icons">
-        Login icon
-        
-        <a href="?action=login"><i class="fa fa-user" aria-hidden="true"></i></a>
-        Shopping bad icon
-        <a href="?action=addtocart">
-            <span id="shop_bag">
-                <i class="fa fa-shopping-bag" aria-hidden="true"></i>-->
-                
-            <!-- Skriver ut antalet produkter i varukorgen -->
-            <?php if(isset($_SESSION['cart-total']) && $_SESSION['cart-total'] > 0){
-                printf ('<div id="qty-cart"><span id="qty">%s</span></div>', $_SESSION['cart-total']);
-            }
-                ?>
-            </span></a>
-    </div> 

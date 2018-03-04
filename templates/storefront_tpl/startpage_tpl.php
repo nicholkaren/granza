@@ -26,7 +26,7 @@
         <p class="est">since 1990</p>
     </div>
     <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
-    
+
 <!-- MAIN CONTENT -->
 <div class="startpage">
     <!-- Första produktraden med damdofter -->
@@ -36,18 +36,17 @@
 
     <!-- Produkter -->
     <div class="main_wrapper_startpage">
-        <?php 
-                foreach ($pagecontent->products as $currprod) {
-                    echo '<div class="product_wrapper">';
-                    echo '<a href="?action=product&pid='.$currprod['product_id'].'">';
-                    echo '<img src="'.$currprod['img_url'].'" class="prod_img">';
-                    echo '<h3 class="perfume_name">'.$currprod['title'].'</h3>';
-                    echo '<p class="price">'.$currprod['price'] .' KR'.'</p>';
-                    echo '<button id="button" type="button"> Läs mer </button>';
-                    echo '</a>';
-                    echo '</div>';} 
-            ?>
-
+    <?php 
+        foreach ($pagecontent->products as $currprod) {
+            echo '<div class="product_wrapper">';
+            echo '<a href="?action=product&pid='.$currprod['product_id'].'">';
+            echo '<img src="'.$currprod['img_url'].'" class="prod_img">';
+            echo '<h3 class="perfume_name">'.$currprod['title'].'</h3>';
+            echo '<p class="price">'.$currprod['price'] .' KR'.'</p>';
+            echo '<button id="button" type="button"> Läs mer </button>';
+            echo '</a>';
+            echo '</div>';} 
+        ?>
         <!-- UPPTÄCK ALLA DAMDOFTER -->
         <a href="?action=category&id=1">
             <div class="discover_women">
@@ -71,29 +70,22 @@
 
     </div>
     <!-- / Första main -->
-
-
-
-
-    <!-- PRODUKTRAD MED HERRDOFTER -->
+    <!-- HERRDOFTER -->
     <a href="?action=category&id=2">
         <h2 class="headline_gender">Herrdofter | Profumo Oumo</h2>
     </a>
-
     <div class="main_wrapper_startpage">
-
         <?php 
-                foreach ($pagecontent2->products as $currprod2) {
-                    echo '<div class="product_wrapper">';
-                    echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'">';
-                    echo '<img src="'.$currprod2['img_url_2'].'" class="prod_img">';
-                    echo '<h3 class="perfume_name">'.$currprod2['title_2'].'</h3>';
-                    echo '<p class="price">'.$currprod2['price_2'] .' KR'.'</p>';
-                    echo '<button id="button" type="button"> Läs mer </button>';
-                    echo '</a>';
-                    echo '</div>';} 
-            ?>
-
+            foreach ($pagecontent2->products as $currprod2) {
+                echo '<div class="product_wrapper">';
+                echo '<a href="?action=product&pid='.$currprod2['product_id_2'].'">';
+                echo '<img src="'.$currprod2['img_url_2'].'" class="prod_img">';
+                echo '<h3 class="perfume_name">'.$currprod2['title_2'].'</h3>';
+                echo '<p class="price">'.$currprod2['price_2'] .' KR'.'</p>';
+                echo '<button id="button" type="button"> Läs mer </button>';
+                echo '</a>';
+                echo '</div>';} 
+        ?>
         <!-- UPPTÄCK ALLA HERRDOFTER -->
         <a href="?action=category&id=2">
             <div class="discover_men">
@@ -104,16 +96,14 @@
                 <div class="arrow-right"></div>
             </div>
         </a>
-
-        <!--En kreativ yta -->
+        <!-- Kreativ yta -->
         <div id="philosophy">
             <p class="thephilosophy"> "In the victorian times, everyone was well versed in the language of perfume. <br> When you gifted a bouquet or a perfume, you were telling a story, or sending a message"
-                <br> - Fransesco Granza</p>
+            <br> - Fransesco Granza</p>
         </div>
     </div>
     <!-- main wrapper -->
 </div>
 <!-- End of startpage div -->
 
-<?php require_once('templates/storefront_tpl/footer.php');
-    ?>
+<?php require_once('templates/storefront_tpl/footer.php');?>
