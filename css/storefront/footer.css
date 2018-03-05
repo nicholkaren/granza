@@ -105,11 +105,11 @@ img#footerimg {
     }
 
     .eq:nth-of-type(even) {
-        border-bottom: 1px solid white;
+        border-bottom: 1px solid black;
     }
 
     p.granza-foooter-links {
-        font-size: 22px;
+        font-size: 17px;
         padding-left: 0;
     }
 

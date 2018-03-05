@@ -462,7 +462,7 @@ p.thephilosophy {
 }
 
 
-/* Mobilanpassning för iphone 6 plus */
+/* Mobilanpassning för 500 */
 
 @media only screen and (max-width: 500px) { 
 
@@ -481,8 +481,8 @@ p.thephilosophy {
     }
 
     .small_banner {
-        margin-top: 7%;
-        width: 98%;
+        margin-top: 12%;
+        width: 100%;
         font-size: 16.2px;
         padding: 2.5%;
     }
@@ -493,6 +493,11 @@ p.thephilosophy {
 
     .startpage_bigimage {
         max-height: 620px;
+    }
+
+    .ca3-scroll-down-link {
+        top: 75%;
+        left: 53%;
     }
 
     h2.headline_gender {
@@ -542,9 +547,9 @@ p.thephilosophy {
     }
 
     #register_member {
-        margin-top: 2.3%;
-        margin-bottom: 6%;
+        margin: 2.3% 6% 6% 0%;
         height: 350px;
+        display: table-row;
     }
 
     .placement-left {
@@ -553,7 +558,7 @@ p.thephilosophy {
 
     .placement-right {
         width: 100%;
-        margin-top: 5%;
+        margin-top: 9%;
         margin-right: 0px;
     }
 
@@ -568,9 +573,9 @@ p.thephilosophy {
     }
 
     button#ansok {
-        width: 96%;
+        width: 80%;
         padding: 15px; 
-        margin-top: 8%;
+        margin-top: 1%;
     }
 
     p.all_men {
