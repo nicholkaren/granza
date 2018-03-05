@@ -26,14 +26,12 @@
         <p class="est">since 1990</p>
     </div>
     <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
-
 <!-- MAIN CONTENT -->
 <div class="startpage">
     <!-- Första produktraden med damdofter -->
     <a href="?action=category&id=1">
         <h2 class="headline_gender"> Damdofter | Profumi donna </h2>
     </a>
-
     <!-- Produkter -->
     <div class="main_wrapper_startpage">
     <?php 
