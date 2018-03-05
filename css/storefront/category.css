@@ -156,3 +156,12 @@ button {
     }
 
 }
+
+/* Media Queries for Ipad size */
+@media all and (min-width:700px) and (max-width: 1023px){ 
+
+    .product_wrapper {
+        width: 49.5%;
+    }
+
+}

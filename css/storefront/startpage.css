@@ -464,7 +464,7 @@ p.thephilosophy {
 
 /* Mobilanpassning för 500 */
 
-@media only screen and (max-width: 500px) { 
+@media only screen and (max-width: 699px) { 
 
     .topimage {
         display: none;
@@ -605,6 +605,68 @@ p.thephilosophy {
 }
 
 
+/* Media Queries for Ipad size */
+@media all and (min-width:700px) and (max-width: 1023px){ 
+
+    .topimage {
+        max-width: none;
+    }
+
+    .startpage {
+        width: 105%;
+    }
+
+    .startpage_bigimage {
+        width: 105%;
+    }
+
+    div.create {
+        width: 90%;
+        top: 37%;
+    }
+
+    .create p {
+        font-size: 60px;
+    }
+
+    p.est {
+        font-size: 25px;
+    }
+
+    .ca3-scroll-down-link {
+        left: 51%;
+    }
+
+    h2.headline_gender {
+        padding-top: 4%;
+    }
+
+    .product_wrapper {
+        width: 49.5%;
+    }
+
+    p.all_women {
+        top: 42%;
+        left: 15%;
+        font-size: 27px;
+    }
+
+    .arrow-left {
+        top: 64%;
+    }
+
+    #register_member {
+        display: table-row;
+    }
+
+    .placement-right {
+        width: 100%;
+        flex: 0 0 100%;
+        margin-top: 15%;
+        margin-right: 0%;
+    }
+
+}
 
 
 /******* MEDIA QUERIES FÖR SKÄRM < 800px ************/
