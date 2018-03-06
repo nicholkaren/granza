@@ -26,9 +26,10 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
-      <li><a href="?action=default">Hem</a></li>
-      <li><a href="?action=category&id=1">Damdofter</a></li>
-      <li><a href="?action=category&id=2">Herrdofter</a></li>
+        <img id="id_logo" src="img/logo/logotype-new.png">
+        <li><a href="?action=default">Hem</a></li>
+        <li><a href="?action=category&id=1">Damdofter</a></li>
+        <li><a href="?action=category&id=2">Herrdofter</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
         <li><a href="?action=about-us">Om Granza</a></li>
