@@ -8,7 +8,6 @@ footer {
 
 /* Varje box har en width på 32%, 32 x 3 = 96%; så de övriga 4% distribueras
 jämnt mellan dessa och ger perfekt margin. */ 
-
 .square {
     width: 32%; /* Definiera storlek på dem */
 }
@@ -61,7 +60,7 @@ p.granza-foooter-links a {
 }
 
 p.granza-foooter-links a:hover {
-       color: grey; 
+    color: grey; 
 }
 
 span.who {
@@ -77,8 +76,8 @@ span.who {
 
 img#footerimg {
     width: 55%;
-   margin-left: 20%;
-   margin-top: -20%;
+    margin-left: 20%;
+    margin-top: -20%;
 }
 
 
@@ -97,8 +96,8 @@ img#footerimg {
     }
 
     .eq:nth-of-type(odd) {
-    border-right: 0px solid white; 
-}
+        border-right: 0px solid white; 
+    }
 
     .square {
         width: 100%;
@@ -120,16 +119,32 @@ img#footerimg {
     }
 }
 
+/******* MEDIA QUERIES FÖR SKÄRM < 800px ************/
 
+@media all and (min-width:700px) and (max-width: 1023px) { 
 
+    p.granza-foooter-text{
+        font-style: 10px;
+    }
 
+    p.granza-foooter-links {
+        padding-left: 15%;
+        padding-top: 21%;
+        text-decoration: none;
+    }
+    footer {
+        width: 105%;
+    }
 
-
-
-
-
-
-
-
+    img#footerimg {
+        width: 100%;
+        margin-left: -1%;
+        margin-top: -14%;
+    }
 
 }
+
+
+
+
+
