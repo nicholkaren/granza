@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Granza perfumes | <?php echo $pagecontent->title; ?></title>
-<link rel="shortcut icon" href="img/logo/granza.png"/>
+<link rel="shortcut icon" href="img/logo/g-logotype.png"/>
 <link type="text/css" rel="stylesheet" href="css/storefront/header.css">
 <link type="text/css" rel="stylesheet" href="css/storefront/footer.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800|Work+Sans:300,400" rel="stylesheet">
