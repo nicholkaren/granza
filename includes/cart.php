@@ -7,7 +7,6 @@ if (isset($_SESSION['cart'])){
 $idsInCart = array_keys($_SESSION['cart']);
 $idsInCart = implode(array_filter($idsInCart), ',');
 
-
 $sql = "SELECT * FROM product, product_img WHERE product.product_id = product_img.product_id AND product.product_id 
         IN ($idsInCart)";
 
@@ -16,7 +15,6 @@ $stmt->execute();
 $result = $stmt->fetchAll();
 
 $totalSum = 0;
-
 
 // Varje rad i loopen är en prod från $result som vi lägger i en nyskapad array $prod
 
@@ -28,11 +26,13 @@ foreach ($result as $product){
     $prod['price'] = $product['price'];
     $prod['title'] = $product['title'];
     $prod['sum'] = $prod['price'] * $prod['qty'];
+    $prod['moms'] = $prod['sum'] * 0.2;
+
     $totalSum += $prod['sum'];
+    $momsSats += $prod['moms'];
     
     $cart['cartItems'][$product['product_id']] = $prod;
 }
-
 
 // Här sparar vi totalsumman i $cart['total'].
 $cart['total'] = $totalSum;

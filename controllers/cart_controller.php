@@ -1,10 +1,11 @@
 <?php
 include('meny_controller.php');
-//Kundvagnen 
+//Varukorg 
 
 $pagecontent = new stdClass; 
-$pagecontent->title = "Din kundvagn";
+$pagecontent->title = "Din varukorg";
 $total = 0;
+$momsSats = 0;
 
 
 if ($_GET['action'] === 'addtocart' && !empty($_POST['pid'])){
@@ -12,6 +13,7 @@ if ($_GET['action'] === 'addtocart' && !empty($_POST['pid'])){
     $pid = $_POST['pid'];
     $qty = $_POST['qty'];
     $price = $_POST['price'];
+
     // Här är ett test för att kolla om produkten man vill lägga till i varukorgen redan finns. 
     // Om ja- plussas antalet med antalet som redan finns.
     // Om inte- läggs det i varukorgen.
