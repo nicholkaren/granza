@@ -98,7 +98,7 @@ input[type="checkbox"] {
 img.create_canvas {
 	width: 100%;
 	height: auto;
-	margin-top: 8.7%;
+	margin-top: 11%;
 }
 
 .main_wrapper {
@@ -173,6 +173,37 @@ hr {
 }
 
 
+
+@media all and (min-width:300px) and (max-width: 766px) { 
+
+	.main_wrapper {
+		display: block;
+		padding-top: 40%;
+	}
+
+	h2.login_title {
+		margin-top: 0%;
+	}
+
+	form {
+    	width: 100%; 
+	}
+
+	h2.create_title {
+		padding-top: 50px;
+		width: 100%;
+	}
+
+	button#send {
+		width: 100%;
+		border: none;
+	}
+
+	img.create_canvas {
+		display: none;
+	}
+
+}
 
 
 
