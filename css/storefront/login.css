@@ -174,7 +174,7 @@ hr {
 
 
 
-@media all and (min-width:300px) and (max-width: 766px) { 
+@media all and (min-width:300px) and (max-width: 1022px) { 
 
 	.main_wrapper {
 		display: block;

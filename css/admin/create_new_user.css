@@ -112,6 +112,47 @@ button.create_account:hover {
     border: none;
 }
 
+@media (min-width: 400px) and (max-width: 759px)  { 
+    
+    h1.create_account_title {
+        font-size: 26px;
+        text-transform: uppercase;
+        top: -13%;
+        color: black;
+    }
+
+    div.login {
+        top: 19%;
+        width: 80%;
+        -webkit-box-shadow: 0 0 12px grey;
+        box-shadow: 0 0 12px grey;
+    }
+
+    form.create_user_form {
+        margin-top: 0px;
+        padding: 7%;
+    }
+
+    img.background {
+        display: none;
+    }
+
+    .checkbox_wrapper {
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    button.create_account {
+        margin-top: 16%;
+        width: 100%;
+    }
+
+    footer {
+        display: none;
+    }
+}
+
+
 /******* MEDIA QUERIES FÖR SKÄRM > 1025px ************/
 
 @media (min-width: 760px) {
