@@ -12,7 +12,6 @@ hr  {
     margin-bottom: 20px;
 }
 
-
 /* Rubriker */
 h2.site_title {
     font-size: 1em;
@@ -26,7 +25,6 @@ h2.site_title {
 
 #your-info > h2:nth-child(18) {
     margin-left: -22%;
-
 }
 
 /* Titlar på formulären */
@@ -44,18 +42,17 @@ h3.form-header {
 }
 
 /* Alla inputfält */
- input[type="text"]{
+input[type="text"]{
     margin:0 auto;
     border: 1px solid #000000;
-	padding: 10px;
-	font-size: 10px;
-	margin-bottom: 8px;
-	width: 60%;
+    padding: 10px;
+    font-size: 10px;
+    margin-bottom: 8px;
+    width: 60%;
     font-size: 0.8em;
 }
 
 /* Listan för betalningsmetod */
-
 .payment-lista > label > input {
     margin-right: 10px;
 }
@@ -99,7 +96,7 @@ input[type=checkbox]:checked ~ #street2-hidden{
 }
 
 /*--VISNING AV CART--*/
-tbody{
+tbody {
     margin:0 auto;
 }
 
@@ -173,7 +170,6 @@ body > div.aside_checkout > div > a > div > i {
 }
 
 /* Lägg order */
-
 button.btn-placeorder{
     margin:0 auto;
     margin-top:8%;
@@ -224,13 +220,6 @@ hr#minicart {
     font-size: 13px;
     float: right;
 }
-
-
-
-
-
-
-
 
 
 /* Mobilanpassning för iphone 6 plus */
@@ -292,103 +281,53 @@ hr#minicart {
         padding-bottom: 5%;
         margin: 0% 0% 7% 0%;
     }
+}
 
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--Media Queries--*/
-
-
+/* Media Queries */
 @media all and (max-width:1100px){
+    
     #to-pay {
         margin-right: 5%;
-    
-}
+    }
 
-#moms {
-    margin-right:5%;
+    #moms {
+        margin-right:5%;
     }
 }
-
 
 @media all and (max-width:800px){
     
-.payment-lista{
-    margin-left: 36%;
-
+    .payment-lista {
+        margin-left: 36%;
+    }  
 }
-
-    
-    
-}
-
-
 
 @media all and (max-width:515px){
     
     .checkout-wrapper {
-    max-width:500px;
-}
-    .payment-lista{
-    margin-left: 25%;
+        max-width:500px;
+    }
 
-}
+    .payment-lista{
+        margin-left: 25%;
+    }
     
     td {
         font-size: 12px;
     }
     
     #prod-sum {
-
-    font-size: 16px;
+        font-size: 16px;
+    }
 }
-}
 
-
-
-
-
-@media all and (max-width:450px){
-
+@media all and (max-width:450px) {
     
-    .payment-lista{
-    margin-left: 25%;
-
-}
+    .payment-lista {
+        margin-left: 25%;
+    }
 
     #prod-sum {
-
-    font-size: 13px;
-}
-    
-    
+        font-size: 13px;
+    }
 }

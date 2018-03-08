@@ -15,7 +15,6 @@
     <i class="fa fa-gift" aria-hidden="true"></i> Parfymprov vid varje beställning |
     <i class="far fa-clock"></i> 60 dagars öppet köp |
 </div>
-
 <!-- TOPPBILD -->
 <div class="startpage_bigimage">
     <img class="topimage" src="img/slider/big_img.jpg">
@@ -64,7 +63,6 @@
                 <a href="?action=login"><button id="ansok"> Bli medlem </button></a>
             </div>
         </div>
-
     </div>
     <!-- / Första main -->
     <!-- HERRDOFTER -->
@@ -88,7 +86,6 @@
             <div class="discover_men">
                 <img class="bigperfume" src="img/products/big/tabacco.jpg">
                 <img class="bigperfume2" src="img/products/big/tabacco_mobile.jpg">
-
                 <p class="all_men"> Se alla dofter <br>för uomo </p>
                 <div class="arrow-right"></div>
             </div>

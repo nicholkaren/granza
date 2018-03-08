@@ -25,8 +25,8 @@
         </button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
+    <a href="?action=default"><img id="id_logo" src="img/logo/logotype-new.png"></a>
     <ul class="nav navbar-nav">
-        <img id="id_logo" src="img/logo/logotype-new.png">
         <li><a href="?action=default">Hem</a></li>
         <li><a href="?action=category&id=1">Damdofter</a></li>
         <li><a href="?action=category&id=2">Herrdofter</a></li>

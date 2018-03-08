@@ -65,6 +65,9 @@ span#order {
     margin-top: 2.25%;
     padding: 3%;
     padding-bottom: 5%;
+    -moz-box-shadow: 0 0 10px #dcdcdc;
+    -webkit-box-shadow: 0 0 10px #dcdcdc;
+    box-shadow: 0 0 10px #dcdcdc;
 }
 
 /* h1 Din varukorg */
@@ -110,6 +113,9 @@ h1:after {
     box-sizing: border-box;
     padding: 7%;
     margin-bottom: 5%;
+    -moz-box-shadow: 0 0 10px #dcdcdc;
+    -webkit-box-shadow: 0 0 10px #dcdcdc;
+    box-shadow: 0 0 10px #dcdcdc;
 }
 
 /* En eskild rad med en produkt och dess info */
@@ -136,7 +142,6 @@ h1:after {
 }
 
 /* Produkt beskrivning */
-
 .item-title{
     text-align: center;
     padding-top: 8%;
@@ -151,7 +156,6 @@ span.desc{
 }
 
 /* Antal produkter i varukorgen */
-
 .item-qty{
     width: 17%;
     padding-top: 6%; 
@@ -201,7 +205,6 @@ input[type="number"] {
 }
 
 /* Uppdatera cart */
-
 .btn-update {
     background-color: transparent;
     border: none;
@@ -248,18 +251,13 @@ div.goback > i {
     margin: 0px;
 }
 
-
-
-
-
 /* Mobilanpassning för iphone 6 plus */
-
 @media only screen and (max-width: 500px) { 
 
     h1.shoppingbag {
         font-size: 17px;
         text-align: center;
-        margin-top: 40px;
+        margin-top: 80px;
         margin-bottom: 25px;
     }
 
@@ -286,7 +284,6 @@ div.goback > i {
         margin-left: 28px;
     }
 
-
     .total {
         margin-top: 15%;
     }
@@ -294,7 +291,7 @@ div.goback > i {
     .aside {
         width: 100%;
         margin: 0;
-        height: 60px;
+        height: 95px;
         padding: 7%;
     }
 
@@ -324,7 +321,7 @@ div.goback > i {
     }
 
     .cart-sum{
-        width: 17%;
+        width: 30%;
         margin-left: 10px;
         padding-top: 12%;
         font-size: 12px;
@@ -373,7 +370,7 @@ div.goback > i {
     .item-title{
         text-align: center;
         padding-top: 12%;
-        width: 20%; 
+        width: 27%; 
     }
 
     span.desc{
@@ -383,7 +380,7 @@ div.goback > i {
 /* Antal produkter i varukorgen */
 
     .item-qty{
-        width:12%; 
+        width: 14%; 
     }
 
     input[type="number"] {

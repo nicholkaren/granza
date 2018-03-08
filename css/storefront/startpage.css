@@ -346,13 +346,12 @@ p.all_men {
 .arrow-right:hover {
       border-left: 20px solid #2A4128;
 } 
-/* CSS för ansök om medlemsskap hos Granza 
-Uppdelad i två block, en med bildkollage och en med bara text */
+/* CSS för ansök om medlemsskap hos Granza */
 #register_member {
     width: 100%;
     height: 400px;
     background-color: #D4A80E; 
-    padding-top: 3%;
+    padding-top: 2%;
     padding-bottom: 2%;
     margin-top: 0.6%;
 }
@@ -672,7 +671,7 @@ p.thephilosophy {
     }
 
     .ca3-scroll-down-link {
-        left: 51%;
+        left: 53.5%;
     }
 
     h2.headline_gender {

@@ -1,6 +1,6 @@
 <?php require_once('templates/storefront_tpl/header.php');?>
 
-<!--KATEGORI SIDA-->
+<!--KATEGORISIDA-->
 <link type="text/css" rel="stylesheet" href="css/storefront/category.css">
 
 <div class="category">
@@ -29,5 +29,4 @@
         ?>
     </div>
 </div>
-
 <?php require_once('templates/storefront_tpl/footer.php');?>
