@@ -256,18 +256,24 @@ button:hover {
 
 p.all_women {
     position: absolute;
-    top: 43%;
-    left: 15%;
-
+    top: 40%;
+    left: 33%;
     color: white;
     text-transform: uppercase;
     font-size: 30px;
     font-family: lato;
     font-weight: 700;
     letter-spacing: 1px;
+    background: white;
+    color: black;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 7%;
+    padding-left: 7%;
+    text-align: center;
 }
 
-.arrow-left {
+/*.arrow-left {
   width: 0; 
   height: 0; 
   border-top: 15px solid transparent;
@@ -277,7 +283,7 @@ p.all_women {
   position: absolute;
   top: 55%;
   left: 15%;
-}
+}*/
 
 img.lily {
     width: 38.5%;
@@ -344,42 +350,35 @@ p.all_men {
 Uppdelad i två block, en med bildkollage och en med bara text */
 #register_member {
     width: 100%;
-    height: 480px;
+    height: 400px;
     background-color: #D4A80E; 
-    display: flex;
-    padding-top: 2%;
+    padding-top: 3%;
     padding-bottom: 2%;
     margin-top: 0.6%;
 }
 
-.placement-left {
-    width: 40%;
-    padding-left: 3%;
-    flex: 1;
-}
-
-.kollage1 {
-    width: 200%;
-    margin-top: 20%;
-}
-
 .placement-right {
-    width: 50%;
+    width: 100%;
     color: white;
     text-align: center;
-    margin-top: 10%;
-    margin-right: 21%;
-    flex: 0 0 60%; 
+    margin-top: 6%;
     font-size: 25px;
 }
 
 .placement-right p {
-    font-size: 24px;
+    font-size: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.placement-right > h1 {
+    font-size: 35px;
+    text-transform: uppercase;
 }
 
 /* knapp för att ansöka */
 button#ansok {
-    width: 25%;
+    width: 14%;
     margin: 0 auto;
     padding: 10px;
     border: 2px solid white;
@@ -387,14 +386,13 @@ button#ansok {
     font-size: 13px;
     text-decoration: none;
     cursor: pointer;
-    margin-top: 4%;
+    margin-top: 2%;
 }
 
 #ansok:hover { 
     color: black;
     background-color: white;
 }
-
 
 /* Kreativ ruta under herrdofter */
 #philosophy {
@@ -464,7 +462,11 @@ p.thephilosophy {
 
 /* Mobilanpassning för 500 */
 
-@media only screen and (max-width: 699px) { 
+@media all and (min-width:300px) and (max-width: 766px) { 
+
+    #id_logo {
+        margin-left: 140px;
+    }
 
     .topimage {
         display: none;
@@ -487,8 +489,18 @@ p.thephilosophy {
         padding: 2.5%;
     }
 
+    div.create {
+        width: 100%;
+        top: 34%;
+        padding: 60px;
+    }
+
     .create p {
-        display: none;
+        font-size: 29px;
+    }
+
+    p.est {
+        font-size: 17px;
     }
 
     .startpage_bigimage {
@@ -558,7 +570,7 @@ p.thephilosophy {
 
     .placement-right {
         width: 100%;
-        margin-top: 9%;
+        margin-top: 10%;
         margin-right: 0px;
     }
 
@@ -567,13 +579,15 @@ p.thephilosophy {
         color: white;
         text-align: center;
         padding: 7%;
-        font-size: 16px;
+        padding-top: 4%;
+        padding-bottom: 20px;
+        font-size: 18px;
         margin-right: 0px;
         flex: 0 0 100%;
     }
 
     button#ansok {
-        width: 80%;
+        width: 50%;
         padding: 15px; 
         margin-top: 1%;
     }
@@ -606,7 +620,27 @@ p.thephilosophy {
 
 
 /* Media Queries for Ipad size */
-@media all and (min-width:700px) and (max-width: 1023px){ 
+@media all and (min-width:767px) and (max-width: 1439px){ 
+
+    #id_logo {
+        display: inline-block;
+        margin-top: 25px;
+        margin-left: 66px;
+        width: 140px;
+    }
+    .navbar-nav {
+        float: left;
+        margin: 0;
+        font-size: 11px;
+    }
+
+    .navbar-nav {
+        margin-left: 0px !important;
+    }
+
+    .navbar-right {
+        margin-right: 0px !important;
+    }
 
     .topimage {
         max-width: none;
@@ -614,6 +648,10 @@ p.thephilosophy {
 
     .startpage {
         width: 105%;
+    }
+
+    .small_banner {
+        padding: 1.5%;
     }
 
     .startpage_bigimage {
@@ -666,28 +704,60 @@ p.thephilosophy {
         margin-right: 0%;
     }
 
-}
-
-
-/******* MEDIA QUERIES FÖR SKÄRM < 800px ************/
-
-
-@media all and (max-width:800px){
-    
-    .product_wrapper:nth-child(4) {
-        display: none;
-    }
-    
-    .start_cat, .start_prod {
+     .start_cat, .start_prod {
         flex-wrap: wrap;
     }
     
     #offer-link > .banner-p {
         font-size: 14px;
     }
+
+    .arrow-left, .arrow-right {
+        display: none;
+    }
+
+    p.all_women {
+        top: 32%;
+        left: 27%;
+        text-align: center;
+        font-size: 27px;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 3%; 
+    }
+
+    .placement-right p {
+        font-size: 19px;
+    }
+
+    p.all_men { 
+        top: 36%;
+        left: 30%;
+        text-align: center;
+        font-size: 27px;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 3%; 
+    }
+
+    #register_member {
+        width: 100%;
+        height: 343px;
+        background-color: #D4A80E;
+        display: flex;
+        padding-top: 0%;
+        padding-bottom: 2%;
+        margin-top: 0.6%;
+    }
+
+    p.thephilosophy {
+        padding: 11%;
+    }
+
 }
 
-/******* MEDIA QUERIES FÖR SKÄRM < 700px ************/
+
+/******* MEDIA QUERIES FÖR SKÄRM < 700px
 
 
 @media all and (max-width:700px){
@@ -700,9 +770,9 @@ p.thephilosophy {
     }
    
     
-}
+} ************/
 
-/******* MEDIA QUERIES FÖR SKÄRM < 650px ************/
+/******* MEDIA QUERIES FÖR SKÄRM < 650px 
 
 
 @media all and (max-width:650px){
@@ -726,5 +796,5 @@ p.thephilosophy {
     .sliderPic {
     max-height: 250px; 
 
-}
+}************/
 

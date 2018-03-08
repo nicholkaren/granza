@@ -59,8 +59,9 @@
         <!-- BLI MEDLEM -->
         <div id="register_member">
             <div class="placement-right">
-                <p> Bli medlem i Granza och få tillgång till exklusiva erbjudanden! <br> Prenumerera på nyhetsbrevet och ta del av spännande resereportage <br> om när vi besöker våra parfymerier i Italien. </p>
-                <a href="?action=login"><button id="ansok"> Ansök här! </button></a>
+                <h1>Bli medlem</span></h1>
+                <p> Få tillgång till exklusiva erbjudanden! Prenumerera på vårt nyhetsbrev och ta del av resereportage om när vi besöker vårt parfymeri i Italien. </p>
+                <a href="?action=login"><button id="ansok"> Bli medlem </button></a>
             </div>
         </div>
 
