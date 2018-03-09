@@ -7,7 +7,8 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+
 
 <!-- Liten reklambanner under headern -->
 <div class="small_banner">

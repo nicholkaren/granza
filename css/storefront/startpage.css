@@ -396,7 +396,7 @@ button#ansok {
 /* Kreativ ruta under herrdofter */
 #philosophy {
     width: 100%;
-    height: 480px;
+    height: 400px;
     background-color: #000000; 
     text-align: center;
     margin-top: 0.3%;
@@ -411,9 +411,9 @@ button#ansok {
 p.thephilosophy {
     width: 100%;
     color: white;
-    font-size: 40px;
+    font-size: 27px;
     text-align: center;
-    font-family: 'Dr Sugiyama', cursive;
+    font-family: 'Satisfy', cursive;
     font-weight: 400;
     letter-spacing: 1.5px;
     padding-top: 10%;
@@ -495,7 +495,7 @@ p.thephilosophy {
     }
 
     .create p {
-        font-size: 29px;
+        font-size: 25px;
     }
 
     p.est {
@@ -611,7 +611,7 @@ p.thephilosophy {
     }
 
     p.thephilosophy {
-        font-size: 32px;
+        font-size: 24px;
         padding: 9%;
         margin-top: 10%;
     }
@@ -699,7 +699,7 @@ p.thephilosophy {
     .placement-right {
         width: 100%;
         flex: 0 0 100%;
-        margin-top: 15%;
+        margin-top: 6%;
         margin-right: 0%;
     }
 
@@ -753,6 +753,14 @@ p.thephilosophy {
         padding: 11%;
     }
 
+    button#ansok {
+        width: 30%;
+        margin-top: 3%;
+    }
+
+    #philosophy {
+        height: 352px; 
+    }
 }
 
 
