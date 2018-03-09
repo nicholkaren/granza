@@ -28,8 +28,5 @@
     </td>
     <td>
         <?php echo '<a class ="edit_link" href="?action=edituser&uid='.$pagecontent->uid.'">Redigera</a>'?></td>
-
-
 </tbody>
-
 </div>

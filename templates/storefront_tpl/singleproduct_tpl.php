@@ -75,11 +75,6 @@
 
         <img class="scent" src="img/doftnoter/doftfamilj1.png">
 </div> <!-- End of product single div -->
-      
-      <!-- Block med doftfamiljs-hjul
-      <div id="block">
-          <img class="scent-wheel" src="img/products/big/scent_wheel.png"> 
-      </div>-->
 
       <!--Liknande produkter 4 st -->
       <div class="product_upsale">

@@ -20,15 +20,13 @@ class Person {
     }
 
     public function getUserInfo($element) {        
-        return $this->userInfo[$element];
-                    
+        return $this->userInfo[$element];            
     }
 
     public function logIn($email, $password){
         
         global $pdo;
         
-     
         $sql = "SELECT person_id, level FROM person WHERE email = :email AND password = :password AND active = 1 ";
         
         // Whitespace och hasha lösenord
@@ -45,13 +43,11 @@ class Person {
 
         $result = $stmt->fetch();
         
-        
         if($result){
             $this->personId = $result['person_id'];
             $this->getUserInfoFromDB();
             $_SESSION['personId'] = $this->personId;
             $_SESSION['level'] = $result['level'];
-
         }  
     } 
 }
@@ -69,15 +65,11 @@ class Person {
     public function isLoggedIn(){
         if(isset($_SESSION['personId'])) {
             $this->setId( (int) $_SESSION['personId']);
-             //echo $this->personId." är inloggad";
-            
+             //echo $this->personId." är inloggad";   
         }
 
         return $this->personId !==null;
-        
-        
-        // return isset($_SESSION['personId]);
-        
+        // return isset($_SESSION['personId]); 
     }
     
     //admin
@@ -93,9 +85,6 @@ class Person {
             return $userlevel === "2";
 
          }
-        
-        // return ($_SESSION['level] == 2)
-        
     }
     
     public function getId(){
@@ -116,9 +105,8 @@ class Person {
         if($result !== false ) {
             $this->personId = $setThisId; 
         }
-
     }
-    
+
     public function getLogInForm(){
         if($this->isLoggedIn()){
             $returnData = '<a href="?logout">'."Logga ut".'</a>';
@@ -132,7 +120,6 @@ class Person {
         global $pdo;
         
         $sql = "UPDATE granza.person SET password = :password WHERE person.person_id = :id";
-        
        
         $stmt = $pdo->prepare($sql);
 
