@@ -142,17 +142,32 @@ button {
     }
 
     p.description {
-        font-size: 15px;
-        padding: 2% 9% 3% 9%;
+        font-size: 16px;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 5%; 
     }
 
     .cat_img {
-        height: 557px;
+        height: 620px;
     }
 
     .main_wrapper {
         margin-right: 0%;
         margin-left: 0%;
+    }
+
+    h1.bigheadline_category {
+        font-size: 17px; 
+        padding-bottom: 0px;
+    }
+
+    .category_banner_text {
+        padding-top: 7%;
+    }
+
+    .main_wrapper {
+        padding-bottom: 0px;
     }
 
 }
@@ -162,6 +177,19 @@ button {
 
     .product_wrapper {
         width: 49.5%;
+    }
+
+    .product_wrapper img {
+        margin-bottom: -0.6%;
+    }
+
+    .category {
+        width: 100%;
+    }
+
+    p.description {
+        width: 80%;
+        margin: 0 auto;
     }
 
 }

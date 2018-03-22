@@ -142,13 +142,14 @@ tr {
 .checkout-img {
     width: 80px;
     height: 80px;
+    margin-top: 3%;
 }
 
 /* h1 Din varukorg */
 h1.shoppingbag2 {
     width: 100%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 50px;
     font-size: 1em;
     text-transform: uppercase;
@@ -212,6 +213,9 @@ hr#minicart {
     margin-left: 2%;
     margin-top: 2.25%;
     padding: 3%;
+    -moz-box-shadow: 0 0 10px #dcdcdc;
+    -webkit-box-shadow: 0 0 10px #dcdcdc;
+    box-shadow: 0 0 10px #dcdcdc;
 }
 
 .goback3 {
