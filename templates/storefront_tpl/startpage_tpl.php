@@ -52,8 +52,7 @@
                 <img class="bigperfume2" src="img/products/big/women_all_mobile.jpg">
 
                 <p class="all_women"> Se alla parfymer <br>för donna </p>
-
-                <div class="arrow-left"></div>
+                <div class="arrow-right"></div>
             </div>
         </a>
         <!-- BLI MEDLEM -->

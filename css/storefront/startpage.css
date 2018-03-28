@@ -253,7 +253,7 @@ button:hover {
 .discover_women > .bigperfume2 {
     display: none;
 }
-
+/*
 p.all_women {
     position: absolute;
     top: 40%;
@@ -272,7 +272,7 @@ p.all_women {
     padding-left: 7%;
     text-align: center;
 }
-
+*/
 /*.arrow-left {
   width: 0; 
   height: 0; 
@@ -285,24 +285,9 @@ p.all_women {
   left: 15%;
 }*/
 
-img.lily {
-    width: 38.5%;
-    position: absolute;
-    top: -10%;
-    left: 6%;
-}
-
-img.mint {
-    width: 20%;
-    position: absolute;
-    top: 40%;
-    left: 20%;
-}
-
 .arrow-left:hover {
       border-left: 15px solid #2A4128;
 } 
-
 
 /* Alla parfymer herr */
 .discover_men {
@@ -318,11 +303,10 @@ img.mint {
         display: none;
     }
 
-p.all_men {
+p.all_men, p.all_women {
     position: absolute;
     top: 44.5%;
     left: 59%;
-
     color: white;
     text-transform: uppercase;
     font-size: 30px;
